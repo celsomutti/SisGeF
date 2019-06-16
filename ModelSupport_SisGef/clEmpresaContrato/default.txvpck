@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodeSet version="1.0">
+  <view uin="jj00vy2jlnarsj1kh_v">
+    <property name="$defaultDiagram" value="true" />
+    <property name="$metaclass" value="Package Diagram" />
+    <property name="$name" value="default" />
+    <reference referencedUin="delphi:e_class:src:SisGef:clEmpresaContrato.@unitclass">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clEmpresaContrato.@unitclass.TABLENAME" />
+    </reference>
+    <reference referencedUin="delphi:e_class:src:SisGef:clEmpresaContrato.TEmpresaContrato">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="10,10,134,417" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clEmpresaContrato.TEmpresaContrato.FEmpresa" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clEmpresaContrato.TEmpresaContrato.FContrato" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clEmpresaContrato.TEmpresaContrato.FInicio" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clEmpresaContrato.TEmpresaContrato.FTermino" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clEmpresaContrato.TEmpresaContrato.SetEmpresa(System.Integer)" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clEmpresaContrato.TEmpresaContrato.SetContrato(System.Integer)" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clEmpresaContrato.TEmpresaContrato.SetInicio(System.TDateTime)" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clEmpresaContrato.TEmpresaContrato.SetTermino(System.TDateTime)" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clEmpresaContrato.TEmpresaContrato.Create()" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clEmpresaContrato.TEmpresaContrato.Empresa" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clEmpresaContrato.TEmpresaContrato.Contrato" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clEmpresaContrato.TEmpresaContrato.Inicio" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clEmpresaContrato.TEmpresaContrato.Termino" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clEmpresaContrato.TEmpresaContrato.MaxSeq()" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clEmpresaContrato.TEmpresaContrato.Validar()" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clEmpresaContrato.TEmpresaContrato.Insert()" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clEmpresaContrato.TEmpresaContrato.Update()" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clEmpresaContrato.TEmpresaContrato.Delete(System.string)" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clEmpresaContrato.TEmpresaContrato.getObject(System.string,System.string)" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clEmpresaContrato.TEmpresaContrato.getObjects()" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clEmpresaContrato.TEmpresaContrato.getField(System.string,System.string)" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clEmpresaContrato.TEmpresaContrato.Destroy()" />
+    </reference>
+  </view>
+</nodeSet>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<TfrxReport Version="5.1.11" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="2039" PreviewOptions.MDIChild="True" PreviewOptions.Modal="False" PreviewOptions.Zoom="1" PrintOptions.Printer="Padrão" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="42530,7728041782" ReportOptions.Description.Text="" ReportOptions.LastChange="42531,6844047222" ScriptLanguage="PascalScript" ScriptText.Text="begin&#13;&#10;&#13;&#10;end." StoreInDFM="False">
+  <Datasets>
+    <item DataSet="dsrepRecados" DataSetName="dsrepRecados"/>
+  </Datasets>
+  <Variables>
+    <item Name=" Recado"/>
+    <item Name="parImpressao"/>
+  </Variables>
+  <TfrxDataPage Name="Data" Height="1000" Left="0" Top="0" Width="1000"/>
+  <TfrxReportPage Name="Page1" PaperWidth="210" PaperHeight="297" PaperSize="9" LeftMargin="5" RightMargin="5" TopMargin="5" BottomMargin="5" ColumnWidth="0" ColumnPositions.Text="" HGuides.Text="" VGuides.Text="">
+    <TfrxMasterData Name="MasterData1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="207,87415" Left="0" Top="18,89765" Width="755,906" ColumnWidth="0" ColumnGap="0" DataSet="dsrepRecados" DataSetName="dsrepRecados" Filter="&#60;dsrepRecados.&#34;DOM_IMPRESSAO&#34;&#62; &#60;&#62; 'S'" RowCount="0">
+      <TfrxMemoView Name="Memo1" Left="3,77953" Top="3,77953" Width="94,48825" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="[dsrepRecados.&#34;COD_ASSINATURA&#34;]"/>
+      <TfrxMemoView Name="dsrepRecadosNOM_ASSINANTE" Left="3,77953" Top="30,23624" Width="744,56741" Height="18,89765" DataField="NOM_ASSINANTE" DataSet="dsrepRecados" DataSetName="dsrepRecados" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[dsrepRecados.&#34;NOM_ASSINANTE&#34;]"/>
+      <TfrxMemoView Name="dsrepRecadosDES_ENDERECO" Left="3,77953" Top="52,91342" Width="744,56741" Height="45,35436" DataField="DES_ENDERECO" DataSet="dsrepRecados" DataSetName="dsrepRecados" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[dsrepRecados.&#34;DES_ENDERECO&#34;]"/>
+      <TfrxMemoView Name="dsrepRecadosDES_RECADO" Left="3,77953" Top="102,04731" Width="744,56741" Height="68,03154" DataField="DES_RECADO" DataSet="dsrepRecados" DataSetName="dsrepRecados" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[dsrepRecados.&#34;DES_RECADO&#34;]"/>
+      <TfrxLineView Name="Line1" Left="3,77953" Top="192,75603" Width="744,56741" Height="0" Color="0" Frame.Style="fsDash" Frame.Typ="4"/>
+      <TfrxMemoView Name="parImpressao" Left="3,77953" Top="173,85838" Width="744,56741" Height="11,33859" Font.Charset="1" Font.Color="0" Font.Height="-7" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="[parImpressao]"/>
+      <TfrxMemoView Name="dsrepRecadosDES_PRODUTO" Left="113,3859" Top="3,77953" Width="109,60637" Height="18,89765" DataField="DES_PRODUTO" DataSet="dsrepRecados" DataSetName="dsrepRecados" Text="[dsrepRecados.&#34;DES_PRODUTO&#34;]"/>
+    </TfrxMasterData>
+  </TfrxReportPage>
+</TfrxReport>

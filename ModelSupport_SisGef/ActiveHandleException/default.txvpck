@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodeSet version="1.0">
+  <view uin="8rq7lhowk4av8bbrs_v">
+    <property name="$defaultDiagram" value="true" />
+    <property name="$metaclass" value="Package Diagram" />
+    <property name="$name" value="default" />
+    <reference referencedUin="delphi:e_class:src:SisGef:ActiveHandleException.@unitclass">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_field:src:SisGef:ActiveHandleException.@unitclass.ActiveException" />
+      <reference referencedUin="delphi:l_ast:src:SisGef:ActiveHandleException.@unitclass.ActiveException" />
+    </reference>
+    <reference referencedUin="delphi:e_class:src:SisGef:ActiveHandleException.TActiveHandleException">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="10,10,155,67" />
+      <reference referencedUin="delphi:e_field:src:SisGef:ActiveHandleException.TActiveHandleException.FLogFile" />
+      <reference referencedUin="delphi:e_method:src:SisGef:ActiveHandleException.TActiveHandleException.AppException(System.TObject,System.SysUtils.Exception)" />
+      <reference referencedUin="delphi:e_method:src:SisGef:ActiveHandleException.TActiveHandleException.Create()" />
+    </reference>
+  </view>
+</nodeSet>

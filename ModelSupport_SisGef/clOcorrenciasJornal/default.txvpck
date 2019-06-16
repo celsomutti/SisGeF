@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodeSet version="1.0">
+  <view uin="lr0wstjztef_v">
+    <property name="$defaultDiagram" value="true" />
+    <property name="$metaclass" value="Package Diagram" />
+    <property name="$name" value="default" />
+    <reference referencedUin="delphi:e_class:src:SisGef:clOcorrenciasJornal.@unitclass">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clOcorrenciasJornal.@unitclass.TABLENAME" />
+    </reference>
+    <reference referencedUin="delphi:e_class:src:SisGef:clOcorrenciasJornal.TOcorrenciasJornal">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="10,10,130,987" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clOcorrenciasJornal.TOcorrenciasJornal.Roteiro" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clOcorrenciasJornal.TOcorrenciasJornal.FRoteiro" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clOcorrenciasJornal.TOcorrenciasJornal.SetRoteiro(System.string)" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clOcorrenciasJornal.TOcorrenciasJornal.Entregador" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clOcorrenciasJornal.TOcorrenciasJornal.FEntregador" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clOcorrenciasJornal.TOcorrenciasJornal.SetEntregador(System.Integer)" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clOcorrenciasJornal.TOcorrenciasJornal.Assinatura" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clOcorrenciasJornal.TOcorrenciasJornal.FAssinatura" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clOcorrenciasJornal.TOcorrenciasJornal.SetAssinatura(System.string)" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clOcorrenciasJornal.TOcorrenciasJornal.Nome" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clOcorrenciasJornal.TOcorrenciasJornal.FNome" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clOcorrenciasJornal.TOcorrenciasJornal.SetNome(System.string)" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clOcorrenciasJornal.TOcorrenciasJornal.Produto" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clOcorrenciasJornal.TOcorrenciasJornal.FProduto" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clOcorrenciasJornal.TOcorrenciasJornal.SetProduto(System.string)" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clOcorrenciasJornal.TOcorrenciasJornal.Ocorrencia" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clOcorrenciasJornal.TOcorrenciasJornal.FOcorrencia" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clOcorrenciasJornal.TOcorrenciasJornal.SetOcorrencia(System.Integer)" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clOcorrenciasJornal.TOcorrenciasJornal.Reincidencia" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clOcorrenciasJornal.TOcorrenciasJornal.FReincidencia" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clOcorrenciasJornal.TOcorrenciasJornal.SetReincidencia(System.string)" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clOcorrenciasJornal.TOcorrenciasJornal.Descricao" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clOcorrenciasJornal.TOcorrenciasJornal.FDescricao" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clOcorrenciasJornal.TOcorrenciasJornal.SetDescricao(System.string)" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clOcorrenciasJornal.TOcorrenciasJornal.Endereco" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clOcorrenciasJornal.TOcorrenciasJornal.FEndereco" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clOcorrenciasJornal.TOcorrenciasJornal.SetEndereco(System.Integer)" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clOcorrenciasJornal.TOcorrenciasJornal.Retorno" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clOcorrenciasJornal.TOcorrenciasJornal.FRetorno" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clOcorrenciasJornal.TOcorrenciasJornal.SetRetorno(System.string)" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clOcorrenciasJornal.TOcorrenciasJornal.Resultado" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clOcorrenciasJornal.TOcorrenciasJornal.FResultado" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clOcorrenciasJornal.TOcorrenciasJornal.SetResultado(System.Integer)" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clOcorrenciasJornal.TOcorrenciasJornal.Origem" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clOcorrenciasJornal.TOcorrenciasJornal.FOrigem" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clOcorrenciasJornal.TOcorrenciasJornal.SetOrigem(System.Integer)" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clOcorrenciasJornal.TOcorrenciasJornal.Obs" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clOcorrenciasJornal.TOcorrenciasJornal.FObs" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clOcorrenciasJornal.TOcorrenciasJornal.SetObs(System.string)" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clOcorrenciasJornal.TOcorrenciasJornal.Status" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clOcorrenciasJornal.TOcorrenciasJornal.FStatus" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clOcorrenciasJornal.TOcorrenciasJornal.SetStatus(System.Integer)" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clOcorrenciasJornal.TOcorrenciasJornal.Validar()" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clOcorrenciasJornal.TOcorrenciasJornal.Data" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clOcorrenciasJornal.TOcorrenciasJornal.FData" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clOcorrenciasJornal.TOcorrenciasJornal.SetData(System.TDateTime)" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clOcorrenciasJornal.TOcorrenciasJornal.Create()" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clOcorrenciasJornal.TOcorrenciasJornal.conexao" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clOcorrenciasJornal.TOcorrenciasJornal.Destroy()" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clOcorrenciasJornal.TOcorrenciasJornal.Insert()" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clOcorrenciasJornal.TOcorrenciasJornal.Numero" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clOcorrenciasJornal.TOcorrenciasJornal.FNumero" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clOcorrenciasJornal.TOcorrenciasJornal.SetNumero(System.Integer)" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clOcorrenciasJornal.TOcorrenciasJornal.FLog" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clOcorrenciasJornal.TOcorrenciasJornal.SetEndereco(System.string)" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clOcorrenciasJornal.TOcorrenciasJornal.SetLog(System.string)" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clOcorrenciasJornal.TOcorrenciasJornal.Log" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clOcorrenciasJornal.TOcorrenciasJornal.Update()" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clOcorrenciasJornal.TOcorrenciasJornal.Delete(System.string)" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clOcorrenciasJornal.TOcorrenciasJornal.getObject(System.string,System.string)" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clOcorrenciasJornal.TOcorrenciasJornal.getField(System.string,System.string)" />
+    </reference>
+  </view>
+</nodeSet>

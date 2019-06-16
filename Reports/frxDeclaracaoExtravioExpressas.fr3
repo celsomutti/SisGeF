@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<TfrxReport Version="5.3.14" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Printer="Default" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="43152,7007427199" ReportOptions.Description.Text="" ReportOptions.LastChange="43158,6023864583" ScriptLanguage="PascalScript" ScriptText.Text="begin&#13;&#10;&#13;&#10;end.">
+  <Variables>
+    <item Name=" Declaração"/>
+    <item Name="vAgente"/>
+    <item Name="vEntregador"/>
+    <item Name="vNN"/>
+    <item Name="vValor"/>
+    <item Name="vMulta"/>
+    <item Name="vVerba"/>
+    <item Name="vData"/>
+    <item Name="vImpressao"/>
+    <item Name="vCPF"/>
+  </Variables>
+  <TfrxDataPage Name="Data" Height="1000" Left="0" Top="0" Width="1000"/>
+  <TfrxReportPage Name="Page1" PaperWidth="210" PaperHeight="297" PaperSize="9" LeftMargin="10" RightMargin="10" TopMargin="10" BottomMargin="10" ColumnWidth="0" ColumnPositions.Text="" BackPictureStretched="False" HGuides.Text="" VGuides.Text="">
+    <TfrxPageHeader Name="PageHeader1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="102,04731" Left="0" Top="18,89765" Width="718,1107"/>
+    <TfrxMemoView Name="Memo1" Left="0" Top="166,29932" Width="718,1107" Height="18,89765" Font.Charset="0" Font.Color="0" Font.Height="-19" Font.Name="Calibri" Font.Style="1" HAlign="haCenter" ParentFont="False" Text="Declaração de Multa e/ou Extravio de Produto"/>
+    <TfrxMemoView Name="Memo2" Left="75,5906" Top="219,21274" Width="151,1812" Height="170,07885" Font.Charset="0" Font.Color="0" Font.Height="-19" Font.Name="Calibri" Font.Style="1" ParentFont="False" Text="Agente: &#13;&#10;Entregador: &#13;&#10;&#13;&#10;Nosso Número: &#13;&#10;&#13;&#10;Valor do Produto: &#13;&#10;Valor da Multa: &#13;&#10;Valor da Verba:  "/>
+    <TfrxMemoView Name="Memo4" Left="75,5906" Top="442,20501" Width="559,37044" Height="294,80334" Font.Charset="0" Font.Color="0" Font.Height="-19" Font.Name="Calibri" Font.Style="0" HAlign="haBlock" LineSpacing="40" ParentFont="False" Text="                              Declaro para os devidos fins que o NN acima com seu(s) respectivo(s) valor(es) é de minha inteira responsabilidade ficando a Franquia desde já autorizada a descontar da minha Prestação de Contas a que tempo lhe convir. "/>
+    <TfrxMemoView Name="Memo5" Left="75,5906" Top="680,3154" Width="559,37044" Height="200,31509" Font.Charset="0" Font.Color="0" Font.Height="-19" Font.Name="Calibri" Font.Style="0" HAlign="haBlock" ParentFont="False" Text="[vData]&#13;&#10;&#13;&#10;&#13;&#10;&#13;&#10;&#13;&#10;&#13;&#10;____________________________________________&#13;&#10;[vEntregador]&#13;&#10;[vCPF]"/>
+    <TfrxMemoView Name="Memo6" Left="3,77953" Top="1028,03216" Width="714,33117" Height="18,89765" Font.Charset="0" Font.Color="0" Font.Height="-11" Font.Name="Arial Narrow" Font.Style="0" ParentFont="False" Text="[vImpressao]"/>
+    <TfrxMemoView Name="vAgente" Left="249,44898" Top="215,43321" Width="400,63018" Height="22,67718" Font.Charset="0" Font.Color="0" Font.Height="-19" Font.Name="Calibri" Font.Style="0" ParentFont="False" Text="[vAgente]"/>
+    <TfrxMemoView Name="vEntregador" Left="249,44898" Top="238,11039" Width="400,63018" Height="41,57483" Font.Charset="0" Font.Color="0" Font.Height="-19" Font.Name="Calibri" Font.Style="0" ParentFont="False" Text="[vEntregador]"/>
+    <TfrxMemoView Name="vNN" Left="249,44898" Top="283,46475" Width="400,63018" Height="22,67718" Font.Charset="0" Font.Color="0" Font.Height="-19" Font.Name="Calibri" Font.Style="0" ParentFont="False" Text="[vNN]"/>
+    <TfrxMemoView Name="vValor" Left="249,44898" Top="317,48052" Width="400,63018" Height="22,67718" Font.Charset="0" Font.Color="0" Font.Height="-19" Font.Name="Calibri" Font.Style="0" ParentFont="False" Text="[vValor]"/>
+    <TfrxMemoView Name="vMulta" Left="249,44898" Top="343,93723" Width="400,63018" Height="18,89765" Font.Charset="0" Font.Color="0" Font.Height="-19" Font.Name="Calibri" Font.Style="0" ParentFont="False" Text="[vMulta]"/>
+    <TfrxMemoView Name="vVerba" Left="249,44898" Top="366,61441" Width="400,63018" Height="22,67718" Font.Charset="0" Font.Color="0" Font.Height="-19" Font.Name="Calibri" Font.Style="0" ParentFont="False" Text="[vVerba]"/>
+  </TfrxReportPage>
+</TfrxReport>

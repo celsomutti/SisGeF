@@ -1,0 +1,860 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodeSet version="1.0">
+  <view uin="203smlugpicaj61dr_v">
+    <property name="$defaultDiagram" value="true" />
+    <property name="$metaclass" value="Package Diagram" />
+    <property name="$name" value="default" />
+    <reference referencedUin="design:view:::po96lr3z08g4ux4xe_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:udm.Tdm" />
+      <reference referencedUin="delphi:e_class:src:SisGef:udm.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::r7gsw746g8g600x6h_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmControleTransporte.@unitclass" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmControleTransporte.TfrmControleTransporte" />
+    </reference>
+    <reference referencedUin="design:view:::x9r8nsb5x8g79sxqf_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:uthrPopularExtraviosCadastro.@unitclass" />
+      <reference referencedUin="delphi:e_class:src:SisGef:uthrPopularExtraviosCadastro.thrPopularExtraviosCadastro" />
+    </reference>
+    <reference referencedUin="design:view:::ksyjv206a9gjucz7t_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:uthrImportarAero.TCSVEntrega" />
+      <reference referencedUin="delphi:e_class:src:SisGef:uthrImportarAero.thrImportarAero" />
+      <reference referencedUin="delphi:e_class:src:SisGef:uthrImportarAero.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::luhvemw1y9g3k2rcm_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmEntregadoresFuncionarios.TfrmEntregadoresFuncionarios" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmEntregadoresFuncionarios.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::qivjksl1d0gx47o1j_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:clEntregador.@unitclass" />
+      <reference referencedUin="delphi:e_class:src:SisGef:clEntregador.TEntregador" />
+    </reference>
+    <reference referencedUin="design:view:::m0pin28q0ag1uoglr_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:clUsuarios.TUsuarios" />
+      <reference referencedUin="delphi:e_class:src:SisGef:clUsuarios.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::b3j07nuukag5kzelp_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmEntregas.TfrmEntregas" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmEntregas.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::t5drmxm90bg0qanlo_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmVeiculosEx.TfrmVeiculosEx" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmVeiculosEx.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::9u4qa86wbbgepv2fp_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:clPessoaF.@unitclass" />
+      <reference referencedUin="delphi:e_class:src:SisGef:clPessoaF.TPessoaF" />
+    </reference>
+    <reference referencedUin="design:view:::ufpzwxbwqbgj8rszn_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:uthrFecharExtrato.thrFecharExtrato" />
+      <reference referencedUin="delphi:e_class:src:SisGef:uthrFecharExtrato.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::zkl923708cgx0p0ml_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmPesquisaEntregadores.TfrmPesquisaEntregadores" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmPesquisaEntregadores.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::udz2e3y8pcgksdj3s_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:clDetalheTransporte.@unitclass" />
+      <reference referencedUin="delphi:e_class:src:SisGef:clDetalheTransporte.TDetalheTransporte" />
+    </reference>
+    <reference referencedUin="design:view:::lc1dkit14dgldenas_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:clDevolucoes.@unitclass" />
+      <reference referencedUin="delphi:e_class:src:SisGef:clDevolucoes.TDevolucoes" />
+    </reference>
+    <reference referencedUin="design:view:::1t2hc8e7mdgsu96of_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:uthrPopularLancamentos.@unitclass" />
+      <reference referencedUin="delphi:e_class:src:SisGef:uthrPopularLancamentos.thrPopularLancamentos" />
+    </reference>
+    <reference referencedUin="design:view:::zzpfryuy3egrhecqp_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmListaAtribuicoes.TfrmListaAtribuicoes" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmListaAtribuicoes.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::nftt9sd5keg10m7ef_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmDebitosRestricoes.TfrmDebitosRestricoes" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmDebitosRestricoes.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::f0y448jp1fg9nf76j_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmImportaEntrega.TfrmImportaEntregas" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmImportaEntrega.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::q0q8fntnjfgwu0u6j_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmRetornoEntregas.@unitclass" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmRetornoEntregas.TfrmRetornoEntregas" />
+    </reference>
+    <reference referencedUin="design:view:::6svcsyvt1ggn8s5do_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmVerbaCEP.TfrmVerbaCEP" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmVerbaCEP.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::qh9xf3vkjggaodnsn_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:clUtil.@unitclass" />
+      <reference referencedUin="delphi:e_class:src:SisGef:clUtil.TUtil" />
+    </reference>
+    <reference referencedUin="design:view:::ecsf18py0hg9ytzvs_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmImportaBaixas.TfrmImportaBaixas" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmImportaBaixas.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::2hzbj8j2fvtxymd8p_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:clExtravios.TExtravios" />
+      <reference referencedUin="delphi:e_class:src:SisGef:clExtravios.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::480k5y0cghgtpa60i_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:uthrImportarFinanceiroTFO.@unitclass" />
+      <reference referencedUin="delphi:e_class:src:SisGef:uthrImportarFinanceiroTFO.TCSVFinanceiro" />
+      <reference referencedUin="delphi:e_class:src:SisGef:uthrImportarFinanceiroTFO.thrImportarFinanceiroTFO" />
+    </reference>
+    <reference referencedUin="design:view:::nrz3td6xxhg1qm4dr_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmCentroCusto.TfrmCentroCusto" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmCentroCusto.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::ofmuli0aeigljjsqe_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmEntregadorEx.@unitclass" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmEntregadorEx.TfrmEntregadorEx" />
+    </reference>
+    <reference referencedUin="design:view:::e03y9yv3tigo05l1k_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:clAcessos.@unitclass" />
+      <reference referencedUin="delphi:e_class:src:SisGef:clAcessos.TAcessos" />
+    </reference>
+    <reference referencedUin="design:view:::r4kkv3qg0jgpluvfi_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:clAtribuicoes.@unitclass" />
+      <reference referencedUin="delphi:e_class:src:SisGef:clAtribuicoes.TAtribuicoes" />
+    </reference>
+    <reference referencedUin="design:view:::y00xxi0fsjg76mj0s_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmAtribuicoesEntregas.@unitclass" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmAtribuicoesEntregas.TfrmAtribuicoesEntregas" />
+    </reference>
+    <reference referencedUin="design:view:::vetxdous9kge1ahyi_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:clControleKM.TControleKM" />
+      <reference referencedUin="delphi:e_class:src:SisGef:clControleKM.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::uhk2wttjrkgsuop2r_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmImportarEtiquetas.@unitclass" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmImportarEtiquetas.TfrmImportarEtiquetas" />
+    </reference>
+    <reference referencedUin="design:view:::rigeq94i0lgysve5o_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmLogin.TfrmLogin" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmLogin.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::9vf8u9vgrlg2b8sbo_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:clContasReceber.@unitclass" />
+      <reference referencedUin="delphi:e_class:src:SisGef:clContasReceber.TContasReceber" />
+    </reference>
+    <reference referencedUin="design:view:::0st5r4007mgiqts4j_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:clAtribuicoesJornal.TAtribuicoes" />
+      <reference referencedUin="delphi:e_class:src:SisGef:clAtribuicoesJornal.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::f9tpgj53lmg7zd95m_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:clContatoEntregador.@unitclass" />
+      <reference referencedUin="delphi:e_class:src:SisGef:clContatoEntregador.TContatoEntregador" />
+    </reference>
+    <reference referencedUin="design:view:::0wcksj1f4nghy64at_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:uthrCalculaExtratoFiltroEntregador.thrCalculaExtratoFiltroEntregador" />
+      <reference referencedUin="delphi:e_class:src:SisGef:uthrCalculaExtratoFiltroEntregador.@unitclass" />
+      <reference referencedUin="delphi:e_class:src:SisGef:uthrCalculaExtratoFiltroEntregador.TRegExtrato" />
+    </reference>
+    <reference referencedUin="design:view:::rmbta9h7lng7w4x3h_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmTipoExportacao.@unitclass" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmTipoExportacao.TfrmTipoExportacao" />
+    </reference>
+    <reference referencedUin="design:view:::biy9ij0l0ogapzeng_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmGrupoVerba.@unitclass" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmGrupoVerba.TfrmGrupoVerba" />
+    </reference>
+    <reference referencedUin="design:view:::g1flo9vqiog05oqoj_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:uthrExtratoFechadoAgente.thrExtratoFechado" />
+      <reference referencedUin="delphi:e_class:src:SisGef:uthrExtratoFechadoAgente.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::8js98t841pgh77x5j_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmListaApoio.@unitclass" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmListaApoio.TfrmListaApoio" />
+    </reference>
+    <reference referencedUin="design:view:::94q5mtpafpgzp2aao_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:clOrdemServico.@unitclass" />
+      <reference referencedUin="delphi:e_class:src:SisGef:clOrdemServico.TOrdemServico" />
+    </reference>
+    <reference referencedUin="design:view:::2h8w2erphrgtarfef_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmDivergencia.TfrmDivergencia" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmDivergencia.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::ysaaden21sgeyo0ef_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:clEstados.@unitclass" />
+      <reference referencedUin="delphi:e_class:src:SisGef:clEstados.TEstados" />
+    </reference>
+    <reference referencedUin="design:view:::nr2bg4u2fsgbv9o6k_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:clTipoAssinatura.@unitclass" />
+      <reference referencedUin="delphi:e_class:src:SisGef:clTipoAssinatura.TTipoAssinatura" />
+    </reference>
+    <reference referencedUin="design:view:::fjbqnj41ysguoq5xq_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:clRelatorioDiario.@unitclass" />
+      <reference referencedUin="delphi:e_class:src:SisGef:clRelatorioDiario.TRelatorioDiario" />
+    </reference>
+    <reference referencedUin="design:view:::5ugfcu67ftgkssg4l_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmImpressao.@unitclass" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmImpressao.TfrmImpressao" />
+    </reference>
+    <reference referencedUin="design:view:::sqp3ajc7utgpgz9pe_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:uthrPopularExtravios.@unitclass" />
+      <reference referencedUin="delphi:e_class:src:SisGef:uthrPopularExtravios.thrPopularExtravios" />
+    </reference>
+    <reference referencedUin="design:view:::wpv8dplpeugdo200r_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:uthrSalvaAtribuicoesJornal.thrSalvaAtribuicoes" />
+      <reference referencedUin="delphi:e_class:src:SisGef:uthrSalvaAtribuicoesJornal.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::pifj20z2xugv6h2mt_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:uthrSalvarExtravios.thrSalvarExtravios" />
+      <reference referencedUin="delphi:e_class:src:SisGef:uthrSalvarExtravios.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::xem29k6mfvge0l41j_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmImportarExtravios.TfrmImportarExtravios" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmImportarExtravios.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::wj84pp00xvgzy6b3n_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:uthrSalvarAssinantes.@unitclass" />
+      <reference referencedUin="delphi:e_class:src:SisGef:uthrSalvarAssinantes.thrSalvarAssinantes" />
+    </reference>
+    <reference referencedUin="design:view:::ytx74ej848d0daaek_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:clVeiculos.@unitclass" />
+      <reference referencedUin="delphi:e_class:src:SisGef:clVeiculos.TVeiculos" />
+    </reference>
+    <reference referencedUin="design:view:::qtnkf0n4hwg3baydt_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:clEnderecoEntregador.TEnderecoEntregador" />
+      <reference referencedUin="delphi:e_class:src:SisGef:clEnderecoEntregador.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::3q0t0px20xg3tbhfl_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:clContatoAgente.TContatoAgente" />
+      <reference referencedUin="delphi:e_class:src:SisGef:clContatoAgente.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::4jdyum2fxgy0plgp_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:clRestricoes.TRestricoes" />
+      <reference referencedUin="delphi:e_class:src:SisGef:clRestricoes.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::1crdg0x0yxghsfr8h_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:clPlanilhaCredito.@unitclass" />
+      <reference referencedUin="delphi:e_class:src:SisGef:clPlanilhaCredito.TPlanilhaCredito" />
+    </reference>
+    <reference referencedUin="design:view:::hyfew0ozeygpg68jo_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:uthrSalvaBaixasConcluidas.thrSalvaBaixasConcluidas" />
+      <reference referencedUin="delphi:e_class:src:SisGef:uthrSalvaBaixasConcluidas.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::75dru1cxygdjcfhi_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmEtiquetasJornal.@unitclass" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmEtiquetasJornal.TfrmEtiquetasJornal" />
+    </reference>
+    <reference referencedUin="design:view:::zh1xa54iezgbw4z9l_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:uthrPopularAero.thrPopularAero" />
+      <reference referencedUin="delphi:e_class:src:SisGef:uthrPopularAero.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::2zelf0yvvzg62l3we_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:uthrPopularEntregadoresVencidos.@unitclass" />
+      <reference referencedUin="delphi:e_class:src:SisGef:uthrPopularEntregadoresVencidos.thrPopularEntregadoresVencidos" />
+    </reference>
+    <reference referencedUin="design:view:::92a085h2c0h4wo35s_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:clRestricaoEntrega.TRestricaoEntrega" />
+      <reference referencedUin="delphi:e_class:src:SisGef:clRestricaoEntrega.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::xhoavpueu0hzw7jas_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:uthrPopularEtiquetas.@unitclass" />
+      <reference referencedUin="delphi:e_class:src:SisGef:uthrPopularEtiquetas.thrPopularEtiquetas" />
+    </reference>
+    <reference referencedUin="design:view:::fdtx60nt91hon5hvf_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:uthrSalvarEtiquetas.@unitclass" />
+      <reference referencedUin="delphi:e_class:src:SisGef:uthrSalvarEtiquetas.thrSalvarEtiquetas" />
+    </reference>
+    <reference referencedUin="design:view:::5qhvep3lq1h9j73ym_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmRelatorioDocumentosVencidos.TfrmRelatorioDocumentosVencidos" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmRelatorioDocumentosVencidos.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::tkw2q5nab2hsq9jao_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:clServicos.TServicos" />
+      <reference referencedUin="delphi:e_class:src:SisGef:clServicos.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::m58abq0ot2h8jlqjs_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:uthrPopularVeiculos.@unitclass" />
+      <reference referencedUin="delphi:e_class:src:SisGef:uthrPopularVeiculos.thrPopularVeiculos" />
+    </reference>
+    <reference referencedUin="design:view:::gurqlkeg93h48kovq_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:uthrImportarBaixas.thrImportaBaixas" />
+      <reference referencedUin="delphi:e_class:src:SisGef:uthrImportarBaixas.TCSVBaixa" />
+      <reference referencedUin="delphi:e_class:src:SisGef:uthrImportarBaixas.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::2wuziq4go3h2qgx0m_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:clBarrTFO.TBarrTFO" />
+      <reference referencedUin="delphi:e_class:src:SisGef:clBarrTFO.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::pw1c7q0t74hye3ioq_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:clPessoaJ.TPessoaJ" />
+      <reference referencedUin="delphi:e_class:src:SisGef:clPessoaJ.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::l2zockjzn4h9afbzf_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmBaixaContasReceber.TfrmBaixaContaReceber" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmBaixaContasReceber.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::xan8ef8j65hufbmxn_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:uthrPopularLancamentosExtrato.thrPopularLancamentosExtrato" />
+      <reference referencedUin="delphi:e_class:src:SisGef:uthrPopularLancamentosExtrato.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::cxolnambl5hv5jwno_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:uthrSalvaAero.thrSalvaAero" />
+      <reference referencedUin="delphi:e_class:src:SisGef:uthrSalvaAero.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::3xfatvzo36hkj0a6o_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:clMalote.@unitclass" />
+      <reference referencedUin="delphi:e_class:src:SisGef:clMalote.TMalote" />
+    </reference>
+    <reference referencedUin="design:view:::ho7nofc2l6hcml3jq_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmDetalhesRestricoes.@unitclass" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmDetalhesRestricoes.TfrmDetalhesRestricoes" />
+    </reference>
+    <reference referencedUin="design:view:::hcr0daru07hu8ln6q_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:uthrPopulaRelatorioRetorno.thrPopulaRelatorioRetorno" />
+      <reference referencedUin="delphi:e_class:src:SisGef:uthrPopulaRelatorioRetorno.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::t6ju2aith7h0fx7hk_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:uthrPopularRestricoes.@unitclass" />
+      <reference referencedUin="delphi:e_class:src:SisGef:uthrPopularRestricoes.thrPopularRestricoes" />
+    </reference>
+    <reference referencedUin="design:view:::cd0h2ghk08hxrvv7t_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:clAssinantes.TAssinantes" />
+      <reference referencedUin="delphi:e_class:src:SisGef:clAssinantes.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::gk8u16tyf8htovuuk_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmClientes.TfrmClientes" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmClientes.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::75y4lqf319hicylqo_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:clExtrato.@unitclass" />
+      <reference referencedUin="delphi:e_class:src:SisGef:clExtrato.TExtrato" />
+    </reference>
+    <reference referencedUin="design:view:::1s0fdao2h9hc2xa0j_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:clFTPSimples.@unitclass" />
+      <reference referencedUin="delphi:e_class:src:SisGef:clFTPSimples.TFTPSimples" />
+    </reference>
+    <reference referencedUin="design:view:::noxt8gify9ha2rlzh_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmLancamentos.@unitclass" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmLancamentos.TfrmLancamentos" />
+    </reference>
+    <reference referencedUin="design:view:::qxgtmw26j0h3svgbj_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:uthrExtratoFechadoRestricoes.@unitclass" />
+      <reference referencedUin="delphi:e_class:src:SisGef:uthrExtratoFechadoRestricoes.thrExtratoFechadoRestricoes" />
+    </reference>
+    <reference referencedUin="design:view:::htsjllix0ahax34tm_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmExtrato.TfrmExtrato" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmExtrato.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::6g314rm2kahggql1r_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmDevolucoes.TfrmDevolucoes" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmDevolucoes.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::s7ns1lf04bh5j31xm_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmRecepcaoContainers.TfrmRecepcaoContainers" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmRecepcaoContainers.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::v6oruroiobhg548nm_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmPrincipal.TfrmPrincipal" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmPrincipal.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::fhltura45chdi009h_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:uthrCancelarFechamento.@unitclass" />
+      <reference referencedUin="delphi:e_class:src:SisGef:uthrCancelarFechamento.thrCancelarFechamento" />
+    </reference>
+    <reference referencedUin="design:view:::gnrygl42och2qwtkf_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmRetiradaDevolucoes.@unitclass" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmRetiradaDevolucoes.TfrmRetiradaDevolucoes" />
+    </reference>
+    <reference referencedUin="design:view:::6bg6kbp77dhsxx6oj_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmServicos.TfrmServicos" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmServicos.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::wj6eh7i5qdhds9lht_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmData.TfrmData" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmData.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::qgj4umxg0eh09v6qo_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:uthrPopularExtraviosRestricao.@unitclass" />
+      <reference referencedUin="delphi:e_class:src:SisGef:uthrPopularExtraviosRestricao.thrPopularExtraviosRestricao" />
+    </reference>
+    <reference referencedUin="design:view:::05vnamj2qeh8akytq_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:uthrSalvaRetornoEntregas.@unitclass" />
+      <reference referencedUin="delphi:e_class:src:SisGef:uthrSalvaRetornoEntregas.thrSalvaRetornoEntregas" />
+    </reference>
+    <reference referencedUin="design:view:::ruilswql9fhbed38l_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:clConexao.TConexao" />
+      <reference referencedUin="delphi:e_class:src:SisGef:clConexao.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::deephmbrrfho4zqsg_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmEmpresasAgentes.@unitclass" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmEmpresasAgentes.TfrmEmpresasAgentes" />
+    </reference>
+    <reference referencedUin="design:view:::lw3697kq8gh8bx0im_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:uthrImportarEntregas.thrImportarEntregas" />
+      <reference referencedUin="delphi:e_class:src:SisGef:uthrImportarEntregas.@unitclass" />
+      <reference referencedUin="delphi:e_class:src:SisGef:uthrImportarEntregas.TCSVEntrega" />
+    </reference>
+    <reference referencedUin="design:view:::i2hdthatwghseqo1r_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:clEnvioEMail.@unitclass" />
+      <reference referencedUin="delphi:e_class:src:SisGef:clEnvioEMail.TEnviarEmail" />
+    </reference>
+    <reference referencedUin="design:view:::wmdhkbuzchh0fi7so_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmLocalizar.TfrmLocalizar" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmLocalizar.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::lb4glhy4xhh5cilqn_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:clAcareacoes.TAcareacoes" />
+      <reference referencedUin="delphi:e_class:src:SisGef:clAcareacoes.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::mq0com7nhihf1fo4m_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmSalvaLancamento.@unitclass" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmSalvaLancamento.TfrmSalvaLancamento" />
+    </reference>
+    <reference referencedUin="design:view:::isqd7hqtyihg0qp0l_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmPlanilhaCredito.TfrmPlanilhaCredito" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmPlanilhaCredito.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::2ftmphm6hjh9q40ot_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmGravarExtravio.@unitclass" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmGravarExtravio.TfrmGravarExtravio" />
+    </reference>
+    <reference referencedUin="design:view:::gnor5hii0khei9j4r_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmPrazosEntrega.TfrmPrazosEntrega" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmPrazosEntrega.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::rk749c2pgkha0hu6p_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:clAgentesJornal.@unitclass" />
+      <reference referencedUin="delphi:e_class:src:SisGef:clAgentesJornal.TAgenteJornal" />
+    </reference>
+    <reference referencedUin="design:view:::97iixc3f1lhiqauiq_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:uthrCalculaExtratoFiltroAgente.@unitclass" />
+      <reference referencedUin="delphi:e_class:src:SisGef:uthrCalculaExtratoFiltroAgente.TRegExtrato" />
+      <reference referencedUin="delphi:e_class:src:SisGef:uthrCalculaExtratoFiltroAgente.thrCalculaExtratoFiltroAgente" />
+    </reference>
+    <reference referencedUin="design:view:::gtmwrxaehlhfxv9lq_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:uthrImportarDevolucao.TCSVDevolucao" />
+      <reference referencedUin="delphi:e_class:src:SisGef:uthrImportarDevolucao.thrImportarDevolucao" />
+      <reference referencedUin="delphi:e_class:src:SisGef:uthrImportarDevolucao.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::a7eh3s9q2mhgc88ql_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:clEndereco.@unitclass" />
+      <reference referencedUin="delphi:e_class:src:SisGef:clEndereco.TEndereco" />
+    </reference>
+    <reference referencedUin="design:view:::hpipwcm3kmhgq3pti_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:uthrExtratoFechado.thrExtratoFechado" />
+      <reference referencedUin="delphi:e_class:src:SisGef:uthrExtratoFechado.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::c8p4b8an2nhfgw2tr_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmAutorizacao.TfrmAutorizacao" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmAutorizacao.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::5fwpenklknh29jh0g_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmManutencaoRestricoes.TfrmManutencaoRestricoes" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmManutencaoRestricoes.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::01xjfnlb5oh0dyvgl_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:uthrImportarEtiquetas.thrImportarEtiquetas" />
+      <reference referencedUin="delphi:e_class:src:SisGef:uthrImportarEtiquetas.@unitclass" />
+      <reference referencedUin="delphi:e_class:src:SisGef:uthrImportarEtiquetas.TCSVEtiqueta" />
+    </reference>
+    <reference referencedUin="design:view:::hjmspsfplohg1kyts_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:uthrPopularAtribuicoesJornal.thrPopularAtribuicoes" />
+      <reference referencedUin="delphi:e_class:src:SisGef:uthrPopularAtribuicoesJornal.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::blo8isb25phfqdzkh_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:uthrImportarExtravios.thrImportarExtravios" />
+      <reference referencedUin="delphi:e_class:src:SisGef:uthrImportarExtravios.TCSVExtravio" />
+      <reference referencedUin="delphi:e_class:src:SisGef:uthrImportarExtravios.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::74lpbcz6ppht9vxjt_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmAssinantes.TfrmAssinantes" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmAssinantes.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::wo0pbxgx8qhp84utq_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:clBaixas.TBaixa" />
+      <reference referencedUin="delphi:e_class:src:SisGef:clBaixas.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::z3lmfnbutqhujqutn_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:clEntrega.@unitclass" />
+      <reference referencedUin="delphi:e_class:src:SisGef:clEntrega.TEntrega" />
+    </reference>
+    <reference referencedUin="design:view:::mk29v84cfrh4nwwgn_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmImportarFinanceiro.@unitclass" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmImportarFinanceiro.TfrmImportarFinanceiro" />
+    </reference>
+    <reference referencedUin="design:view:::qrq1isqg0shpklndm_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:clAgentes.@unitclass" />
+      <reference referencedUin="delphi:e_class:src:SisGef:clAgentes.TAgente" />
+    </reference>
+    <reference referencedUin="design:view:::eupddibmish9n3ucj_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmFiltro.TfrmFiltro" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmFiltro.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::46vk3nad1thj8jj7k_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:uthrExtratoPrevioAgente.thrExtratoPrevio" />
+      <reference referencedUin="delphi:e_class:src:SisGef:uthrExtratoPrevioAgente.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::t5n3l8t4kthyu48pp_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmEnvioEmail.@unitclass" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmEnvioEmail.TfrmEnvioEmail" />
+    </reference>
+    <reference referencedUin="design:view:::tabi08z86uhr5np6h_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmMalotes.TfrmMalotes" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmMalotes.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::qvtsndkpuh69uz0h_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmUsuariosAgentes.TfrmUsuariosAgentes" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmUsuariosAgentes.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::r0na8tcb8vhao1z2i_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmAgentesJornal.TfrmAgentesJornal" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmAgentesJornal.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::lcacftd2svhlrk6gi_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:uthrPopularAcareacoes.@unitclass" />
+      <reference referencedUin="delphi:e_class:src:SisGef:uthrPopularAcareacoes.thrPopularAcareacoes" />
+    </reference>
+    <reference referencedUin="design:view:::ne0hsyh7bwhn1phip_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmContasReceber.@unitclass" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmContasReceber.TfrmContasReceber" />
+    </reference>
+    <reference referencedUin="design:view:::tmamur9wz0n_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:clVerbaCEP.TVerbaCEP" />
+      <reference referencedUin="delphi:e_class:src:SisGef:clVerbaCEP.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::epsk1oc4xwh4t6fpn_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:clEnderecoAgente.TEnderecoAgente" />
+      <reference referencedUin="delphi:e_class:src:SisGef:clEnderecoAgente.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::ee6rh95mixh7bl9fr_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmAtribuicoesJornal.@unitclass" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmAtribuicoesJornal.TfrmAtribuicoesJornal" />
+    </reference>
+    <reference referencedUin="design:view:::suflntmc2yhv453ag_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:clLacres.@unitclass" />
+      <reference referencedUin="delphi:e_class:src:SisGef:clLacres.TLacre" />
+    </reference>
+    <reference referencedUin="design:view:::4ak4b99edyhtcfsit_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:uGlobais.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::7q3z2905yyhop2lbp_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmOrdemServico.@unitclass" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmOrdemServico.TfrmOrdemServico" />
+    </reference>
+    <reference referencedUin="design:view:::aprugoj3gzhernn6h_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:clLancamentos.@unitclass" />
+      <reference referencedUin="delphi:e_class:src:SisGef:clLancamentos.TLancamentos" />
+    </reference>
+    <reference referencedUin="design:view:::s1xr8wllkjq_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:SisGef.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::qdsxfjwj50iemkx6q_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmTipoDevolucao.@unitclass" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmTipoDevolucao.TfrmTipoDevolucao" />
+    </reference>
+    <reference referencedUin="design:view:::n8todjbft0ilsy8vh_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmDevolucaoBase.@unitclass" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmDevolucaoBase.TfrmDevolucaoBase" />
+    </reference>
+    <reference referencedUin="design:view:::w22i4zjd1iv0jy9p_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:clProdutos.TProdutos" />
+      <reference referencedUin="delphi:e_class:src:SisGef:clProdutos.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::0pea540ay1i2ccjvo_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmProcesso.TfrmProcesso" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmProcesso.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::h450eupth2i4b3s5h_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmDataGV.@unitclass" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmDataGV.TfrmDataGV" />
+    </reference>
+    <reference referencedUin="design:view:::uf609jaz03i9hfhuk_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmExtraviosProdutos.TfrmExtraviosProdutos" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmExtraviosProdutos.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::fnwksjlgn3ion41bp_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmVeiculos.TfrmVeiculos" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmVeiculos.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::s6qxpopl74i1fqiyn_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:uthrPopulaRecepcao.thrPopularecepcao" />
+      <reference referencedUin="delphi:e_class:src:SisGef:uthrPopulaRecepcao.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::xrjg4ef5r4irgsttp_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:uthrImportarAbastecimentosJatinho.thrImportaAbastecimentosJatinho" />
+      <reference referencedUin="delphi:e_class:src:SisGef:uthrImportarAbastecimentosJatinho.TCSVAbastecimento" />
+      <reference referencedUin="delphi:e_class:src:SisGef:uthrImportarAbastecimentosJatinho.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::0yg0kjew95i7wwe0s_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmProdutos.TfrmProdutos" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmProdutos.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::u0mlpssv5i9729zp_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmRecepcaoHermes.@unitclass" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmRecepcaoHermes.TfrmRecepcaoHermes" />
+    </reference>
+    <reference referencedUin="design:view:::i4kvup1inyj_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:clStatus.@unitclass" />
+      <reference referencedUin="delphi:e_class:src:SisGef:clStatus.TStatus" />
+    </reference>
+    <reference referencedUin="design:view:::ybr5i0u2k6i1kz8xo_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmUsuarios.TfrmUsuarios" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmUsuarios.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::ej76xey747il6ynjh_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:clCEPAgentes.@unitclass" />
+      <reference referencedUin="delphi:e_class:src:SisGef:clCEPAgentes.TCEPAgentes" />
+    </reference>
+    <reference referencedUin="design:view:::pttndcv2n1rdizddk_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmAbastecimentos.@unitclass" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmAbastecimentos.TfrmAbastecimentos" />
+    </reference>
+    <reference referencedUin="design:view:::7bmeqxyra3n_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:clAbastecimentos.TAbastecimentos" />
+      <reference referencedUin="delphi:e_class:src:SisGef:clAbastecimentos.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::f9ln2zzgs7ihs1jue_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmAcareacoes.TfrmAcareacoes" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmAcareacoes.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::xxltp5dde8ik1zyge_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmExtratoAgente.TfrmExtratoAgente" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmExtratoAgente.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::pbcjt0r019i95ndxp_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:clCliente.TCliente" />
+      <reference referencedUin="delphi:e_class:src:SisGef:clCliente.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::e7aoo02sn9iu8k3kj_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmImportaAbastacimentos.TfrmImportaAbastecimentos" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmImportaAbastacimentos.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::7ydujeutd0il41nmk_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmControleKM.@unitclass" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmControleKM.TfrmControleKM" />
+    </reference>
+    <reference referencedUin="design:view:::uxccefq6x0ijldlil_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:uthrSalvaRecepcao.thrSalvaRecepcao" />
+      <reference referencedUin="delphi:e_class:src:SisGef:uthrSalvaRecepcao.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::xorsukuagaimto0tj_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmLacres.@unitclass" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmLacres.TfrmLacres" />
+    </reference>
+    <reference referencedUin="design:view:::zpwnh0p82bi0kcwak_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmGruposUsuarios.TfrmGruposUsuarios" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmGruposUsuarios.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::kkvwl00qobi87xnyf_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:clContatos.TContatos" />
+      <reference referencedUin="delphi:e_class:src:SisGef:clContatos.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::0gn7c5tn8ci8pupgr_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:clCodigosEntregadores.TCodigosEntregadores" />
+      <reference referencedUin="delphi:e_class:src:SisGef:clCodigosEntregadores.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::iolikhruci4ab03g_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:uthrSalvaAtribuicoes.@unitclass" />
+      <reference referencedUin="delphi:e_class:src:SisGef:uthrSalvaAtribuicoes.thrSalvaAtribuicoes" />
+    </reference>
+    <reference referencedUin="design:view:::w0nba8aedibou5pt_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:clBancos.TBancos" />
+      <reference referencedUin="delphi:e_class:src:SisGef:clBancos.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::86m6cais1eii3om0g_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:uthrPopularEntregadores.@unitclass" />
+      <reference referencedUin="delphi:e_class:src:SisGef:uthrPopularEntregadores.thrPopularEntregadores" />
+    </reference>
+    <reference referencedUin="design:view:::k9aosqsqjeiesufeq_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:clCentroCusto.TCentroCusto" />
+      <reference referencedUin="delphi:e_class:src:SisGef:clCentroCusto.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::knue6834fi3jytwm_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:clGruposVerba.TGruposVerba" />
+      <reference referencedUin="delphi:e_class:src:SisGef:clGruposVerba.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::9bcxqaglofihrk77m_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmDetalhesLancamentos.@unitclass" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmDetalhesLancamentos.TfrmDetalhesLancamentos" />
+    </reference>
+    <reference referencedUin="design:view:::6208mfp40gi1u9vpi_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmCadastraSenha.@unitclass" />
+      <reference referencedUin="delphi:e_class:src:SisGef:ufrmCadastraSenha.TfrmCadastraSenha" />
+    </reference>
+    <reference referencedUin="design:view:::e000p6pewgiu616sg_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:SisGef:uthrPopularAtribuicoes.thrPopularAtribuicoes" />
+      <reference referencedUin="delphi:e_class:src:SisGef:uthrPopularAtribuicoes.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::hej3sx00e7gvrs97n_v">
+      <property name="$shortcutReference" value="true" />
+    </reference>
+    <reference referencedUin="design:view:::466n4ouu7wp40d0or_v">
+      <property name="$shortcutReference" value="true" />
+      <property name="@__package_fqn" value="clFuncionarioServico" />
+      <reference referencedUin="delphi:e_class:src:SisGef:clFuncionarioServico.TFuncionarioServico" />
+      <reference referencedUin="delphi:e_class:src:SisGef:clFuncionarioServico.@unitclass" />
+    </reference>
+  </view>
+</nodeSet>

@@ -1,0 +1,47 @@
+Arquivo
+	Cadastro
+		Agentes
+		Entregadores
+		Clientes
+		Produtos
+		Serviços
+		Verbas Expressa
+		Verbas Tiragem
+	Importação
+		Importar Entregas (TFO)
+		Importar Baixas (TFO)
+		Importar Abastecimentos
+		Importar Financeiro (TFO)
+		Importar Tiragem (TFO)
+	Arquivar
+	Sair
+Operação
+	Expressa
+		Entregas (TFO)
+		Extravios (TFO)
+		Resumo de Entregas Baixadas
+	Malotes
+	Ordens de Serviço
+	Abastecimentos
+	Controle de KM
+	Financeiro
+		Lançamentos de Débito e Crédito
+		Manutenção de Restrições
+		Fechamento de Expressas
+		Fechamento de Tiragens
+		Extratos de Agentes
+		Extrato Franquia
+Relatórios
+Sistemas
+	Parâmetros do Sistema
+	Configuração da Impressora
+	Segurança
+		Usuários / Perfis
+		Alterar Senha
+		Trocar de Usuário (Logoff)
+	Histórico
+	Mensagens
+	
+		
+		
+		

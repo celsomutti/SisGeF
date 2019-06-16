@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodeSet version="1.0">
+  <view uin="l8eiy6zh5hpi6ggst_v">
+    <property name="$defaultDiagram" value="true" />
+    <property name="$metaclass" value="Package Diagram" />
+    <property name="$name" value="default" />
+    <reference referencedUin="delphi:e_class:src:SisGef:clOS.@unitclass">
+      <property name="$shortcutReference" value="true" />
+    </reference>
+    <reference referencedUin="delphi:e_class:src:SisGef:clOS.TOS">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="10,10,177,717" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clOS.TOS.FNumero" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clOS.TOS.FData" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clOS.TOS.FCliente" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clOS.TOS.FCadastro" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clOS.TOS.FPlaca" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clOS.TOS.FRota" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clOS.TOS.FKMInicial" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clOS.TOS.FHoraSaida" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clOS.TOS.FKMFinal" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clOS.TOS.FHoraRetorno" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clOS.TOS.FServico" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clOS.TOS.FValor" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clOS.TOS.FStatus" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clOS.TOS.SetNumero(System.Integer)" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clOS.TOS.SetData(System.TDateTime)" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clOS.TOS.SetCliente(System.Integer)" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clOS.TOS.SetCadastro(System.Integer)" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clOS.TOS.SetVeiculo(System.string)" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clOS.TOS.SetRota(System.string)" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clOS.TOS.SetKMInicial(System.Integer)" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clOS.TOS.SetHoraSaida(System.TTime)" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clOS.TOS.SetKMFinal(System.Integer)" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clOS.TOS.SetHoraRetorno(System.TTime)" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clOS.TOS.SetServico(System.string)" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clOS.TOS.SetValor(System.Double)" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clOS.TOS.SetStatus(System.string)" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clOS.TOS.Numero" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clOS.TOS.Data" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clOS.TOS.Cliente" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clOS.TOS.Cadastro" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clOS.TOS.Veiculo" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clOS.TOS.Rota" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clOS.TOS.KMInicial" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clOS.TOS.HoraSaida" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clOS.TOS.KMFinal" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clOS.TOS.HoraRetorno" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clOS.TOS.Servico" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clOS.TOS.Valor" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clOS.TOS.Status" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clOS.TOS.Log" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clOS.TOS.FLog" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clOS.TOS.SetLog(System.string)" />
+    </reference>
+  </view>
+</nodeSet>

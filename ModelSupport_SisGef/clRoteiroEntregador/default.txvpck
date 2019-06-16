@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodeSet version="1.0">
+  <view uin="v7vsmkwfft2ybv4sg_v">
+    <property name="$defaultDiagram" value="true" />
+    <property name="$metaclass" value="Package Diagram" />
+    <property name="$name" value="default" />
+    <reference referencedUin="delphi:e_class:src:SisGef:clRoteiroEntregador.@unitclass">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clRoteiroEntregador.@unitclass.TABLENAME" />
+    </reference>
+    <reference referencedUin="delphi:e_class:src:SisGef:clRoteiroEntregador.TRoteiroEntregador">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="10,10,134,462" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clRoteiroEntregador.TRoteiroEntregador.FRoteiroAntigo" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clRoteiroEntregador.TRoteiroEntregador.FRoteiroNovo" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clRoteiroEntregador.TRoteiroEntregador.FLog" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clRoteiroEntregador.TRoteiroEntregador.conexao" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clRoteiroEntregador.TRoteiroEntregador.FID" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clRoteiroEntregador.TRoteiroEntregador.FDescricao" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clRoteiroEntregador.TRoteiroEntregador.SetRoteiroAntigo(System.string)" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clRoteiroEntregador.TRoteiroEntregador.SetRoteiroNovo(System.string)" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clRoteiroEntregador.TRoteiroEntregador.SetLog(System.string)" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clRoteiroEntregador.TRoteiroEntregador.SetID(System.Integer)" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clRoteiroEntregador.TRoteiroEntregador.SetDescricao(System.string)" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clRoteiroEntregador.TRoteiroEntregador.RoteiroAntigo" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clRoteiroEntregador.TRoteiroEntregador.RoteiroNovo" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clRoteiroEntregador.TRoteiroEntregador.Log" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clRoteiroEntregador.TRoteiroEntregador.ID" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clRoteiroEntregador.TRoteiroEntregador.Descricao" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clRoteiroEntregador.TRoteiroEntregador.Validar()" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clRoteiroEntregador.TRoteiroEntregador.Insert()" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clRoteiroEntregador.TRoteiroEntregador.Update()" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clRoteiroEntregador.TRoteiroEntregador.Delete(System.string)" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clRoteiroEntregador.TRoteiroEntregador.getObject(System.string,System.string)" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clRoteiroEntregador.TRoteiroEntregador.getField(System.string,System.string)" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clRoteiroEntregador.TRoteiroEntregador.Exist()" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clRoteiroEntregador.TRoteiroEntregador.Create()" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clRoteiroEntregador.TRoteiroEntregador.Destroy()" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clRoteiroEntregador.TRoteiroEntregador.Mostrar" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clRoteiroEntregador.TRoteiroEntregador.FMostrar" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clRoteiroEntregador.TRoteiroEntregador.SetMostrar(System.string)" />
+    </reference>
+  </view>
+</nodeSet>

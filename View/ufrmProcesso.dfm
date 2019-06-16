@@ -1,0 +1,73 @@
+object frmProcesso: TfrmProcesso
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsNone
+  ClientHeight = 86
+  ClientWidth = 409
+  Color = clWindow
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  GlassFrame.SheetOfGlass = True
+  KeyPreview = True
+  OldCreateOrder = False
+  Position = poMainFormCenter
+  Visible = True
+  OnClose = FormClose
+  PixelsPerInch = 96
+  TextHeight = 13
+  object cxGroupBox1: TcxGroupBox
+    Left = 12
+    Top = 4
+    ParentCustomHint = False
+    Align = alCustom
+    Anchors = []
+    BiDiMode = bdLeftToRight
+    Ctl3D = True
+    ParentBiDiMode = False
+    ParentColor = False
+    ParentCtl3D = False
+    ParentFont = False
+    ParentShowHint = False
+    ShowHint = False
+    Style.Color = clWindow
+    Style.Shadow = False
+    Style.TransparentBorder = False
+    TabOrder = 0
+    Transparent = True
+    DesignSize = (
+      385
+      72)
+    Height = 72
+    Width = 385
+    object cxProgressBar1: TcxProgressBar
+      AlignWithMargins = True
+      Left = 3
+      Top = 25
+      Anchors = [akLeft, akTop, akRight, akBottom]
+      AutoSize = False
+      ParentColor = False
+      ParentFont = False
+      Properties.BarStyle = cxbsLEDs
+      Properties.BeginColor = 54056
+      Properties.ShowTextStyle = cxtsText
+      Style.BorderStyle = ebsUltraFlat
+      Style.LookAndFeel.NativeStyle = False
+      Style.LookAndFeel.SkinName = 'Office2013White'
+      Style.Shadow = False
+      StyleDisabled.LookAndFeel.NativeStyle = False
+      StyleDisabled.LookAndFeel.SkinName = 'Office2013White'
+      StyleFocused.LookAndFeel.NativeStyle = False
+      StyleFocused.LookAndFeel.SkinName = 'Office2013White'
+      StyleHot.LookAndFeel.NativeStyle = False
+      StyleHot.LookAndFeel.SkinName = 'Office2013White'
+      TabOrder = 0
+      Transparent = True
+      Height = 24
+      Width = 379
+    end
+  end
+end

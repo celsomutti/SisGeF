@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodeSet version="1.0">
+  <view uin="khk9aeo54sq_v">
+    <property name="$defaultDiagram" value="true" />
+    <property name="$metaclass" value="Package Diagram" />
+    <property name="$name" value="default" />
+    <reference referencedUin="delphi:e_class:src:SisGef:clEnderecosEmpresas.@unitclass">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clEnderecosEmpresas.@unitclass.TABLENAME" />
+    </reference>
+    <reference referencedUin="delphi:e_class:src:SisGef:clEnderecosEmpresas.TEndrecosEmpresa">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="10,10,153,417" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clEnderecosEmpresas.TEndrecosEmpresa.Empresa" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clEnderecosEmpresas.TEndrecosEmpresa.FEmpresa" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clEnderecosEmpresas.TEndrecosEmpresa.SetEmpresa(System.Integer)" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clEnderecosEmpresas.TEndrecosEmpresa.Sequencia" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clEnderecosEmpresas.TEndrecosEmpresa.FSequencia" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clEnderecosEmpresas.TEndrecosEmpresa.SetSequencia(System.Integer)" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clEnderecosEmpresas.TEndrecosEmpresa.Tipo" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clEnderecosEmpresas.TEndrecosEmpresa.FTipo" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clEnderecosEmpresas.TEndrecosEmpresa.SetTipo(System.string)" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clEnderecosEmpresas.TEndrecosEmpresa.Correspondencia" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clEnderecosEmpresas.TEndrecosEmpresa.FCorrespondencia" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clEnderecosEmpresas.TEndrecosEmpresa.SetCorrespondencia(System.Integer)" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clEnderecosEmpresas.TEndrecosEmpresa.Create()" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clEnderecosEmpresas.TEndrecosEmpresa.conexao" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clEnderecosEmpresas.TEndrecosEmpresa.Destroy()" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clEnderecosEmpresas.TEndrecosEmpresa.Validar()" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clEnderecosEmpresas.TEndrecosEmpresa.Insert()" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clEnderecosEmpresas.TEndrecosEmpresa.Update()" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clEnderecosEmpresas.TEndrecosEmpresa.Delete(System.string)" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clEnderecosEmpresas.TEndrecosEmpresa.getObject(System.string,System.string)" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clEnderecosEmpresas.TEndrecosEmpresa.getField(System.string,System.string)" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clEnderecosEmpresas.TEndrecosEmpresa.getObjects()" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clEnderecosEmpresas.TEndrecosEmpresa.MaxSeq()" />
+    </reference>
+  </view>
+</nodeSet>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodeSet version="1.0">
+  <view uin="qz48ih49n0anhgkun_v">
+    <property name="$defaultDiagram" value="true" />
+    <property name="$metaclass" value="Package Diagram" />
+    <property name="$name" value="default" />
+    <reference referencedUin="delphi:e_class:src:SisGef:Model.ControleTransporte.@unitclass">
+      <property name="$shortcutReference" value="true" />
+    </reference>
+    <reference referencedUin="delphi:e_class:src:SisGef:Model.ControleTransporte.TControleTransporte">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="10,10,191,583" />
+      <reference referencedUin="delphi:e_field:src:SisGef:Model.ControleTransporte.TControleTransporte.FID" />
+      <reference referencedUin="delphi:e_field:src:SisGef:Model.ControleTransporte.TControleTransporte.FDataTransporte" />
+      <reference referencedUin="delphi:e_property:src:SisGef:Model.ControleTransporte.TControleTransporte.ID" />
+      <reference referencedUin="delphi:e_property:src:SisGef:Model.ControleTransporte.TControleTransporte.DataTransporte" />
+      <reference referencedUin="delphi:e_property:src:SisGef:Model.ControleTransporte.TControleTransporte.Cliente" />
+      <reference referencedUin="delphi:e_field:src:SisGef:Model.ControleTransporte.TControleTransporte.FCliente" />
+      <reference referencedUin="delphi:e_property:src:SisGef:Model.ControleTransporte.TControleTransporte.Operacao" />
+      <reference referencedUin="delphi:e_field:src:SisGef:Model.ControleTransporte.TControleTransporte.FOperacao" />
+      <reference referencedUin="delphi:e_property:src:SisGef:Model.ControleTransporte.TControleTransporte.Placa" />
+      <reference referencedUin="delphi:e_field:src:SisGef:Model.ControleTransporte.TControleTransporte.FPlaca" />
+      <reference referencedUin="delphi:e_property:src:SisGef:Model.ControleTransporte.TControleTransporte.Motorista" />
+      <reference referencedUin="delphi:e_field:src:SisGef:Model.ControleTransporte.TControleTransporte.FMotorista" />
+      <reference referencedUin="delphi:e_property:src:SisGef:Model.ControleTransporte.TControleTransporte.KmSaida" />
+      <reference referencedUin="delphi:e_field:src:SisGef:Model.ControleTransporte.TControleTransporte.FKmSaida" />
+      <reference referencedUin="delphi:e_property:src:SisGef:Model.ControleTransporte.TControleTransporte.HoraSaida" />
+      <reference referencedUin="delphi:e_field:src:SisGef:Model.ControleTransporte.TControleTransporte.FHoraSaida" />
+      <reference referencedUin="delphi:e_property:src:SisGef:Model.ControleTransporte.TControleTransporte.KmRetorno" />
+      <reference referencedUin="delphi:e_field:src:SisGef:Model.ControleTransporte.TControleTransporte.FKmRetorno" />
+      <reference referencedUin="delphi:e_property:src:SisGef:Model.ControleTransporte.TControleTransporte.HoraRetorno" />
+      <reference referencedUin="delphi:e_field:src:SisGef:Model.ControleTransporte.TControleTransporte.FHoraRetorno" />
+      <reference referencedUin="delphi:e_property:src:SisGef:Model.ControleTransporte.TControleTransporte.KmRodado" />
+      <reference referencedUin="delphi:e_field:src:SisGef:Model.ControleTransporte.TControleTransporte.FKmrodado" />
+      <reference referencedUin="delphi:e_property:src:SisGef:Model.ControleTransporte.TControleTransporte.Servico" />
+      <reference referencedUin="delphi:e_field:src:SisGef:Model.ControleTransporte.TControleTransporte.FServico" />
+      <reference referencedUin="delphi:e_field:src:SisGef:Model.ControleTransporte.TControleTransporte.Obs" />
+      <reference referencedUin="delphi:e_property:src:SisGef:Model.ControleTransporte.TControleTransporte.ValServico" />
+      <reference referencedUin="delphi:e_field:src:SisGef:Model.ControleTransporte.TControleTransporte.FValServico" />
+      <reference referencedUin="delphi:e_property:src:SisGef:Model.ControleTransporte.TControleTransporte.Status" />
+      <reference referencedUin="delphi:e_field:src:SisGef:Model.ControleTransporte.TControleTransporte.FStatus" />
+      <reference referencedUin="delphi:e_property:src:SisGef:Model.ControleTransporte.TControleTransporte.Log" />
+      <reference referencedUin="delphi:e_field:src:SisGef:Model.ControleTransporte.TControleTransporte.FLog" />
+      <reference referencedUin="delphi:e_field:src:SisGef:Model.ControleTransporte.TControleTransporte.FObs" />
+      <reference referencedUin="delphi:e_method:src:SisGef:Model.ControleTransporte.TControleTransporte.Create()" />
+      <reference referencedUin="delphi:e_method:src:SisGef:Model.ControleTransporte.TControleTransporte.Create(System.Integer,System.TDate,System.Integer,System.string,System.Integer,System.Integer,System.Double,System.TTime,System.Double,System.TTime,System.Double,System.string,System.string,System.Double,System.Integer,System.string)" />
+    </reference>
+  </view>
+</nodeSet>

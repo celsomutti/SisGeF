@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodeSet version="1.0">
+  <view uin="ym54muy7h065qtq3k_v">
+    <property name="$defaultDiagram" value="true" />
+    <property name="$metaclass" value="Package Diagram" />
+    <property name="$name" value="default" />
+    <reference referencedUin="delphi:e_class:src:SisGef:clFinanceiroEmpresa.@unitclass">
+      <property name="$shortcutReference" value="true" />
+    </reference>
+    <reference referencedUin="delphi:e_class:src:SisGef:clFinanceiroEmpresa.TFinanceiroEmpresa">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="10,10,134,567" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clFinanceiroEmpresa.TFinanceiroEmpresa.Create()" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clFinanceiroEmpresa.TFinanceiroEmpresa.Empresa" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clFinanceiroEmpresa.TFinanceiroEmpresa.FEmpresa" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clFinanceiroEmpresa.TFinanceiroEmpresa.SetEmpresa(System.Integer)" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clFinanceiroEmpresa.TFinanceiroEmpresa.Sequencia" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clFinanceiroEmpresa.TFinanceiroEmpresa.FSequencia" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clFinanceiroEmpresa.TFinanceiroEmpresa.SetSequencia(System.Integer)" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clFinanceiroEmpresa.TFinanceiroEmpresa.TipoConta" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clFinanceiroEmpresa.TFinanceiroEmpresa.FTipoConta" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clFinanceiroEmpresa.TFinanceiroEmpresa.SetTipoConta(System.string)" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clFinanceiroEmpresa.TFinanceiroEmpresa.Banco" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clFinanceiroEmpresa.TFinanceiroEmpresa.FBanco" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clFinanceiroEmpresa.TFinanceiroEmpresa.SetBanco(System.string)" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clFinanceiroEmpresa.TFinanceiroEmpresa.Agencia" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clFinanceiroEmpresa.TFinanceiroEmpresa.FAgencia" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clFinanceiroEmpresa.TFinanceiroEmpresa.SetAgencia(System.string)" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clFinanceiroEmpresa.TFinanceiroEmpresa.Conta" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clFinanceiroEmpresa.TFinanceiroEmpresa.FConta" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clFinanceiroEmpresa.TFinanceiroEmpresa.SetConta(System.string)" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clFinanceiroEmpresa.TFinanceiroEmpresa.Favorecido" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clFinanceiroEmpresa.TFinanceiroEmpresa.FFavorecido" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clFinanceiroEmpresa.TFinanceiroEmpresa.SetFavorecido(System.string)" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clFinanceiroEmpresa.TFinanceiroEmpresa.CNPJ" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clFinanceiroEmpresa.TFinanceiroEmpresa.FCNPJ" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clFinanceiroEmpresa.TFinanceiroEmpresa.SetCNPJ(System.string)" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clFinanceiroEmpresa.TFinanceiroEmpresa.Forma" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clFinanceiroEmpresa.TFinanceiroEmpresa.FForma" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clFinanceiroEmpresa.TFinanceiroEmpresa.SetForma(System.string)" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clFinanceiroEmpresa.TFinanceiroEmpresa.Padrao" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clFinanceiroEmpresa.TFinanceiroEmpresa.FPadrao" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clFinanceiroEmpresa.TFinanceiroEmpresa.SetPadrao(System.string)" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clFinanceiroEmpresa.TFinanceiroEmpresa.MaxSeq()" />
+    </reference>
+  </view>
+</nodeSet>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodeSet version="1.0">
+  <view uin="780d9icu7fr_v">
+    <property name="$defaultDiagram" value="true" />
+    <property name="$metaclass" value="Package Diagram" />
+    <property name="$name" value="default" />
+    <reference referencedUin="delphi:e_class:src:SisGef:clEmpresas.@unitclass">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clEmpresas.@unitclass.TABLENAME" />
+    </reference>
+    <reference referencedUin="delphi:e_class:src:SisGef:clEmpresas.TEmpresas">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="10,10,166,507" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clEmpresas.TEmpresas.FCodigo" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clEmpresas.TEmpresas.FUsuario" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clEmpresas.TEmpresas.FDataCadastro" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clEmpresas.TEmpresas.FObs" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clEmpresas.TEmpresas.FManutencao" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clEmpresas.TEmpresas.FStatus" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clEmpresas.TEmpresas.SetCodigo(System.Integer)" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clEmpresas.TEmpresas.SetUsuario(System.string)" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clEmpresas.TEmpresas.SetManutencao(System.TDateTime)" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clEmpresas.TEmpresas.SetStatus(System.string)" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clEmpresas.TEmpresas.SetObs(System.string)" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clEmpresas.TEmpresas.SetDataCadastro(System.TDateTime)" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clEmpresas.TEmpresas.DataCadastro" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clEmpresas.TEmpresas.Usuario" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clEmpresas.TEmpresas.Status" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clEmpresas.TEmpresas.Obs" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clEmpresas.TEmpresas.Manutencao" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clEmpresas.TEmpresas.Codigo" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clEmpresas.TEmpresas.Validar()" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clEmpresas.TEmpresas.Exist(System.string)" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clEmpresas.TEmpresas.Insert()" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clEmpresas.TEmpresas.Create()" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clEmpresas.TEmpresas.conexao" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clEmpresas.TEmpresas.Destroy()" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clEmpresas.TEmpresas.Update()" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clEmpresas.TEmpresas.getObject(System.string,System.string)" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clEmpresas.TEmpresas.getObjects()" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clEmpresas.TEmpresas.getField(System.string,System.string)" />
+    </reference>
+  </view>
+</nodeSet>

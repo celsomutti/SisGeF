@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<TfrxReport Version="5.3.14" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="3583" PreviewOptions.MDIChild="True" PreviewOptions.Modal="False" PreviewOptions.Zoom="1" PreviewOptions.ZoomMode="zmPageWidth" PrintOptions.Printer="Padrão" PrintOptions.PrintOnSheet="0" ReportOptions.Author="Celso Mutti" ReportOptions.CreateDate="42200,4991546065" ReportOptions.Description.Text="Etiquetas de Assinaturas de Jornais e Revistas" ReportOptions.Name="Etiqueta de Revista e Jornal" ReportOptions.LastChange="43609,6175447801" ReportOptions.VersionBuild="0" ReportOptions.VersionMajor="1" ReportOptions.VersionMinor="0" ReportOptions.VersionRelease="0" ScriptLanguage="PascalScript" ScriptText.Text="&#13;&#10;procedure MasterData2OnBeforePrint(Sender: TfrxComponent);&#13;&#10;begin&#13;&#10;  if &#60;frxDBDataset.&#34;COD_BARRA&#34;&#62; = '' then&#13;&#10;  begin&#13;&#10;    BarCode2.Visible := False;&#13;&#10;    Memo4.Visible := False;&#13;&#10;    Memo7.Visible := False;&#13;&#10;    Memo14.Visible := False;&#13;&#10;    frxDBDataset1ID_REVISTA.Visible := False;&#13;&#10;    Memo2.Visible := False;&#13;&#10;    Memo5.Visible := False;&#13;&#10;  end&#13;&#10;  else&#13;&#10;  begin&#13;&#10;    BarCode2.Visible := True;&#13;&#10;    Memo4.Visible := True;&#13;&#10;    Memo7.Visible := True;&#13;&#10;    Memo14.Visible := True;&#13;&#10;    frxDBDataset1ID_REVISTA.Visible := True;&#13;&#10;    Memo2.Visible := True;&#13;&#10;    Memo5.Visible := True;&#13;&#10;  end;&#13;&#10;end;&#13;&#10;&#13;&#10;begin&#13;&#10;&#13;&#10;end." StoreInDFM="False">
+  <Datasets>
+    <item DataSet="frxDBDataset" DataSetName="frxDBDataset"/>
+  </Datasets>
+  <Variables>
+    <item Name=" User"/>
+    <item Name="pEtiqueta"/>
+  </Variables>
+  <TfrxDataPage Name="Data" Height="1000" Left="0" Top="0" Width="1000"/>
+  <TfrxReportPage Name="Page1" PaperWidth="215,9" PaperHeight="279,4" PaperSize="1" LeftMargin="4" RightMargin="3,9" TopMargin="22" BottomMargin="4" Columns="1" ColumnWidth="208" ColumnPositions.Text="0" HGuides.Text="" VGuides.Text="" OnBeforePrint="Page1OnBeforePrint">
+    <TfrxMasterData Name="MasterData2" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="128,12598425" Left="0" Top="18,89765" Width="786,14224" OnBeforePrint="MasterData2OnBeforePrint" Columns="2" ColumnWidth="405,165354330709" ColumnGap="0" DataSet="frxDBDataset" DataSetName="frxDBDataset" Filter="&#60;frxDBDataset.&#34;NUM_ORDEM&#34;&#62; &#62;= StrToInt(&#60;pEtiqueta&#62;)" RowCount="0">
+      <TfrxMemoView Name="Memo4" Left="11,33859" Top="0" Width="71,81107" Height="15,11812" OnBeforePrint="Memo4OnBeforePrint" DataSet="dm.frxDBDataset" DataSetName="frxDBDataset1" Font.Charset="0" Font.Color="0" Font.Height="-9" Font.Name="Courier New" Font.Style="0" ParentFont="False" Text="[frxDBDataset.&#34;COD_ASSINANTE&#34;]"/>
+      <TfrxMemoView Name="Memo5" Left="139,84261" Top="102,82684" Width="83,14966" Height="11,33859" OnBeforePrint="Memo5OnBeforePrint" DataSet="dm.frxDBDataset" DataSetName="frxDBDataset1" Font.Charset="0" Font.Color="0" Font.Height="-9" Font.Name="Courier New" Font.Style="1" ParentFont="False" Text="[frxDBDataset.&#34;NUM_ROTEIRO&#34;]"/>
+      <TfrxBarCodeView Name="BarCode2" Left="11,33859" Top="89,70872" Width="46" Height="26,45671" BarType="bcCode128" CalcCheckSum="True" Expression="&#60;frxDBDataset.&#34;COD_BARRA&#34;&#62;" Rotation="0" ShowText="False" TestLine="False" Text="0" WideBarRatio="2" Zoom="1" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="0"/>
+      <TfrxMemoView Name="Memo6" Left="298,58287" Top="103,04731" Width="75,5906" Height="11,33859" DataSet="dm.frxDBDataset" DataSetName="frxDBDataset1" Font.Charset="0" Font.Color="0" Font.Height="-9" Font.Name="Courier New" Font.Style="0" HAlign="haRight" ParentFont="False" Text="[frxDBDataset.&#34;COD_BARRA&#34;]"/>
+      <TfrxMemoView Name="Memo7" Left="86,92919" Top="0" Width="253,22851" Height="15,11812" Font.Charset="0" Font.Color="0" Font.Height="-9" Font.Name="Courier New" Font.Style="0" ParentFont="False" Text="[frxDBDataset.&#34;COD_PRODUTO&#34;] [frxDBDataset.&#34;COD_TIPO_ASSINATURA&#34;]">
+        <Formats>
+          <item/>
+          <item/>
+        </Formats>
+      </TfrxMemoView>
+      <TfrxMemoView Name="Memo8" Left="11,33859" Top="11,89765" Width="287,24428" Height="15,11812" DataSet="dm.frxDBDataset" DataSetName="frxDBDataset1" Font.Charset="0" Font.Color="0" Font.Height="-9" Font.Name="Courier New" Font.Style="0" ParentFont="False" Text="[frxDBDataset.&#34;NOM_ASSINANTE&#34;]"/>
+      <TfrxMemoView Name="Memo9" Left="11,33859" Top="23,45671" Width="362,83488" Height="18,89765" AutoWidth="True" DataSet="dm.frxDBDataset" DataSetName="frxDBDataset1" Font.Charset="0" Font.Color="0" Font.Height="-9" Font.Name="Courier New" Font.Style="0" ParentFont="False" Text="[frxDBDataset.&#34;NOM_CUIDADOS&#34;]"/>
+      <TfrxMemoView Name="Memo10" Left="11,33859" Top="34,7953" Width="362,83488" Height="26,45671" Font.Charset="0" Font.Color="0" Font.Height="-11" Font.Name="Courier New" Font.Style="1" ParentFont="False" Text="[frxDBDataset.&#34;DES_ENDERECO&#34;] [frxDBDataset.&#34;DES_COMPLEMENTO&#34;]">
+        <Formats>
+          <item/>
+          <item/>
+        </Formats>
+      </TfrxMemoView>
+      <TfrxMemoView Name="Memo11" Left="11,33859" Top="56,47248" Width="362,83488" Height="11,33859" Font.Charset="0" Font.Color="0" Font.Height="-9" Font.Name="Courier New" Font.Style="0" ParentFont="False" Text="[frxDBDataset.&#34;DES_BAIRRO&#34;]"/>
+      <TfrxMemoView Name="Memo12" Left="11,33859" Top="68,81107" Width="362,83488" Height="11,33859" DataSet="dm.frxDBDataset" DataSetName="frxDBDataset1" Font.Charset="0" Font.Color="0" Font.Height="-9" Font.Name="Courier New" Font.Style="0" ParentFont="False" Text="[frxDBDataset.&#34;DES_REFERENCIA&#34;]"/>
+      <TfrxMemoView Name="Memo13" Left="226,7718" Top="102,82684" Width="64,25201" Height="11,33859" DataSet="dm.frxDBDataset" DataSetName="frxDBDataset1" Font.Charset="0" Font.Color="0" Font.Height="-9" Font.Name="Courier New" Font.Style="0" ParentFont="False" Text="[frxDBDataset.&#34;NUM_EDICAO&#34;]"/>
+      <TfrxMemoView Name="Memo14" Left="343,93723" Top="0,77953" Width="30,23624" Height="15,11812" DataSet="dm.frxDBDataset" DataSetName="frxDBDataset1" Font.Charset="0" Font.Color="0" Font.Height="-9" Font.Name="Courier New" Font.Style="0" HAlign="haRight" ParentFont="False" Text="[frxDBDataset.&#34;NUM_ORDEM&#34;]"/>
+      <TfrxMemoView Name="frxDBDataset1ID_REVISTA" Left="302,3624" Top="11,71653543" Width="71,81107" Height="15,11812" DataSet="dm.frxDBDataset" DataSetName="frxDBDataset1" Font.Charset="0" Font.Color="0" Font.Height="-9" Font.Name="Courier New" Font.Style="0" HAlign="haRight" ParentFont="False" Text="[frxDBDataset.&#34;ID_REVISTA&#34;]"/>
+      <TfrxMemoView Name="Memo2" Left="139,84261" Top="90,70872" Width="234,33086" Height="11,33859" Font.Charset="0" Font.Color="0" Font.Height="-9" Font.Name="Courier New" Font.Style="0" ParentFont="False" Text="CEP [frxDBDataset.&#34;CEP_ENDERECO&#34;] [frxDBDataset.&#34;DES_CIDADE&#34;]/[frxDBDataset.&#34;DES_UF&#34;]">
+        <Formats>
+          <item/>
+          <item/>
+          <item/>
+        </Formats>
+      </TfrxMemoView>
+    </TfrxMasterData>
+  </TfrxReportPage>
+</TfrxReport>

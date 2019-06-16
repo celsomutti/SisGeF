@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<TfrxReport Version="5.1.11" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="4095" PreviewOptions.ShowCaptions="True" PreviewOptions.Zoom="1" PreviewOptions.ZoomMode="zmPageWidth" PrintOptions.Printer="Default" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="41571,5914351736" ReportOptions.Description.Text="" ReportOptions.LastChange="42271,7423974653" ScriptLanguage="PascalScript" ScriptText.Text="begin&#13;&#10;&#13;&#10;end.">
+  <Datasets>
+    <item DataSet="frxDBDsAtribuicoesJornal" DataSetName="Atribuições Jornal"/>
+  </Datasets>
+  <Variables>
+    <item Name=" Sistema"/>
+    <item Name="pEntregador"/>
+    <item Name="pData"/>
+    <item Name="pUsuario"/>
+    <item Name="pSistema"/>
+    <item Name="pLote"/>
+  </Variables>
+  <TfrxDataPage Name="Data" Height="1000" Left="0" Top="0" Width="1000"/>
+  <TfrxReportPage Name="Page1" Orientation="poLandscape" PaperWidth="297" PaperHeight="210" PaperSize="9" LeftMargin="10" RightMargin="10" TopMargin="10" BottomMargin="10" ColumnWidth="0" ColumnPositions.Text="" HGuides.Text="" VGuides.Text="">
+    <TfrxPageHeader Name="PageHeader1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="94,48825" Left="0" Top="18,89765" Width="1046,92981">
+      <TfrxMemoView Name="Memo1" Left="3,77953" Top="0" Width="1039,37075" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Courier New" Font.Style="1" ParentFont="False" Text="RELATÓRIO DE ATRIBUIÇÕES"/>
+      <TfrxMemoView Name="Memo2" Left="778,58318" Top="0" Width="264,5671" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Courier New" Font.Style="0" HAlign="haRight" ParentFont="False" Text="PÁGINA [&#60;Page#&#62;] / [TotalPages#]"/>
+      <TfrxMemoView Name="Memo3" Left="3,77953" Top="22,67718" Width="1039,37075" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Courier New" Font.Style="0" ParentFont="False" Text="Entregador: [pEntregador]"/>
+      <TfrxMemoView Name="Memo4" Left="3,77953" Top="22,67718" Width="1039,37075" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Courier New" Font.Style="0" HAlign="haRight" ParentFont="False" Text="Data Atribuição [pData] [pLote]"/>
+      <TfrxMemoView Name="Memo6" Left="3,77953" Top="60,47248" Width="105,82684" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Courier New" Font.Style="0" HAlign="haCenter" ParentFont="False" Text="Nosso Número"/>
+      <TfrxMemoView Name="Memo7" Left="113,3859" Top="60,47248" Width="215,43321" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Courier New" Font.Style="0" HAlign="haCenter" ParentFont="False" Text="Consumidor"/>
+      <TfrxMemoView Name="Memo9" Left="332,59864" Top="60,47248" Width="343,93723" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Courier New" Font.Style="0" HAlign="haCenter" ParentFont="False" Text="Endereço"/>
+      <TfrxMemoView Name="Memo10" Left="684,09493" Top="60,47248" Width="143,62214" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Courier New" Font.Style="0" HAlign="haCenter" ParentFont="False" Text="Bairro"/>
+      <TfrxMemoView Name="Memo11" Left="831,4966" Top="60,47248" Width="71,81107" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Courier New" Font.Style="0" HAlign="haCenter" ParentFont="False" Text="CEP"/>
+      <TfrxMemoView Name="Memo12" Left="907,0872" Top="60,47248" Width="52,91342" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Courier New" Font.Style="0" HAlign="haCenter" ParentFont="False" Text="Vol."/>
+      <TfrxMemoView Name="Memo13" Left="963,78015" Top="60,47248" Width="79,37013" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Courier New" Font.Style="0" HAlign="haCenter" ParentFont="False" Text="Peso Kg"/>
+      <TfrxLineView Name="Line1" Left="3,77953" Top="86,92919" Width="1039,37075" Height="0" Color="0" Frame.Typ="4"/>
+    </TfrxPageHeader>
+    <TfrxMasterData Name="MasterData1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="18,89765" Left="0" Top="173,85838" Width="1046,92981" ColumnWidth="0" ColumnGap="0" DataSetName="frxDBDataset" RowCount="0">
+      <TfrxMemoView Name="frxDBDatasetNUM_NOSSONUMERO" Left="3,77953" Top="0" Width="105,82684" Height="18,89765" DataField="NUM_NOSSONUMERO" DataSetName="frxDBDataset" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Courier New" Font.Style="0" ParentFont="False" Text="[frxDBDataset.&#34;NUM_NOSSONUMERO&#34;]"/>
+      <TfrxMemoView Name="frxDBDatasetNOM_CONSUMIDOR" Left="113,3859" Top="0" Width="215,43321" Height="18,89765" DataField="NOM_CONSUMIDOR" DataSetName="frxDBDataset" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Courier New" Font.Style="0" ParentFont="False" Text="[frxDBDataset.&#34;NOM_CONSUMIDOR&#34;]"/>
+      <TfrxMemoView Name="Memo8" Left="332,59864" Top="0" Width="343,93723" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Courier New" Font.Style="0" ParentFont="False" Text="[frxDBDataset.&#34;DES_ENDERECO&#34;] / [frxDBDataset.&#34;DES_COMPLEMENTO&#34;]"/>
+      <TfrxMemoView Name="frxDBDatasetDES_BAIRRO" Left="684,09493" Top="0" Width="143,62214" Height="18,89765" DataField="DES_BAIRRO" DataSetName="frxDBDataset" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Courier New" Font.Style="0" ParentFont="False" Text="[frxDBDataset.&#34;DES_BAIRRO&#34;]"/>
+      <TfrxMemoView Name="frxDBDatasetNUM_CEP" Left="831,4966" Top="0" Width="71,81107" Height="18,89765" DataField="NUM_CEP" DataSetName="frxDBDataset" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Courier New" Font.Style="0" ParentFont="False" Text="[frxDBDataset.&#34;NUM_CEP&#34;]"/>
+      <TfrxMemoView Name="frxDBDatasetQTD_VOLUMES" Left="907,0872" Top="0" Width="52,91342" Height="18,89765" DataField="QTD_VOLUMES" DataSetName="frxDBDataset" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Courier New" Font.Style="0" HAlign="haRight" ParentFont="False" Text="[frxDBDataset.&#34;QTD_VOLUMES&#34;]"/>
+      <TfrxMemoView Name="frxDBDatasetQTD_PESO_REAL" Left="963,78015" Top="0" Width="79,37013" Height="18,89765" DataField="QTD_PESO_REAL" DataSetName="frxDBDataset" DisplayFormat.ThousandSeparator="." DisplayFormat.FormatStr="%2.3f" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Courier New" Font.Style="0" HAlign="haRight" ParentFont="False" Text="[frxDBDataset.&#34;QTD_PESO_REAL&#34;]"/>
+    </TfrxMasterData>
+    <TfrxReportSummary Name="ReportSummary1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="113,3859" Left="0" Top="253,22851" Width="1046,92981">
+      <TfrxMemoView Name="Memo14" Left="3,77953" Top="30,23624" Width="185,19697" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Courier New" Font.Style="0" ParentFont="False" Text="Total de Enregas"/>
+      <TfrxMemoView Name="Memo15" Left="3,77953" Top="52,91342" Width="185,19697" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Courier New" Font.Style="0" ParentFont="False" Text="Total de Volumes"/>
+      <TfrxMemoView Name="Memo16" Left="3,77953" Top="75,5906" Width="185,19697" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Courier New" Font.Style="0" ParentFont="False" Text="Peso Total"/>
+      <TfrxSysMemoView Name="SysMemo1" Left="196,53556" Top="30,23624" Width="98,26778" Height="18,89765" DisplayFormat.ThousandSeparator="." DisplayFormat.FormatStr="%2.0f" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Courier New" Font.Style="1" HAlign="haRight" ParentFont="False" Text="[COUNT(MasterData1)]"/>
+      <TfrxLineView Name="Line3" Left="3,77953" Top="11,33859" Width="298,58287" Height="0" Color="0" Frame.Typ="4"/>
+      <TfrxSysMemoView Name="SysMemo2" Left="200,31509" Top="52,91342" Width="94,48825" Height="18,89765" DisplayFormat.ThousandSeparator="." DisplayFormat.FormatStr="%2.0f" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Courier New" Font.Style="1" HAlign="haRight" ParentFont="False" Text="[SUM(&#60;frxDBDataset.&#34;QTD_VOLUMES&#34;&#62;,MasterData1)]"/>
+      <TfrxSysMemoView Name="SysMemo3" Left="200,31509" Top="75,5906" Width="94,48825" Height="18,89765" DisplayFormat.ThousandSeparator="." DisplayFormat.FormatStr="%2.3f" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Courier New" Font.Style="1" HAlign="haRight" ParentFont="False" Text="[SUM(&#60;frxDBDataset.&#34;QTD_PESO_REAL&#34;&#62;,MasterData1)]"/>
+    </TfrxReportSummary>
+    <TfrxPageFooter Name="PageFooter1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="41,57483" Left="0" Top="389,29159" Width="1046,92981">
+      <TfrxLineView Name="Line2" Left="3,77953" Top="0" Width="1039,37075" Height="0" Color="0" Frame.Typ="4"/>
+      <TfrxMemoView Name="Memo20" Left="3,77953" Top="3,77953" Width="1039,37075" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Courier New" Font.Style="0" ParentFont="False" Text="Relatório impresso pelo sistema [pSistema] em [&#60;Date&#62;] [Time] por [pUsuario]"/>
+    </TfrxPageFooter>
+  </TfrxReportPage>
+</TfrxReport>

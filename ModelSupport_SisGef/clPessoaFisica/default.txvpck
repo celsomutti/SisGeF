@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodeSet version="1.0">
+  <view uin="08p2qu03uld0q67xl_v">
+    <property name="$defaultDiagram" value="true" />
+    <property name="$metaclass" value="Package Diagram" />
+    <property name="$name" value="default" />
+    <reference referencedUin="delphi:e_class:src:SisGef:clPessoaFisica.@unitclass">
+      <property name="$shortcutReference" value="true" />
+    </reference>
+    <reference referencedUin="delphi:e_class:src:SisGef:clPessoaFisica.TPessoaFisica">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="10,10,145,1468" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clPessoaFisica.TPessoaFisica.Nome" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clPessoaFisica.TPessoaFisica.FNome" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clPessoaFisica.TPessoaFisica.SetNome(System.string)" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clPessoaFisica.TPessoaFisica.Nascimento" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clPessoaFisica.TPessoaFisica.FNascimento" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clPessoaFisica.TPessoaFisica.SetNascimento(System.TDate)" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clPessoaFisica.TPessoaFisica.Pai" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clPessoaFisica.TPessoaFisica.FPai" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clPessoaFisica.TPessoaFisica.SetPai(System.string)" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clPessoaFisica.TPessoaFisica.Mae" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clPessoaFisica.TPessoaFisica.FMae" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clPessoaFisica.TPessoaFisica.SetMae(System.string)" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clPessoaFisica.TPessoaFisica.CPF" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clPessoaFisica.TPessoaFisica.FCPF" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clPessoaFisica.TPessoaFisica.SetCPF(System.string)" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clPessoaFisica.TPessoaFisica.RG" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clPessoaFisica.TPessoaFisica.FRG" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clPessoaFisica.TPessoaFisica.SetRG(System.string)" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clPessoaFisica.TPessoaFisica.Expedidor" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clPessoaFisica.TPessoaFisica.FExpedidor" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clPessoaFisica.TPessoaFisica.SetExpedidor(System.string)" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clPessoaFisica.TPessoaFisica.UFRG" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clPessoaFisica.TPessoaFisica.FUFRG" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clPessoaFisica.TPessoaFisica.SetUFRG(System.string)" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clPessoaFisica.TPessoaFisica.DataRG" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clPessoaFisica.TPessoaFisica.FDataRG" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clPessoaFisica.TPessoaFisica.SetDataRG(System.TDate)" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clPessoaFisica.TPessoaFisica.Naturalidade" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clPessoaFisica.TPessoaFisica.FNaturalidade" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clPessoaFisica.TPessoaFisica.SetNaturalidade(System.string)" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clPessoaFisica.TPessoaFisica.UFNaturalidade" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clPessoaFisica.TPessoaFisica.FUFNaturalidade" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clPessoaFisica.TPessoaFisica.SetUFNaturalidade(System.string)" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clPessoaFisica.TPessoaFisica.CNH" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clPessoaFisica.TPessoaFisica.FCNH" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clPessoaFisica.TPessoaFisica.SetCNH(System.string)" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clPessoaFisica.TPessoaFisica.RegistroCNH" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clPessoaFisica.TPessoaFisica.FRegistroCNH" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clPessoaFisica.TPessoaFisica.SetRegistroCNH(System.string)" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clPessoaFisica.TPessoaFisica.ValidadeCNH" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clPessoaFisica.TPessoaFisica.FValidadeCNH" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clPessoaFisica.TPessoaFisica.SetValidadeCNH(System.TDate)" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clPessoaFisica.TPessoaFisica.CategoriaCNH" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clPessoaFisica.TPessoaFisica.FCategoriaCNH" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clPessoaFisica.TPessoaFisica.SetCategoriaCNH(System.string)" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clPessoaFisica.TPessoaFisica.PrimeiraCNH" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clPessoaFisica.TPessoaFisica.FPrimeiraCNH" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clPessoaFisica.TPessoaFisica.SetPrimeiraCNH(System.TDate)" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clPessoaFisica.TPessoaFisica.PIS" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clPessoaFisica.TPessoaFisica.FPIS" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clPessoaFisica.TPessoaFisica.SetPIS(System.string)" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clPessoaFisica.TPessoaFisica.CTPS" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clPessoaFisica.TPessoaFisica.FCTPS" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clPessoaFisica.TPessoaFisica.SetCTPS(System.string)" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clPessoaFisica.TPessoaFisica.SerieCTPS" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clPessoaFisica.TPessoaFisica.FSerieCTPS" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clPessoaFisica.TPessoaFisica.SetSerieCTPS(System.string)" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clPessoaFisica.TPessoaFisica.UFCTPS" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clPessoaFisica.TPessoaFisica.FUFCTPS" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clPessoaFisica.TPessoaFisica.SetUFCTPS(System.string)" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clPessoaFisica.TPessoaFisica.UFCNH" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clPessoaFisica.TPessoaFisica.FUFCNH" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clPessoaFisica.TPessoaFisica.SetUFCNH(System.string)" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clPessoaFisica.TPessoaFisica.EstadoCivil" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clPessoaFisica.TPessoaFisica.FEstadoCivil" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clPessoaFisica.TPessoaFisica.SetEstadoCivil(System.string)" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clPessoaFisica.TPessoaFisica.TituloEleitor" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clPessoaFisica.TPessoaFisica.FTituloEleitor" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clPessoaFisica.TPessoaFisica.SetTituloEleitor(System.string)" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clPessoaFisica.TPessoaFisica.Reservista" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clPessoaFisica.TPessoaFisica.FReservista" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clPessoaFisica.TPessoaFisica.SetReservista(System.string)" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clPessoaFisica.TPessoaFisica.FormaCredito" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clPessoaFisica.TPessoaFisica.FFormaCredito" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clPessoaFisica.TPessoaFisica.SetFormaCredito(System.string)" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clPessoaFisica.TPessoaFisica.TipoConta" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clPessoaFisica.TPessoaFisica.FTipoConta" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clPessoaFisica.TPessoaFisica.SetTipoConta(System.string)" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clPessoaFisica.TPessoaFisica.Banco" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clPessoaFisica.TPessoaFisica.FBanco" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clPessoaFisica.TPessoaFisica.SetBanco(System.string)" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clPessoaFisica.TPessoaFisica.Agencia" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clPessoaFisica.TPessoaFisica.FAgencia" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clPessoaFisica.TPessoaFisica.SetAgencia(System.string)" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clPessoaFisica.TPessoaFisica.Conta" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clPessoaFisica.TPessoaFisica.FConta" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clPessoaFisica.TPessoaFisica.SetConta(System.string)" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clPessoaFisica.TPessoaFisica.Favorecido" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clPessoaFisica.TPessoaFisica.FFavorecido" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clPessoaFisica.TPessoaFisica.SetFavorecido(System.string)" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clPessoaFisica.TPessoaFisica.CPFFavorecido" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clPessoaFisica.TPessoaFisica.FCPFFavorecido" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clPessoaFisica.TPessoaFisica.SetCPFFavorecido(System.string)" />
+    </reference>
+  </view>
+</nodeSet>

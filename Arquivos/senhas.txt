@@ -1,0 +1,63 @@
+19 - Niteroi
+weberson.azeredo
+weberson123
+
+38 - Rio das Ostras
+rio.ostras
+antonio123
+
+34 - Macaé
+aparecida.souza
+aparecida123
+
+39 - Ilha do Governador
+bruno.joaquim
+bruno123
+
+35 - Copacabana
+carlos.salgueiro
+carlos123	
+
+45 - Leblon
+cassius.lima
+cassius123
+
+43 - Baixada
+fernando.cesar
+fernando123
+
+44 - Campo Grande
+leonardo.papera
+papera123
+
+31 - Cidade Nova
+luciano.davilla
+luciano123
+
+28 - Taquara
+luis.marques
+marques123
+
+33 - Resende
+ricardo.odilon
+ricardo123
+
+40 - Volta Redonda / Barra Mansa
+marcos.ferreira
+marcos123
+
+41 - Petrópolis
+tiago.cardoso
+tiago123
+
+36 - Campos dos Goytacazes
+vitoria.maia
+vitoria123
+
+29 - Zona Sul / Wallace
+wallace.fonseca
+wallace123
+
+30 - Zona Sul / William
+william.fonseca
+william123

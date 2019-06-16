@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodeSet version="1.0">
+  <view uin="aprugoj3gzhernn6h_v">
+    <property name="$defaultDiagram" value="true" />
+    <property name="$metaclass" value="Package Diagram" />
+    <property name="$name" value="default" />
+    <reference referencedUin="delphi:e_class:src:SisGef:clLancamentos.TLancamentos">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="10,10,204,942" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clLancamentos.TLancamentos.getCodigo()" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clLancamentos.TLancamentos.getData()" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clLancamentos.TLancamentos.getDescnto()" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clLancamentos.TLancamentos.getDescontado()" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clLancamentos.TLancamentos.getDescricao()" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clLancamentos.TLancamentos.getEntregador()" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clLancamentos.TLancamentos.getTipo()" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clLancamentos.TLancamentos.getValor()" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clLancamentos.TLancamentos.setCodigo(System.Integer)" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clLancamentos.TLancamentos.setData(System.TDateTime)" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clLancamentos.TLancamentos.setDescontado(System.string)" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clLancamentos.TLancamentos.setDesconto(System.TDateTime)" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clLancamentos.TLancamentos.setDescricao(System.string)" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clLancamentos.TLancamentos.setEntregador(System.Integer)" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clLancamentos.TLancamentos.setTipo(System.string)" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clLancamentos.TLancamentos.setValor(System.Double)" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clLancamentos.TLancamentos.getExtrato()" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clLancamentos.TLancamentos.setExtrato(System.string)" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clLancamentos.TLancamentos.getPersistir()" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clLancamentos.TLancamentos.setPersistir(System.string)" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clLancamentos.TLancamentos.Create()" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clLancamentos.TLancamentos.Destroy()" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clLancamentos.TLancamentos._codigo" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clLancamentos.TLancamentos._descricao" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clLancamentos.TLancamentos._data" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clLancamentos.TLancamentos._entregador" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clLancamentos.TLancamentos._tipo" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clLancamentos.TLancamentos._valor" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clLancamentos.TLancamentos._descontado" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clLancamentos.TLancamentos._desconto" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clLancamentos.TLancamentos._extrato" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clLancamentos.TLancamentos._persistir" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clLancamentos.TLancamentos._conexao" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clLancamentos.TLancamentos.Codigo" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clLancamentos.TLancamentos.Descricao" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clLancamentos.TLancamentos.Data" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clLancamentos.TLancamentos.Entregador" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clLancamentos.TLancamentos.Tipo" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clLancamentos.TLancamentos.Valor" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clLancamentos.TLancamentos.Descontado" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clLancamentos.TLancamentos.Desconto" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clLancamentos.TLancamentos.Extrato" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clLancamentos.TLancamentos.Persistir" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clLancamentos.TLancamentos.MaxSeq()" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clLancamentos.TLancamentos.Validar()" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clLancamentos.TLancamentos.Delete(System.string)" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clLancamentos.TLancamentos.getObject(System.string,System.string)" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clLancamentos.TLancamentos.Insert()" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clLancamentos.TLancamentos.Update()" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clLancamentos.TLancamentos.getField(System.string,System.string)" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clLancamentos.TLancamentos.getObjects()" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clLancamentos.TLancamentos.Merge()" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clLancamentos.TLancamentos.Totalizacao(System.string,System.string,System.string,System.string)" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clLancamentos.TLancamentos.Periodo(System.string,System.string,System.string,System.string)" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clLancamentos.TLancamentos.Fechar(System.string,System.string,System.string,System.string,System.string,System.string)" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clLancamentos.TLancamentos.Persistecia()" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clLancamentos.TLancamentos.ConsolidaLancamentos(System.string,System.string)" />
+    </reference>
+    <reference referencedUin="delphi:e_class:src:SisGef:clLancamentos.@unitclass">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clLancamentos.@unitclass.TABLENAME" />
+    </reference>
+  </view>
+</nodeSet>

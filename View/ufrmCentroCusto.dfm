@@ -1,0 +1,357 @@
+object frmCentroCusto: TfrmCentroCusto
+  Left = 382
+  Top = 330
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsSingle
+  Caption = 'Cadastro de Centro de Custo'
+  ClientHeight = 295
+  ClientWidth = 607
+  Color = clWhite
+  Font.Charset = ANSI_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  Icon.Data = {
+    0000010002002020100001000400E8020000260000002020000001000800A808
+    00000E0300002800000020000000400000000100040000000000000200000000
+    0000000000001000000000000000000000000000800000800000008080008000
+    00008000800080800000C0C0C000808080000000FF0000FF000000FFFF00FF00
+    0000FF00FF00FFFF0000FFFFFF00000000000000000000000008800000000000
+    0000000000000000073088000000000000000000000000088733088000000000
+    0000000000000088873330880000000000000000000000871733330880000000
+    0000000088888081873333308800000000000001088880883333333308800000
+    0000088110088033873333333088000000088880070880888733333333080000
+    0008700777008087173333333330000000000777770000818733333333300000
+    0007777F77070088373333333330000007777FFF770701338F33333333300007
+    777FFFFF7707018877F33333333007F77FFFFFFF77070877777F33333330077F
+    FFFFFFFF770707777777F3333330078FFFFFFFFF7707077777007F333330078F
+    FFFFFFFF77070777008107F33330078FFFFFFFF8770707008881107F3330078F
+    FFFFF8877007070888811107F330078FFFF88FF00F770008888111107F30078F
+    F88FF00FF877040888811110700007888BB00FF88770040888811110000007BB
+    BBB0F88FF00744088FF7111000000BBBBBB08FF00777440FF777711000000BBB
+    BBB0B000777744407777771000000BBBB00BB00077FF74440777700000000BB0
+    0BBBB000FF777744007000000000000BBBBBB00007777774000000000000000B
+    BBB0000000777700000000000000000BB0000000000700000000000000000000
+    0000000000000000000000000000FFFFF87FFFFFE03FFFFF801FFFFF800FFFFF
+    8007FFE00003FF800001FE000000FC000000FC000000FC000000F8000000E000
+    0000800000000000000000000000000000000000000000000000000000000000
+    000000000001000000070000000F0000000F0000000F0020001F0020007F8030
+    05FFC0780FFFC1FC3FFFE7FEFFFF280000002000000040000000010008000000
+    0000000400000000000000000000000100000000000000000000000080000080
+    000000808000800000008000800080800000C0C0C000C0DCC000F0CAA600D4F0
+    FF00B1E2FF0098CBFF006BC6FF0048B8FF0025AAFF0000AAFF000092DC00007A
+    B90033669800004A730000325000D4E3FF00B1C7FF008EABFF006698CB004873
+    FF002557FF000055FF000049DC00003DB900003196000025730000195000D4D4
+    FF00B1B1FF008E8EFF006B6BFF004848FF002525FF000000FE000000DC000000
+    B900000096000000730000005000E3D4FF00C7B1FF00AB8EFF008F6BFF007348
+    FF005725FF005500FF004900DC003D00B900310096002500730019005000F0D4
+    FF00E2B1FF00D48EFF00C66BFF00B848FF00AA25FF00AA00FF009200DC007A00
+    B900620096004A00730032005000FFD4FF00FFB1FF00FF8EFF00FF6BFF00FF48
+    FF00FF25FF00FE00FE00DC00DC00B900B900960096007300730050005000FFD4
+    F000FFB1E200FF8ED400FF6BC600FF48B800FF25AA00FF00AA00DC009200B900
+    7A009600620073004A0050003200FFD4E300FFB1C700FF8EAB00FF6B8F00FF48
+    7300FF255700FF005500DC004900B9003D00960031007300250050001900FFD4
+    D400FFB1B100FF8E8E00FF6B6B00FF484800FF252500FE000000DC000000B900
+    0000960000007300000050000000FFE3D400FFC7B100FFAB8E00FF8F6B00FF73
+    4800FF572500FF550000DC490000B93D0000963100007325000050190000FFF0
+    D400FFE2B100FFD48E00FFC66B00FFB84800FFAA2500FFAA0000DC920000B97A
+    000096620000734A000050320000FFFFD400FFFFB100FFFF8E00FFFF6B00FFFF
+    4800FFFF2500FEFE0000DCDC0000B9B90000969600007373000050500000F0FF
+    D400E2FFB100D4FF8E00C6FF6B00B8FF4800AAFF2500AAFF000092DC00007AB9
+    0000629600004A73000032500000E3FFD400C7FFB100ABFF8E008FFF6B0073FF
+    480057FF250055FF000049DC00003DB90000319600002573000019500000D4FF
+    D400B1FFB1008EFF8E006BFF6B0048FF480025FF250000FE000000DC000000B9
+    0000009600000073000000500000D4FFE300B1FFC7008EFFAB006BFF8F0048FF
+    730025FF570000FF550000DC490000B93D00009631000073250000501900D4FF
+    F000B1FFE2008EFFD4006BFFC60048FFB80025FFAA0000FFAA0000DC920000B9
+    7A000096620000734A0000503200D4FFFF00B1FFFF008EFFFF006BFFFF0048FF
+    FF0025FFFF0000FEFE0000DCDC0000B9B900009696000073730000505000F2F2
+    F200E6E6E600DADADA00CECECE00C2C2C200B6B6B600AAAAAA009E9E9E009292
+    9200868686007A7A7A006E6E6E0062626200565656004A4A4A003E3E3E003232
+    3200262626001A1A1A000E0E0E00F0FBFF00A4A0A000808080000000FF0000FF
+    000000FFFF00FF000000FF00FF00FFFF0000FFFFFF0000000000000000000000
+    00000000000000000000000000EDED0000000000000000000000000000000000
+    00000000000000000000000C1300EDED00000000000000000000000000000000
+    00000000000000000019190C131300EDED000000000000000000000000000000
+    00000000000000001919190C13131300EDED0000000000000000000000000000
+    0000000000000000190C150C1313131300EDED00000000000000000000000000
+    0000EDEDEDEDED001915190C131313131300EDED000000000000000000000000
+    001500EDEDEDED001919131313131313131300EDED0000000000000000000019
+    1915150000EDED001313190C1313131313131300EDED00000000000000191919
+    190000E400EDED001919190C131313131313131300ED00000000000000190C00
+    00E6E4E60000ED00190C150C13131313131313131300000000000000000000E6
+    E4E7E7E4000000001915190C1313131313131313130000000000000000E6E4E7
+    E7FFE7E600E400001919130C131313131313131313000000000000E6E4E7E7FF
+    FFFFE7E600E40015131319FF13131313131313131300000000E6E4E7E7FFFFFF
+    FFFFE7E600E4001519190C0CFF13131313131313130000E4E3E7E6FFFFFFFFFF
+    FFFFE7E600E400190C0C0C0C0CFF131313131313130000E4E6FFFFFFFFFFFFFF
+    FFFFE7E600E4000C0C0C0C0C0C0CFF1313131313130000E4EDFFFFFFFFFFFFFF
+    FFFFE7E600E4000C0C0C0C0C00000CFF13131313130000E4EDFFFFFFFFFFFFFF
+    FFFFE7E600E4000C0C0C0000252A000CFF131313130000E4EDFFFFFFFFFFFFFF
+    FFEDE4E600E4000C00002525252A2B000CFF1313130000E4EDFFFFFFFFFFFFED
+    EDE4E60000E4000C00252525252A2B2A000CFF13130000E4EDFFFFFFFFEDEDE3
+    E30000FFE7E6000000252525252A2A2B2A000CFF130000E4EDFFFFEDEDE3E300
+    00FFFFEDE4E600F200252525252A2A2B2A000C00000000E4EDEDED0E0E0000FF
+    FFEDEDE4E60000F200252525252A2A2B2A000000000000E40E0E0E0E0E00FFED
+    EDE3E300006CF2F2002525FFFF242A2B2A000000000000FB0E0E0E0E0E00EDE3
+    E300006C6C6CF2F200FFFF242424242A2B000000000000FB0E0E0EFBFB000E00
+    00006C6C6C6CF2F2F2002424242424242A000000000000FB0EFBFB00000E0E00
+    00006C6CFFFF6AF2F2F200242424240000000000000000FBFB00000E0E0E0E00
+    0000FFFF6A6A6A6AF2F2000024000000000000000000000000FB0E0E0EFBFB00
+    0000006A6A6A6A6A6AF2000000000000000000000000000000FB0EFBFB000000
+    000000006A6A6A6A0000000000000000000000000000000000FBFB0000000000
+    00000000006A0000000000000000000000000000000000000000000000000000
+    00000000000000000000000000000000000000000000FFFFF87FFFFFE03FFFFF
+    801FFFFF800FFFFF8007FFE00003FF800001FE000000FC000000FC000000FC00
+    0000F8000000E000000080000000000000000000000000000000000000000000
+    0000000000000000000000000001000000070000000F0000000F0000000F0020
+    001F0020007F803005FFC0780FFFC1FC3FFFE7FEFFFF}
+  KeyPreview = True
+  OldCreateOrder = False
+  Position = poMainFormCenter
+  ShowHint = True
+  Visible = True
+  OnActivate = FormActivate
+  OnClose = FormClose
+  OnShow = FormShow
+  DesignSize = (
+    607
+    295)
+  PixelsPerInch = 96
+  TextHeight = 13
+  object cxButton5: TcxButton
+    Left = 515
+    Top = 267
+    Width = 89
+    Height = 20
+    Cursor = crHandPoint
+    Action = actCadastroSair
+    Anchors = [akRight, akBottom]
+    TabOrder = 2
+  end
+  object cxGrid1: TcxGrid
+    AlignWithMargins = True
+    Left = 3
+    Top = 47
+    Width = 601
+    Height = 214
+    Align = alTop
+    Anchors = [akLeft, akTop, akRight, akBottom]
+    TabOrder = 0
+    object cxGrid1DBTableView1: TcxGridDBTableView
+      Navigator.Buttons.CustomButtons = <>
+      Navigator.Buttons.Images = dm.cxImageList1
+      Navigator.Buttons.First.Hint = 'Primeiro Registro'
+      Navigator.Buttons.PriorPage.Visible = False
+      Navigator.Buttons.Prior.Hint = 'Registro Anterior'
+      Navigator.Buttons.Next.Hint = 'Pr'#243'ximo Registro'
+      Navigator.Buttons.NextPage.Visible = False
+      Navigator.Buttons.Last.Hint = #218'ltimo Registro'
+      Navigator.Buttons.Insert.Hint = 'Inserir Registro'
+      Navigator.Buttons.Insert.ImageIndex = 1
+      Navigator.Buttons.Append.Visible = False
+      Navigator.Buttons.Delete.Hint = 'Excluir Registro'
+      Navigator.Buttons.Delete.ImageIndex = 8
+      Navigator.Buttons.Edit.Hint = 'Editar Registro'
+      Navigator.Buttons.Edit.ImageIndex = 14
+      Navigator.Buttons.Post.Hint = 'Salvar Registro'
+      Navigator.Buttons.Post.ImageIndex = 9
+      Navigator.Buttons.Cancel.Hint = 'Cancelar Opera'#231#227'o'
+      Navigator.Buttons.Cancel.ImageIndex = 6
+      Navigator.Buttons.Refresh.Hint = 'Atualizar Grid'
+      Navigator.Buttons.Refresh.ImageIndex = 40
+      Navigator.Buttons.SaveBookmark.Visible = False
+      Navigator.Buttons.GotoBookmark.Visible = False
+      Navigator.Buttons.Filter.Visible = False
+      Navigator.InfoPanel.DisplayMask = '[RecordIndex] de [RecordCount]'
+      Navigator.InfoPanel.Visible = True
+      Navigator.Visible = True
+      DataController.DataSource = ds
+      DataController.Summary.DefaultGroupSummaryItems = <>
+      DataController.Summary.FooterSummaryItems = <>
+      DataController.Summary.SummaryGroups = <>
+      NewItemRow.InfoText = 'Clique aqui para incluir'
+      NewItemRow.Visible = True
+      OptionsBehavior.FocusCellOnTab = True
+      OptionsBehavior.FocusFirstCellOnNewRecord = True
+      OptionsBehavior.GoToNextCellOnEnter = True
+      OptionsBehavior.IncSearch = True
+      OptionsBehavior.FocusCellOnCycle = True
+      OptionsCustomize.ColumnGrouping = False
+      OptionsData.DeletingConfirmation = False
+      OptionsView.NoDataToDisplayInfoText = '<Nenhuma informa'#231#227'o dispon'#237'vel>'
+      OptionsView.GroupByBox = False
+      OptionsView.Indicator = True
+      object cxGrid1DBTableView1COD_CENTRO_CUSTO: TcxGridDBColumn
+        DataBinding.FieldName = 'COD_CENTRO_CUSTO'
+        PropertiesClassName = 'TcxSpinEditProperties'
+        Properties.SpinButtons.Visible = False
+        Width = 86
+      end
+      object cxGrid1DBTableView1DES_CENTRO_CUSTO: TcxGridDBColumn
+        DataBinding.FieldName = 'DES_CENTRO_CUSTO'
+        PropertiesClassName = 'TcxTextEditProperties'
+        Width = 493
+      end
+    end
+    object cxGrid1Level1: TcxGridLevel
+      GridView = cxGrid1DBTableView1
+    end
+  end
+  object cxButton1: TcxButton
+    Left = 3
+    Top = 267
+    Width = 89
+    Height = 20
+    Cursor = crHandPoint
+    Action = actCadastroExportar
+    Anchors = [akLeft, akBottom]
+    TabOrder = 1
+  end
+  object cxLabel27: TcxLabel
+    AlignWithMargins = True
+    Left = 3
+    Top = 3
+    Align = alTop
+    AutoSize = False
+    Caption = 'Centro de Custo'
+    ParentFont = False
+    Style.Font.Charset = ANSI_CHARSET
+    Style.Font.Color = clWindowText
+    Style.Font.Height = -21
+    Style.Font.Name = 'Tahoma'
+    Style.Font.Style = []
+    Style.IsFontAssigned = True
+    Properties.Alignment.Vert = taVCenter
+    Transparent = True
+    Height = 38
+    Width = 601
+    AnchorY = 22
+  end
+  object cxFilterControl1: TcxFilterControl
+    Left = 184
+    Top = 61
+    Width = 300
+    Height = 200
+    TabOrder = 4
+  end
+  object aclCadastro: TActionList
+    Images = dm.cxImageList1
+    Left = 520
+    Top = 16
+    object actCadastroIncluir: TAction
+      Category = 'Cadastro'
+      Caption = '&Incluir'
+      Hint = 'Incluir dados'
+      ImageIndex = 1
+      ShortCut = 45
+    end
+    object actCadastroEditar: TAction
+      Category = 'Cadastro'
+      Caption = '&Editar'
+      Hint = 'Editar dados'
+      ImageIndex = 14
+      ShortCut = 8237
+      Visible = False
+    end
+    object actCadastroExcluir: TAction
+      Category = 'Cadastro'
+      Caption = 'E&xcluir'
+      Hint = 'Excluir dados'
+      ImageIndex = 8
+      ShortCut = 46
+    end
+    object actCadastroCancelar: TAction
+      Category = 'Cadastro'
+      Caption = 'Cancelar'
+      Hint = 'Cancelar opera'#231#227'o atual'
+      ImageIndex = 6
+    end
+    object actCadastroSalvar: TAction
+      Category = 'Cadastro'
+      Caption = 'Sal&var'
+      Hint = 'Salvar dados'
+      ImageIndex = 9
+      ShortCut = 116
+    end
+    object actCadastroImprimir: TAction
+      Category = 'Cadastro'
+      Caption = 'Im&primir'
+      Hint = 'Imprimir dados'
+      ImageIndex = 15
+      ShortCut = 16464
+    end
+    object actCadastroLocalizar: TAction
+      Category = 'Cadastro'
+      Caption = '&Localizar'
+      Hint = 'Localizar dados'
+      ImageIndex = 18
+      ShortCut = 119
+    end
+    object actCadastroSair: TAction
+      Tag = 99
+      Category = 'Cadastro'
+      Caption = 'Sai&r'
+      Hint = 'Sair da tela'
+      ImageIndex = 10
+      OnExecute = actCadastroSairExecute
+    end
+    object actCadastroExcluirEndereco: TAction
+      Category = 'Cadastro'
+      Caption = 'Excluir Endere'#231'o'
+      Enabled = False
+      Hint = 'Excluir este endere'#231'o'
+      ImageIndex = 8
+      ShortCut = 8238
+    end
+    object actCadastroListaApoio: TAction
+      Category = 'Cadastro'
+      Caption = '&Apoio'
+      Hint = 'Lista de Apoio'
+      ImageIndex = 28
+      ShortCut = 120
+      Visible = False
+    end
+    object actCadastroExportar: TAction
+      Tag = 99
+      Category = 'Cadastro'
+      Caption = 'E&xportar'
+      Hint = 'Exportar dados'
+      ImageIndex = 29
+      OnExecute = actCadastroExportarExecute
+    end
+  end
+  object tbCentroCusto: TdxMemData
+    Indexes = <>
+    SortOptions = []
+    BeforeInsert = tbCentroCustoBeforeInsert
+    BeforeEdit = tbCentroCustoBeforeEdit
+    BeforePost = tbCentroCustoBeforePost
+    AfterPost = tbCentroCustoAfterPost
+    BeforeCancel = tbCentroCustoBeforeCancel
+    BeforeDelete = tbCentroCustoBeforeDelete
+    AfterDelete = tbCentroCustoAfterDelete
+    Left = 552
+    Top = 16
+    object tbCentroCustoCOD_CENTRO_CUSTO: TIntegerField
+      DisplayLabel = 'C'#243'digo'
+      FieldName = 'COD_CENTRO_CUSTO'
+    end
+    object tbCentroCustoDES_CENTRO_CUSTO: TStringField
+      DisplayLabel = 'Descri'#231#227'o'
+      FieldName = 'DES_CENTRO_CUSTO'
+      Size = 80
+    end
+  end
+  object ds: TDataSource
+    AutoEdit = False
+    DataSet = tbCentroCusto
+    Left = 488
+    Top = 16
+  end
+  object SaveDialog: TSaveDialog
+    Left = 392
+    Top = 264
+  end
+end

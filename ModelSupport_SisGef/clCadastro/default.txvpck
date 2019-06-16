@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodeSet version="1.0">
+  <view uin="cm857aedhye_v">
+    <property name="$defaultDiagram" value="true" />
+    <property name="$metaclass" value="Package Diagram" />
+    <property name="$name" value="default" />
+    <reference referencedUin="delphi:e_class:src:SisGef:clCadastro.TCadastro">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="10,10,166,642" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clCadastro.TCadastro.Codigo" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clCadastro.TCadastro.FCodigo" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clCadastro.TCadastro.SetCodigo(System.Integer)" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clCadastro.TCadastro.TipoCadastro" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clCadastro.TCadastro.FTipoCadastro" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clCadastro.TCadastro.SetTipoCadastro(System.Integer)" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clCadastro.TCadastro.Departamento" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clCadastro.TCadastro.FDepartamento" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clCadastro.TCadastro.SetDepartamento(System.Integer)" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clCadastro.TCadastro.SubTipo" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clCadastro.TCadastro.FSubTipo" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clCadastro.TCadastro.SetSubTipo(System.Integer)" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clCadastro.TCadastro.Filial" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clCadastro.TCadastro.FFilial" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clCadastro.TCadastro.SetFilial(System.Integer)" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clCadastro.TCadastro.Funcao" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clCadastro.TCadastro.FFuncao" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clCadastro.TCadastro.SetFuncao(System.Integer)" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clCadastro.TCadastro.TipoDoc" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clCadastro.TCadastro.FTipoDoc" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clCadastro.TCadastro.SetTipoDoc(System.string)" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clCadastro.TCadastro.DataCadastro" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clCadastro.TCadastro.FDataCadastro" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clCadastro.TCadastro.SetDataCadastro(System.TDateTime)" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clCadastro.TCadastro.Usuario" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clCadastro.TCadastro.FUsuario" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clCadastro.TCadastro.SetUsuario(System.Integer)" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clCadastro.TCadastro.Roteiro" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clCadastro.TCadastro.FRoteiro" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clCadastro.TCadastro.SetRoteiro(System.Integer)" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clCadastro.TCadastro.StatusGR" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clCadastro.TCadastro.FStatusGR" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clCadastro.TCadastro.SetStatusGR(System.Integer)" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clCadastro.TCadastro.StatusCadastro" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clCadastro.TCadastro.FStatusCadastro" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clCadastro.TCadastro.SetStatusCadastro(System.Integer)" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clCadastro.TCadastro.ValidarDados()" />
+    </reference>
+    <reference referencedUin="delphi:e_class:src:SisGef:clCadastro.@unitclass">
+      <property name="$shortcutReference" value="true" />
+    </reference>
+  </view>
+</nodeSet>

@@ -1,0 +1,73 @@
+Favor solicitar pesquisa GV para o motorista abaixo:
+
+MOTORISTA
+
+Nome Completo 	: $NOME$
+Nome de Guerra	: $GUERRA$
+RG		: $RG$ 		
+Orgao Expedidor : $UFRG$		
+Data Emissao    : $EMISSAORG$
+UF		: $UFNAT$	
+Naturalizade    : $CIDADENAT$
+Data Nascimento	: $DATANAS$     
+CPF             : $CPF$
+CNH		: $CNH$		
+Vencimento CNH  : $VENCCNH$
+UF CNH          : $UFCNH$
+Registro CNH	: $REGCNH$	
+Categoria       : $CAT$		
+1a. Habilitaçao : $1CNH$
+Nome do Pai	: $PAI$
+Nome da Mae	: $MAE$
+Endereço	: $ENDERECO$			
+CEP     	: $CEP$
+Bairro		: $BAIRRO$
+UF		: $UFEND$	
+Cidade          : $CIDADEEND$
+Telefone 1	: $TEL1$     
+Contato         : $CONT1$
+Telefone 2      : $TEL2$
+Contato         : $CONT2$
+Telefone 3      : $TEL3$     
+Contato	        : $CONT3$
+
+PROPRIETARIO DO VEICULO
+
+Pessoa		: $PESSOA$
+CPF/CNPJ	: $CNPJ$
+Nome Completo	: $PROP$
+Data Nascimento	: $NASPROP$
+Nome da Mae	: $MAEPROP$	
+RG		: $RGPROP$	   
+Estado          : $UFRGPROP$	
+Data Emissao    : $EMISSAORGPROP$
+UF		: $UFPROP$	   
+Cidade          : $CIDADEPROP$    
+Endereço	: $ENDERECOPROP$	
+CEP   	        : $CEPPROP$
+Bairro		: $BAIRROPROP$ 
+Telefone 1 	: $TEL1PROP$		
+Contato         : $CONT1PROP$
+Telefone 2 	: $TEL2PROP$            
+Contato         : $CONT2PROP$
+
+DADOS DO VEICULO
+
+Placa		: $PLACA$
+UF		: $UFVEICULO$		
+Cidade          : $CIDADEVEICULO$
+RENAVAN		: $RE$			
+Chassi          : $CHASSI$
+Cor		: $COR$			
+Modelo          : $MODELO$
+Marca           : $MARCA$               
+Ano             : $ANO$
+Tipo            : $TIPO$
+
+OBSERVAÇOES COMPLEMENTARES SOBRE O MOTORISTA
+
+Ja foi vitima de roubo ?    	   : $J1$	Quantas vezes ?    : $Q1$
+Ja se envolveu em acidentes ?  	   : $J2$	Quantas vezes ?    : $Q2$
+Ja transportou para essa empresa ? : $J3$	Quantas vezes ?    : $Q3$
+
+Pesquisa solicitada por $USER$

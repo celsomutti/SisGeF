@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodeSet version="1.0">
+  <view uin="cclxf923s8r_v">
+    <property name="$defaultDiagram" value="true" />
+    <property name="$metaclass" value="Package Diagram" />
+    <property name="$name" value="default" />
+    <reference referencedUin="delphi:e_class:src:SisGef:clPessoaJuridica.@unitclass">
+      <property name="$shortcutReference" value="true" />
+    </reference>
+    <reference referencedUin="delphi:e_class:src:SisGef:clPessoaJuridica.TPessoaJuridica">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="10,10,152,807" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clPessoaJuridica.TPessoaJuridica.FRazao" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clPessoaJuridica.TPessoaJuridica.FFantasia" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clPessoaJuridica.TPessoaJuridica.FCNPJ" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clPessoaJuridica.TPessoaJuridica.FIE" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clPessoaJuridica.TPessoaJuridica.FIEST" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clPessoaJuridica.TPessoaJuridica.FIM" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clPessoaJuridica.TPessoaJuridica.FCNAE" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clPessoaJuridica.TPessoaJuridica.FCRT" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clPessoaJuridica.TPessoaJuridica.SetRazao(System.string)" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clPessoaJuridica.TPessoaJuridica.SetFantasia(System.string)" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clPessoaJuridica.TPessoaJuridica.SetCNPJ(System.string)" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clPessoaJuridica.TPessoaJuridica.SetIE(System.string)" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clPessoaJuridica.TPessoaJuridica.SetIEST(System.string)" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clPessoaJuridica.TPessoaJuridica.SetIM(System.string)" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clPessoaJuridica.TPessoaJuridica.SetCNAE(System.string)" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clPessoaJuridica.TPessoaJuridica.SetCRT(System.Integer)" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clPessoaJuridica.TPessoaJuridica.Razao" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clPessoaJuridica.TPessoaJuridica.Fantasia" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clPessoaJuridica.TPessoaJuridica.CNPJ" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clPessoaJuridica.TPessoaJuridica.IE" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clPessoaJuridica.TPessoaJuridica.IEST" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clPessoaJuridica.TPessoaJuridica.IM" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clPessoaJuridica.TPessoaJuridica.CNAE" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clPessoaJuridica.TPessoaJuridica.CRT" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clPessoaJuridica.TPessoaJuridica.SUFRAMA" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clPessoaJuridica.TPessoaJuridica.FSUFRAMA" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clPessoaJuridica.TPessoaJuridica.SetSUFRAMA(System.string)" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clPessoaJuridica.TPessoaJuridica.FormaCredito" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clPessoaJuridica.TPessoaJuridica.FFormaCredito" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clPessoaJuridica.TPessoaJuridica.SetFormaCredito(System.string)" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clPessoaJuridica.TPessoaJuridica.TipoConta" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clPessoaJuridica.TPessoaJuridica.FTipoConta" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clPessoaJuridica.TPessoaJuridica.SetTipoConta(System.string)" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clPessoaJuridica.TPessoaJuridica.Banco" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clPessoaJuridica.TPessoaJuridica.FBanco" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clPessoaJuridica.TPessoaJuridica.SetBanco(System.string)" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clPessoaJuridica.TPessoaJuridica.Agencia" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clPessoaJuridica.TPessoaJuridica.FAgencia" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clPessoaJuridica.TPessoaJuridica.SetAgencia(System.string)" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clPessoaJuridica.TPessoaJuridica.Conta" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clPessoaJuridica.TPessoaJuridica.FConta" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clPessoaJuridica.TPessoaJuridica.SetConta(System.string)" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clPessoaJuridica.TPessoaJuridica.Favorecido" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clPessoaJuridica.TPessoaJuridica.FFavorecido" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clPessoaJuridica.TPessoaJuridica.SetFavorecido(System.string)" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clPessoaJuridica.TPessoaJuridica.CNPJFavorecido" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clPessoaJuridica.TPessoaJuridica.FCNPJFavorecido" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clPessoaJuridica.TPessoaJuridica.SetCNPJFavorecido(System.string)" />
+    </reference>
+  </view>
+</nodeSet>

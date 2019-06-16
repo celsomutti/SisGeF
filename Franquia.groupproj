@@ -1,0 +1,36 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{6EA224C2-6461-474A-94A6-4A418016A1E2}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="SisGef.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="SisGef">
+        <MSBuild Projects="SisGef.dproj"/>
+    </Target>
+    <Target Name="SisGef:Clean">
+        <MSBuild Projects="SisGef.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="SisGef:Make">
+        <MSBuild Projects="SisGef.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="SisGef"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="SisGef:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="SisGef:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

@@ -1,0 +1,55 @@
+procedure TfrmEntregadores.cxButton2Click(Sender: TObject);
+var
+  ArquivoCSV: TextFile;
+  Contador, I, LinhasTotal: Integer;
+  Linha,campo,codigo: String;
+
+   // Lê Linha e Monta os valores
+  function MontaValor: String;
+  var
+    ValorMontado: String;
+  begin
+    ValorMontado := '';
+    inc(I);
+    While Linha[I] >= ' ' do
+    begin
+      If Linha[I] = ';' then // vc pode usar qualquer delimitador ... eu
+        // estou usando o ";"
+        break;
+      ValorMontado := ValorMontado + Linha[I];
+      inc(I);
+    end;
+    result := ValorMontado;
+  end;
+
+begin
+
+  // Carregando o arquivo ...
+  AssignFile(ArquivoCSV, 'C:\TEMP\ENTREGADORES.CSV');
+  I := 0;
+  try
+    Reset(ArquivoCSV);
+    Readln(ArquivoCSV, Linha);
+    while not Eoln(ArquivoCSV) do
+    begin
+      campo := MontaValor;
+      entregador.Codigo := Campo;
+      campo := MontaValor;
+      entregador.Razao := Campo;
+      entregador.Fantasia := Campo;
+      campo := MontaValor;
+      entregador.Agente:= StrToInt(Campo);
+      entregador.Status := '1';
+      entregador.DtCadastro := DateToStr(Now);
+      entregador.DtAlteracaop := Now;
+      if not (entregador.Insert()) then
+        MessageDlg('Erro ao incluir o entregador ' + agente.Codigo,mtWarning,[mbOK],0);
+      I := 0;
+      Readln(ArquivoCSV, Linha);
+
+    end;
+  finally
+    CloseFile(ArquivoCSV);
+    MessageDlg('OK!',mtInformation,[mbOK],0);
+  end;
+end;

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodeSet version="1.0">
+  <view uin="x9llf5ccqxj_v">
+    <property name="$defaultDiagram" value="true" />
+    <property name="$metaclass" value="Package Diagram" />
+    <property name="$name" value="default" />
+    <reference referencedUin="delphi:e_class:src:SisGef:clCusteioOcorrencias.@unitclass">
+      <property name="$shortcutReference" value="true" />
+    </reference>
+    <reference referencedUin="delphi:e_class:src:SisGef:clCusteioOcorrencias.TCusteioOcorrencias">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="10,10,188,432" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clCusteioOcorrencias.TCusteioOcorrencias.SaveDialog" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clCusteioOcorrencias.TCusteioOcorrencias.entregador" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clCusteioOcorrencias.TCusteioOcorrencias.produtos" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clCusteioOcorrencias.TCusteioOcorrencias.ocorrencias" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clCusteioOcorrencias.TCusteioOcorrencias.FMensagem" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clCusteioOcorrencias.TCusteioOcorrencias.FDataInicial" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clCusteioOcorrencias.TCusteioOcorrencias.FDataFinal" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clCusteioOcorrencias.TCusteioOcorrencias.FTipo" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clCusteioOcorrencias.TCusteioOcorrencias.SetMensagem(System.string)" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clCusteioOcorrencias.TCusteioOcorrencias.SetDataInicial(System.string)" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clCusteioOcorrencias.TCusteioOcorrencias.SetDataFinal(System.string)" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clCusteioOcorrencias.TCusteioOcorrencias.SetTipo(System.Integer)" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clCusteioOcorrencias.TCusteioOcorrencias.Create()" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clCusteioOcorrencias.TCusteioOcorrencias.Destroy()" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clCusteioOcorrencias.TCusteioOcorrencias.ProcessaCusteio(System.string)" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clCusteioOcorrencias.TCusteioOcorrencias.PopulaProdutos()" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clCusteioOcorrencias.TCusteioOcorrencias.PopulaEntregadores()" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clCusteioOcorrencias.TCusteioOcorrencias.Mensagem" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clCusteioOcorrencias.TCusteioOcorrencias.DataInicial" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clCusteioOcorrencias.TCusteioOcorrencias.DataFinal" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clCusteioOcorrencias.TCusteioOcorrencias.Tipo" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clCusteioOcorrencias.TCusteioOcorrencias.PopulaOcorrencias(dxmdaset.TdxMemData)" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clCusteioOcorrencias.TCusteioOcorrencias.PopulaOcorrencias(out@dxmdaset.TdxMemData)" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clCusteioOcorrencias.TCusteioOcorrencias.ProcessaEncerramento(out@dxmdaset.TdxMemData)" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clCusteioOcorrencias.TCusteioOcorrencias.SetupClassOcorrencia(System.Integer)" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clCusteioOcorrencias.TCusteioOcorrencias.SetupClassOcorrencia(dxmdaset.TdxMemData)" />
+    </reference>
+  </view>
+</nodeSet>

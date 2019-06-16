@@ -1,0 +1,612 @@
+object frmControleTransporte: TfrmControleTransporte
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsSingle
+  Caption = 'Controle de Transporte (Relat'#243'rio Di'#225'rio)'
+  ClientHeight = 501
+  ClientWidth = 862
+  Color = clWhite
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  Icon.Data = {
+    0000010003002020000001000800A8080000360000001818000001000800C806
+    0000DE080000101000000100080068050000A60F000028000000200000004000
+    0000010008000000000000040000000000000000000000000000000000000000
+    000022222200663300007777770098320000FD32000098656500CC666600FF65
+    6500CC990000CCCC66000098FD0088888800AAAAAA00BBBBBB0099FEFF00DDDD
+    DD00EEEEEE00FFFFFF0000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    00000000000000000000000000000000000000000B0000000000D407A30085AB
+    3677CC07A30001000000E4118D76000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000D3007063FA0A00000000EC07
+    A300050002002303000028128D76182A897620000B003061FA0A010000006863
+    FA0A1008A30023E03577A5DF35770000000000000000000000009408A30093C6
+    8A769408A300EDC68A76B7000000010000005C0AA30002100000180000000000
+    00006C08A30042000000000000005808A3000000000000000000000000000000
+    00000C000000020000000101A3003240EB74000000000000D3001015DA000000
+    000003000000070052011E0000007063FA0A00000000BC070000080ADA000100
+    00000815DA00B408A30023E03577BC070000E808A300021000000815DA00C808
+    A300A8E635770000D300000000001015DA00D808A3007FE635771015DA008CE3
+    3577D13D207646E03577C4011D0000001D0000000000000000000800BA006A00
+    0000E0DF2A00000000C0000000002009A3000900B2006A00000000000000FFFF
+    FFFF580329004D6A4A00360000000000000000000000B8CC2C00480029007401
+    290060492C0048062900746F735CD808A30068695C4F6C0AA300F5713A77F5E6
+    B6013DF93477CFDE8976BC0700000000000000000000000000009C09A3006049
+    2C00360000000000000015DF8976DD6D7735360000005C0AA300360000001010
+    2A00A4CFFF0000000000360000008409A300050000006C0AA30000708C7629EC
+    5843FEFFFFFF15DF8976CC12EB74BC07000060492C0036000000080AA3000000
+    0000FC09A300FC604A00BC07000060492C0036000000080AA300000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000001131301000000000000000000000000000000000000
+    0000000000000013131313131313010100000000000000000000000000000000
+    000000000013130E061313130C13000000000000000000000000000000000000
+    00001313130E0E11060813130C13130000000000000000000000000000000000
+    0013130E0E11110B060813131313130000000000000000000000000000000013
+    130E0E11110F0F0B06060813131313131300000000000000000000000000130E
+    0E111105050F0F0A060606081313060210131300000000000000000000001311
+    11050505090909090A06060608080602100C031313000000001313010000130F
+    0F050909090911090A060E0E06060602100D0C0C03131300131313130101130F
+    0F09090911110E090A060E0E0E0606021008060C0C0C031313130C130100130A
+    090911110E0E0E11090A060E0E0E060210080606060C0C0C0313131313000013
+    0912110E110E0E0E090A060E0E0E0602100806060606060C0C0C031313000013
+    091212110E0E110E11090A06060E0602100D0C0606060606060C0C0C03130013
+    0912111212110E110909090A0A060602100D0C0C0C0606060606060C03130000
+    13091212111209090A0A0A0A0A0A0602100D0C0C0C0C0C060606060604130000
+    1309121209090A0A0A0A0A0A0A0A070C100D0C0C0C0C0C0C0C06060604130000
+    001309090A0A0A0A0A0A0A0A07070C0C100D0C0C0C0C0C0C0C0C0C0604130000
+    000013130A0A0A0A0A0A07070C0E0E0E100D0C0C0C0C0C0C0C0C0C0C03130000
+    0000000013130A0A07070C0E0E0E0E0E100D0C0C0C0C0C0C0C0C0C0C03130000
+    00000000000013100C0E0E0E0E0E0E0E100D0C0C0C0C0C0C0C0C0C0C03130000
+    00000000000013100E0E0E0E0E0E1012100D0D0C0C0C0C0C0C0C0C0C03130000
+    00000000000013100E0E0E0E101210101010120D0D0C0C0C0C0C0C0C03130000
+    00000000000013100E0E10121010101010101010120D0D0C0C0C0C0C03130000
+    00000000000013101012101010101010101010101010120D0D0C0C0C03130000
+    000000000000001313101010101010101010101010101010120D0D0C03130000
+    0000000000000000001313101010101010101010101010101010120D0C130000
+    0000000000000000000000131310101010101010101010101010101313000000
+    0000000000000000000000000013131010101010101010101013130000000000
+    0000000000000000000000000000001313101010101010131300000000000000
+    0000000000000000000000000000000000131310101313000000000000000000
+    000000000000000000000000000000000000001313000000000000000000FFFF
+    FFFFFFF0FFFFFF803FFFFE00FFFFF0007FFFE0007FFF80001FFF000007FF0000
+    01E3000000400000000100000001800000018000000080000000C0000000C000
+    0000E0000000F0000000FC000000FF000000FF000000FF000000FF000000FF00
+    0000FF800000FFE00000FFF80001FFFE0007FFFF801FFFFFE07FFFFFF9FF2800
+    0000180000003000000001000800000000004002000000000000000000000000
+    00000000000000000000070707000A0A0A001D1D1D002F0F0000281E1A002F1F
+    1F003F2F000025252500282828002A2A2A002E2E2E003A3A3A006D5614006A60
+    1F00434343004444440052525200535353005B5B5B005E5E5E00656565006A6A
+    6A007070700072727200737373007C7C7C00FD3200008D6A0000EE520000E468
+    000098554600B14646008B67440098656500956C6C00956D6D00897570008D7D
+    7D009370700090777700AE656500A0777700A37F7F00B7707000B6777700F06E
+    4B00CC666600DF656500CC990000CFA11600CCA91F00D3AB3300A8856500BD83
+    6D00AA8E7700BCAC6600C6A24E00CCBC4700CFB94800D6B34900CC856600CCAD
+    6600CCC26600CCCC66002F88CE00818181008282820083838300868686008A85
+    8500888888008F8F8F009292920097979700999999009E9E9E00B5969600A0A0
+    A000A1A1A100A2A2A200A3A3A300A9A9A900AAAAAA00ABABAB00AEAEAE00B0A1
+    A100B0B0B000B8B3B300B8BFB100BABABA00BBBBBB00BDBDBD00F58A8A00E399
+    9900C3B99800E4CF8400DCD1B100E4D4A500EFE0B100A1B2C70099FEFF00B3F9
+    FA00C2C2C200C4C4C400C5C5C500C6C6C600C8C8C800CBCBCB00D1D1D100D2D2
+    D200D3D3D300D4D4D400D5D5D500D9D9D900DDDDDD00DEDEDE00C0F1F100D4F3
+    F300E0E0E000E2E2E200E3E3E300E4E4E400E5E5E500E7E7E700EEEEEE00F3F3
+    F300F5F5F500FAFAFA00FFFFFF0000000000A5DF357700000000000000000000
+    00009408A30093C68A769408A300EDC68A76B7000000010000005C0AA3000210
+    000018000000000000006C08A30042000000000000005808A300000000000000
+    000000000000000000000C000000020000000101A3003240EB74000000000000
+    D3001015DA000000000003000000070052011E0000007063FA0A00000000BC07
+    0000080ADA00010000000815DA00B408A30023E03577BC070000E808A3000210
+    00000815DA00C808A300A8E635770000D300000000001015DA00D808A3007FE6
+    35771015DA008CE33577D13D207646E03577C4011D0000001D00000000000000
+    00000800BA006A000000E0DF2A00000000C0000000002009A3000900B2006A00
+    000000000000FFFFFFFF580329004D6A4A00360000000000000000000000B8CC
+    2C00480029007401290060492C0048062900746F735CD808A30068695C4F6C0A
+    A300F5713A77F5E6B6013DF93477CFDE8976BC07000000000000000000000000
+    00009C09A30060492C00360000000000000015DF8976DD6D7735360000005C0A
+    A3003600000010102A00A4CFFF0000000000360000008409A300050000006C0A
+    A30000708C7629EC5843FEFFFFFF15DF8976CC12EB74BC07000060492C003600
+    0000080AA30000000000FC09A300FC604A00BC07000060492C0036000000080A
+    A300000000000000000000000000000000000000000000000000000000000000
+    00000000000F0F02820113430000000000000000000000000000000F82560682
+    0A0A000000000000000000000000000000820C4C6C6430820303820000000000
+    000000000000000F15427475664129208282820F00000000000000000000825B
+    747D1B5965382222208222211082000000000000000082762E1D1E313C33352B
+    2D302221521A091700000B8210008265393134626C33355B582A22215E274516
+    110B8214021A823A317D745B5B623A225B5B22215D2222264744088282000007
+    637E6D6A6C5F3B35565822215E2722222226461A09170007637E7F786C613233
+    383722215A47262422222327440800001C81808031334040404022215A474747
+    472222221F0400000D636033404040403F3E2C505A474747474728271F040000
+    00070E404040403D364D545A5A474747474747472505000000000082403E2F47
+    5B5B5B695A474747474747474408000000000000826B575B5B5B69705A494747
+    474747474408000000000000826F5B5B6779737A6E7B4E484747474744080000
+    00000000826F5B737F73737373737C685347474744080000000000000F4B7273
+    73737373737373737F5C4F494408000000000000000012107373737373737373
+    7377717B4A0900000000000000000000824B7373737373737373737382000000
+    000000000000000000180F4B6B737373734B120F000000000000000000000000
+    0000000012107319100000000000000000000000000000000000000000008200
+    000000000000FFFFFF00FE03FF00F80FFF00E007FF008003FF000000FF000000
+    310000000000000001008000000080000000C0000000C0000000E0000000F800
+    0000FC000000FC000000FC000000FC000000FF000000FFC00100FFE00300FFFC
+    1F00FFFF7F002800000010000000200000000100080000000000000100000000
+    0000000000000000000000000000000000001010100011111100202020002222
+    22002B2B2B00253738003A3A3A003E3E3E003F3F3F00481E1E00783B21003D40
+    34005B4E27006740380041414100474747004F4F4F005B5B4E00505050005151
+    5100545454005656560058585800595959005C5C5C005D5D5D00755555006464
+    6400676767007C7C7C00997D2B00DB7A0000925C530094695F009E6E58009766
+    6600966A6A00936F6F00847C7C008D7E7E00AB626200AA666600B07C7C00E57C
+    4900B0902E00BFAC3A00D3A223009A9A540089817B00A0806700AA8E7F00C0A6
+    4E00CEB04000C7BA4C00C3B05300D2B65200C48B6D00C48F7100CCBD6600CDC0
+    4F00CCC45700CCCA6300CAC96600CCCC6600D9C27E00937180008B8080008987
+    8700888888008D8D8D008E8E8E0095838300909090009D9D9D009F9F9F00A38C
+    8800AC908D00B09E9E00A5A5A200A4A4A400A5A5A500AFA8A600ABABAB00ABAF
+    AF00ADADAD00B6B2B200B5B5B500B6B6B600BFB8B000BAB8B800BBBBBB00BCBC
+    BC00BDBDBD00CEA89F00C0B2A800C1B3AA00EBAFA000A3E2BF00D9C58700C3C1
+    BC00E3D4A600B6DACE00B6DCEB00C1C1C100C6C6C600C7C7C700CFCDC800CECE
+    CE00D2D2D200D3D3D300D4D4D400D6D6D600D7D7D700D8D8D800DADADA00DDDD
+    DD00DEDEDE00DFDFDF00F0E8D100F6EDD700E1E1E100F7F7F70008030300E7E7
+    E700EEEEEE00F3F3F300F5F5F500FAFAFA00FFFFFF0000000000A5DF35770000
+    000000000000000000009408A30093C68A769408A300EDC68A76B70000000100
+    00005C0AA3000210000018000000000000006C08A30042000000000000005808
+    A300000000000000000000000000000000000C000000020000000101A3003240
+    EB74000000000000D3001015DA000000000003000000070052011E0000007063
+    FA0A00000000BC070000080ADA00010000000815DA00B408A30023E03577BC07
+    0000E808A300021000000815DA00C808A300A8E635770000D300000000001015
+    DA00D808A3007FE635771015DA008CE33577D13D207646E03577C4011D000000
+    1D0000000000000000000800BA006A000000E0DF2A00000000C0000000002009
+    A3000900B2006A00000000000000FFFFFFFF580329004D6A4A00360000000000
+    000000000000B8CC2C00480029007401290060492C0048062900746F735CD808
+    A30068695C4F6C0AA300F5713A77F5E6B6013DF93477CFDE8976BC0700000000
+    000000000000000000009C09A30060492C00360000000000000015DF8976DD6D
+    7735360000005C0AA3003600000010102A00A4CFFF0000000000360000008409
+    A300050000006C0AA30000708C7629EC5843FEFFFFFF15DF8976CC12EB74BC07
+    000060492C0036000000080AA30000000000FC09A300FC604A00BC0700006049
+    2C0036000000080AA30000000000000000000000110500000000000000000000
+    0000141B7B101E000000000000000000085467420A0103000000000000000852
+    612C6232290A0E311400000000000666202F41374E2B215F4319140702090C2E
+    656B6435335A225E2A2627170405002D7A6D6E6334332260482524262716000D
+    7877383C3D3F235947442825240B00001F363E403B394C6947454544280B0000
+    0012303A4D565B6C47454545451C00000000135B5B68727255464545451C0000
+    0000136A7279757476735346451C0000000000185D74747474747673531D0000
+    0000000000185C74747474704B15000000000000000000185C704A1A00000000
+    0000000000000000490F00000000FCFF0000F07F0000C07F0000001F00000000
+    0000000000008000000080000000C0000000E0000000F0000000F0000000F800
+    0000FE000000FF830000FFCF0000}
+  KeyPreview = True
+  OldCreateOrder = False
+  Position = poMainFormCenter
+  ShowHint = True
+  OnClose = FormClose
+  OnKeyPress = FormKeyPress
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object cxGroupBox1: TcxGroupBox
+    AlignWithMargins = True
+    Left = 3
+    Top = 47
+    Align = alClient
+    TabOrder = 0
+    DesignSize = (
+      856
+      429)
+    Height = 429
+    Width = 856
+    object cxLabel1: TcxLabel
+      Left = 75
+      Top = 8
+      Caption = 'Data'
+      Transparent = True
+    end
+    object cxData: TcxDateEdit
+      Left = 75
+      Top = 24
+      Hint = 'Data da Opera'#231#227'o'
+      Properties.SaveTime = False
+      Properties.ShowTime = False
+      Properties.OnChange = cxDataPropertiesChange
+      TabOrder = 2
+      Width = 97
+    end
+    object cxLabel2: TcxLabel
+      Left = 178
+      Top = 8
+      Caption = 'Opera'#231#227'o'
+      Transparent = True
+    end
+    object cxOperacao: TcxComboBox
+      Tag = -1
+      Left = 178
+      Top = 24
+      Hint = 'Opera'#231#227'o de Transporte'
+      Properties.OnChange = cxOperacaoPropertiesChange
+      TabOrder = 4
+      Width = 194
+    end
+    object cxLabel3: TcxLabel
+      Left = 378
+      Top = 8
+      Caption = 'Placa'
+      Transparent = True
+    end
+    object cxPlaca: TcxTextEdit
+      Left = 378
+      Top = 24
+      Hint = 'Placa do Ve'#237'culo'
+      Properties.MaxLength = 8
+      Properties.OnChange = cxPlacaPropertiesChange
+      TabOrder = 6
+      Width = 82
+    end
+    object cxLabel4: TcxLabel
+      Left = 466
+      Top = 8
+      Caption = 'Motorista'
+      Transparent = True
+    end
+    object cxMotorista: TcxComboBox
+      Tag = -1
+      Left = 466
+      Top = 24
+      Hint = 'Nome do Motorista'
+      Properties.OnChange = cxMotoristaPropertiesChange
+      TabOrder = 8
+      Width = 216
+    end
+    object cxLabel5: TcxLabel
+      Left = 3
+      Top = 51
+      Caption = 'Procedimentos'
+      Transparent = True
+    end
+    object cxGrid1: TcxGrid
+      Left = 4
+      Top = 74
+      Width = 849
+      Height = 323
+      Anchors = [akLeft, akTop, akRight, akBottom]
+      TabOrder = 11
+      object cxGrid1DBTableView1: TcxGridDBTableView
+        Navigator.Buttons.CustomButtons = <>
+        Navigator.Buttons.Images = dm.cxImageList1
+        Navigator.Buttons.First.Hint = 'Primeiro Registro'
+        Navigator.Buttons.PriorPage.Visible = False
+        Navigator.Buttons.Prior.Hint = 'Registro Anterior'
+        Navigator.Buttons.Next.Hint = 'Pr'#243'ximo Registro'
+        Navigator.Buttons.NextPage.Visible = False
+        Navigator.Buttons.Last.Hint = #218'ltimo Registro'
+        Navigator.Buttons.Insert.Hint = 'Incluir'
+        Navigator.Buttons.Insert.ImageIndex = 1
+        Navigator.Buttons.Append.Visible = False
+        Navigator.Buttons.Delete.Hint = 'Excluir'
+        Navigator.Buttons.Delete.ImageIndex = 8
+        Navigator.Buttons.Edit.Hint = 'Editar'
+        Navigator.Buttons.Edit.ImageIndex = 14
+        Navigator.Buttons.Post.Hint = 'Salvar'
+        Navigator.Buttons.Post.ImageIndex = 9
+        Navigator.Buttons.Cancel.Hint = 'Cancelar Opera'#231#227'o'
+        Navigator.Buttons.Cancel.ImageIndex = 6
+        Navigator.Buttons.Refresh.Visible = False
+        Navigator.Buttons.SaveBookmark.Visible = False
+        Navigator.Buttons.GotoBookmark.Visible = False
+        Navigator.Buttons.Filter.Visible = False
+        Navigator.InfoPanel.DisplayMask = '[RecordIndex] de [RecordCount]'
+        Navigator.InfoPanel.Visible = True
+        Navigator.Visible = True
+        OnEditing = cxGrid1DBTableView1Editing
+        DataController.DataSource = dsProcedimento
+        DataController.Summary.DefaultGroupSummaryItems = <>
+        DataController.Summary.FooterSummaryItems = <>
+        DataController.Summary.SummaryGroups = <>
+        NewItemRow.InfoText = 'Clique aqui para incluir'
+        NewItemRow.Visible = True
+        OptionsBehavior.FocusCellOnTab = True
+        OptionsBehavior.FocusFirstCellOnNewRecord = True
+        OptionsBehavior.GoToNextCellOnEnter = True
+        OptionsBehavior.NavigatorHints = True
+        OptionsBehavior.FocusCellOnCycle = True
+        OptionsCustomize.ColumnFiltering = False
+        OptionsCustomize.ColumnGrouping = False
+        OptionsCustomize.ColumnHidingOnGrouping = False
+        OptionsCustomize.ColumnMoving = False
+        OptionsCustomize.ColumnSorting = False
+        OptionsData.Appending = True
+        OptionsData.DeletingConfirmation = False
+        OptionsView.NoDataToDisplayInfoText = '<Nenhuma informa'#231#227'o dispon'#237'vel>'
+        OptionsView.GroupByBox = False
+        object cxGrid1DBTableView1RecId: TcxGridDBColumn
+          Caption = '#'
+          DataBinding.FieldName = 'RecId'
+          PropertiesClassName = 'TcxTextEditProperties'
+          Properties.ReadOnly = True
+          HeaderAlignmentHorz = taCenter
+          HeaderHint = 'Sequ'#234'ncia do Procedimento'
+          SortIndex = 1
+          SortOrder = soAscending
+          Width = 43
+        end
+        object cxGrid1DBTableView1SEQ_DETALHE: TcxGridDBColumn
+          Caption = '#'
+          DataBinding.FieldName = 'SEQ_DETALHE'
+          PropertiesClassName = 'TcxTextEditProperties'
+          Properties.Alignment.Horz = taRightJustify
+          Properties.ReadOnly = True
+          Visible = False
+          HeaderAlignmentHorz = taCenter
+          SortIndex = 0
+          SortOrder = soAscending
+          Width = 46
+        end
+        object cxGrid1DBTableView1DES_TRANSPORTE: TcxGridDBColumn
+          Caption = 'Descri'#231#227'o'
+          DataBinding.FieldName = 'DES_TRANSPORTE'
+          PropertiesClassName = 'TcxTextEditProperties'
+          HeaderAlignmentHorz = taCenter
+          HeaderHint = 'Descri'#231#227'o do Procedimento'
+          Width = 201
+        end
+        object cxGrid1DBTableView1HOR_CHEGADA: TcxGridDBColumn
+          Caption = 'Chegada'
+          DataBinding.FieldName = 'HOR_CHEGADA'
+          PropertiesClassName = 'TcxTimeEditProperties'
+          Properties.Alignment.Horz = taCenter
+          Properties.TimeFormat = tfHourMin
+          HeaderAlignmentHorz = taCenter
+          HeaderHint = 'Hora de Chegada no Destino'
+        end
+        object cxGrid1DBTableView1HOR_INICIO_CARGA: TcxGridDBColumn
+          Caption = 'Ini. Car.'
+          DataBinding.FieldName = 'HOR_INICIO_CARGA'
+          PropertiesClassName = 'TcxTimeEditProperties'
+          Properties.Alignment.Horz = taCenter
+          HeaderAlignmentHorz = taCenter
+          HeaderHint = 'Hora do In'#237'cio do Carregamento'
+        end
+        object cxGrid1DBTableView1HOR_TERMINO_CARGA: TcxGridDBColumn
+          Caption = 'Fim Car.'
+          DataBinding.FieldName = 'HOR_TERMINO_CARGA'
+          PropertiesClassName = 'TcxTimeEditProperties'
+          Properties.Alignment.Horz = taCenter
+          HeaderAlignmentHorz = taCenter
+          HeaderHint = 'Hora do T'#233'rmino do Carregamento'
+        end
+        object cxGrid1DBTableView1HOR_SAIDA: TcxGridDBColumn
+          Caption = 'Sa'#237'da'
+          DataBinding.FieldName = 'HOR_SAIDA'
+          PropertiesClassName = 'TcxTimeEditProperties'
+          Properties.Alignment.Horz = taCenter
+          Properties.TimeFormat = tfHourMin
+          HeaderAlignmentHorz = taCenter
+          HeaderHint = 'Hora da Sa'#237'da do Destino'
+          Width = 78
+        end
+        object cxGrid1DBTableView1DES_OBSERVACOES: TcxGridDBColumn
+          Caption = 'Observa'#231#245'es'
+          DataBinding.FieldName = 'DES_OBSERVACOES'
+          PropertiesClassName = 'TcxMemoProperties'
+          HeaderAlignmentHorz = taCenter
+          HeaderHint = 'Observa'#231#245'es Referentes ao Procedimento'
+          Width = 311
+        end
+      end
+      object cxGrid1Level1: TcxGridLevel
+        GridView = cxGrid1DBTableView1
+      end
+    end
+    object cxLabel6: TcxLabel
+      Left = 689
+      Top = 8
+      Caption = 'Sa'#237'da Origem'
+      Transparent = True
+    end
+    object cxSaidaOrigem: TcxTimeEdit
+      Left = 688
+      Top = 24
+      Hint = 'Sa'#237'da da Origem'
+      EditValue = 0d
+      Properties.TimeFormat = tfHourMin
+      Properties.OnChange = cxSaidaOrigemPropertiesChange
+      Properties.OnValidate = cxSaidaOrigemPropertiesValidate
+      TabOrder = 10
+      Width = 67
+    end
+    object cxButton1: TcxButton
+      Left = 3
+      Top = 403
+      Width = 75
+      Height = 20
+      Cursor = crHandPoint
+      Action = actControleInclui
+      Anchors = [akLeft, akBottom]
+      TabOrder = 13
+    end
+    object cxButton2: TcxButton
+      Left = 84
+      Top = 403
+      Width = 75
+      Height = 20
+      Cursor = crHandPoint
+      Action = actControleLocalizar
+      Anchors = [akLeft, akBottom]
+      TabOrder = 14
+    end
+    object cxButton3: TcxButton
+      Left = 165
+      Top = 403
+      Width = 75
+      Height = 20
+      Cursor = crHandPoint
+      Action = actControleCancelar
+      Anchors = [akLeft, akBottom]
+      TabOrder = 15
+    end
+    object cxButton4: TcxButton
+      Left = 246
+      Top = 403
+      Width = 75
+      Height = 20
+      Cursor = crHandPoint
+      Action = actControleSalvar
+      Anchors = [akLeft, akBottom]
+      TabOrder = 16
+    end
+    object cxButton5: TcxButton
+      Left = 327
+      Top = 403
+      Width = 75
+      Height = 20
+      Cursor = crHandPoint
+      Action = actControleRelatorios
+      Anchors = [akLeft, akBottom]
+      TabOrder = 17
+    end
+    object cxButton6: TcxButton
+      Left = 778
+      Top = 403
+      Width = 75
+      Height = 20
+      Cursor = crHandPoint
+      Action = actControleSair
+      Anchors = [akRight, akBottom]
+      TabOrder = 18
+    end
+    object cxLabel7: TcxLabel
+      Left = 761
+      Top = 8
+      Caption = 'Chegada Franquia'
+      Transparent = True
+    end
+    object cxChegadaFranquia: TcxTimeEdit
+      Left = 762
+      Top = 24
+      Hint = 'Chegada na Franquia'
+      EditValue = 0d
+      Properties.TimeFormat = tfHourMin
+      Properties.OnChange = cxSaidaOrigemPropertiesChange
+      Properties.OnValidate = cxSaidaOrigemPropertiesValidate
+      TabOrder = 20
+      Width = 67
+    end
+    object cxLabel8: TcxLabel
+      Left = 3
+      Top = 8
+      Caption = 'Relat'#243'rio N'#186'.'
+      Transparent = True
+    end
+    object cxRelatorio: TcxTextEdit
+      Left = 3
+      Top = 24
+      Hint = 'N'#250'mero do Relat'#243'rio'
+      TabStop = False
+      Properties.Alignment.Horz = taRightJustify
+      Properties.MaxLength = 8
+      Properties.ReadOnly = True
+      Properties.OnChange = cxPlacaPropertiesChange
+      TabOrder = 0
+      Width = 66
+    end
+  end
+  object dxStatusBar1: TdxStatusBar
+    Left = 0
+    Top = 479
+    Width = 862
+    Height = 22
+    Panels = <
+      item
+        PanelStyleClassName = 'TdxStatusBarTextPanelStyle'
+      end>
+    PaintStyle = stpsUseLookAndFeel
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+  end
+  object cxLabel27: TcxLabel
+    AlignWithMargins = True
+    Left = 3
+    Top = 3
+    Align = alTop
+    AutoSize = False
+    Caption = 'Controle de Transporte'
+    ParentFont = False
+    Style.Font.Charset = ANSI_CHARSET
+    Style.Font.Color = clWindowText
+    Style.Font.Height = -21
+    Style.Font.Name = 'Tahoma'
+    Style.Font.Style = []
+    Style.IsFontAssigned = True
+    Properties.Alignment.Vert = taVCenter
+    Transparent = True
+    Height = 38
+    Width = 856
+    AnchorY = 22
+  end
+  object dsProcedimento: TDataSource
+    DataSet = dm.tbProcedimentos
+    Left = 496
+  end
+  object aclControle: TActionList
+    Images = dm.cxImageList1
+    Left = 536
+    object actControleInclui: TAction
+      Tag = 3
+      Category = 'Controle'
+      Caption = '&Incluir'
+      Hint = 'Incluir Opera'#231#227'o'
+      ImageIndex = 1
+      OnExecute = actControleIncluiExecute
+    end
+    object actControleLocalizar: TAction
+      Tag = 99
+      Category = 'Controle'
+      Caption = '&Localizar'
+      Hint = 'Localizar Opera'#231#227'o'
+      ImageIndex = 18
+      ShortCut = 119
+      OnExecute = actControleLocalizarExecute
+    end
+    object actControleCancelar: TAction
+      Tag = 99
+      Category = 'Controle'
+      Caption = 'Cancelar'
+      Hint = 'Cancelar edi'#231#227'o'
+      ImageIndex = 6
+      OnExecute = actControleCancelarExecute
+    end
+    object actControleSalvar: TAction
+      Tag = 3
+      Category = 'Controle'
+      Caption = 'Sal&var'
+      Hint = 'Salvar Opera'#231#227'o'
+      ImageIndex = 9
+      ShortCut = 116
+      OnExecute = actControleSalvarExecute
+    end
+    object actControleRelatorios: TAction
+      Tag = 3
+      Category = 'Controle'
+      Caption = '&Relat'#243'rio'
+      Hint = 'Relat'#243'rio de transportes'
+      ImageIndex = 16
+    end
+    object actControleSair: TAction
+      Tag = 99
+      Category = 'Controle'
+      Caption = '&Sair'
+      Hint = 'Sair da tela'
+      ImageIndex = 10
+      OnExecute = actControleSairExecute
+    end
+  end
+end

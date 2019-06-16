@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodeSet version="1.0">
+  <view uin="0pw0if5o39bfqpmjf_v">
+    <property name="$defaultDiagram" value="true" />
+    <property name="$metaclass" value="Package Diagram" />
+    <property name="$name" value="default" />
+    <reference referencedUin="delphi:e_class:src:SisGef:clContatosEmpresas.@unitclass">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clContatosEmpresas.@unitclass.TABLENAME" />
+    </reference>
+    <reference referencedUin="delphi:e_class:src:SisGef:clContatosEmpresas.TContatosEmpresas">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="10,10,134,372" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clContatosEmpresas.TContatosEmpresas.FEmpresa" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clContatosEmpresas.TContatosEmpresas.FPadrao" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clContatosEmpresas.TContatosEmpresas.FSequencia" />
+      <reference referencedUin="delphi:e_field:src:SisGef:clContatosEmpresas.TContatosEmpresas.conexao" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clContatosEmpresas.TContatosEmpresas.SetEmpresa(System.Integer)" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clContatosEmpresas.TContatosEmpresas.SetSequencia(System.Integer)" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clContatosEmpresas.TContatosEmpresas.SetPadrao(System.string)" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clContatosEmpresas.TContatosEmpresas.Create()" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clContatosEmpresas.TContatosEmpresas.Empresa" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clContatosEmpresas.TContatosEmpresas.Sequencia" />
+      <reference referencedUin="delphi:e_property:src:SisGef:clContatosEmpresas.TContatosEmpresas.Padrao" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clContatosEmpresas.TContatosEmpresas.MaxSeq()" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clContatosEmpresas.TContatosEmpresas.Validar()" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clContatosEmpresas.TContatosEmpresas.Insert()" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clContatosEmpresas.TContatosEmpresas.Update()" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clContatosEmpresas.TContatosEmpresas.Delete(System.string)" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clContatosEmpresas.TContatosEmpresas.getObjects()" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clContatosEmpresas.TContatosEmpresas.getField(System.string,System.string)" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clContatosEmpresas.TContatosEmpresas.Destroy()" />
+      <reference referencedUin="delphi:e_method:src:SisGef:clContatosEmpresas.TContatosEmpresas.getObject(System.string,System.string)" />
+    </reference>
+  </view>
+</nodeSet>

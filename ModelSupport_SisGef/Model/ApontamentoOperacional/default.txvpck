@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodeSet version="1.0">
+  <view uin="t7rpg0lxk725jblmi_v">
+    <property name="$defaultDiagram" value="true" />
+    <property name="$metaclass" value="Package Diagram" />
+    <property name="$name" value="default" />
+    <reference referencedUin="delphi:e_class:src:SisGef:Model.ApontamentoOperacional.@unitclass">
+      <property name="$shortcutReference" value="true" />
+    </reference>
+    <reference referencedUin="delphi:e_class:src:SisGef:Model.ApontamentoOperacional.TApontamentoOperacional">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="10,10,191,433" />
+      <reference referencedUin="delphi:e_field:src:SisGef:Model.ApontamentoOperacional.TApontamentoOperacional.FID" />
+      <reference referencedUin="delphi:e_field:src:SisGef:Model.ApontamentoOperacional.TApontamentoOperacional.FEntregador" />
+      <reference referencedUin="delphi:e_field:src:SisGef:Model.ApontamentoOperacional.TApontamentoOperacional.FRoteiroAntigo" />
+      <reference referencedUin="delphi:e_field:src:SisGef:Model.ApontamentoOperacional.TApontamentoOperacional.FData" />
+      <reference referencedUin="delphi:e_field:src:SisGef:Model.ApontamentoOperacional.TApontamentoOperacional.FStatusOperacao" />
+      <reference referencedUin="delphi:e_field:src:SisGef:Model.ApontamentoOperacional.TApontamentoOperacional.FRoteiroNovo" />
+      <reference referencedUin="delphi:e_field:src:SisGef:Model.ApontamentoOperacional.TApontamentoOperacional.FObs" />
+      <reference referencedUin="delphi:e_field:src:SisGef:Model.ApontamentoOperacional.TApontamentoOperacional.FPlanilha" />
+      <reference referencedUin="delphi:e_field:src:SisGef:Model.ApontamentoOperacional.TApontamentoOperacional.FIDReferencia" />
+      <reference referencedUin="delphi:e_field:src:SisGef:Model.ApontamentoOperacional.TApontamentoOperacional.FDataReferencia" />
+      <reference referencedUin="delphi:e_field:src:SisGef:Model.ApontamentoOperacional.TApontamentoOperacional.FLog" />
+      <reference referencedUin="delphi:e_property:src:SisGef:Model.ApontamentoOperacional.TApontamentoOperacional.ID" />
+      <reference referencedUin="delphi:e_property:src:SisGef:Model.ApontamentoOperacional.TApontamentoOperacional.Entregador" />
+      <reference referencedUin="delphi:e_property:src:SisGef:Model.ApontamentoOperacional.TApontamentoOperacional.RoteiroAntigo" />
+      <reference referencedUin="delphi:e_property:src:SisGef:Model.ApontamentoOperacional.TApontamentoOperacional.Data" />
+      <reference referencedUin="delphi:e_property:src:SisGef:Model.ApontamentoOperacional.TApontamentoOperacional.StatusOperacao" />
+      <reference referencedUin="delphi:e_property:src:SisGef:Model.ApontamentoOperacional.TApontamentoOperacional.RoteiroNovo" />
+      <reference referencedUin="delphi:e_property:src:SisGef:Model.ApontamentoOperacional.TApontamentoOperacional.Obs" />
+      <reference referencedUin="delphi:e_property:src:SisGef:Model.ApontamentoOperacional.TApontamentoOperacional.Planilha" />
+      <reference referencedUin="delphi:e_property:src:SisGef:Model.ApontamentoOperacional.TApontamentoOperacional.IDReferencia" />
+      <reference referencedUin="delphi:e_property:src:SisGef:Model.ApontamentoOperacional.TApontamentoOperacional.DataReferencia" />
+      <reference referencedUin="delphi:e_property:src:SisGef:Model.ApontamentoOperacional.TApontamentoOperacional.Log" />
+      <reference referencedUin="delphi:e_method:src:SisGef:Model.ApontamentoOperacional.TApontamentoOperacional.Create()" />
+      <reference referencedUin="delphi:e_method:src:SisGef:Model.ApontamentoOperacional.TApontamentoOperacional.Create(System.Integer,System.Integer,System.string,System.TDate,System.string,System.string,System.string,System.string,System.Integer,System.Integer,System.string)" />
+    </reference>
+  </view>
+</nodeSet>

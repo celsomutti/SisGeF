@@ -1,0 +1,50 @@
+{TODO 1 -oCelso -cFinanceiro : Implementação de visualização do extrato para os agentes.}
+{DONE 1 -oCelso -cOperacional : Implementar trava de importação de baixas por data (sequencia)}
+{DONE 1 -oCelso -cSistema : Cancelar a inclusão de usuários no sistema de banco de dados}
+
+{DONE 1 -oCelso -cFinanceiro :  Fechamento de Expressa: implementação do encerramento do fechamento}
+{DONE 1 -oCelso -cFinanceiro :  Fechamento de Expressa: implementação do cancelamento do fechamento não encerrado}
+{TODO 2 -oCelso -cFinanceiro : Fechamento de Expressa: implementação da exclusão de lançamentos}
+{TODO 2 -oCelso -cFinanceiro : Fechamento de Expressa: implementação da exclusão de extravios}
+{DONE 2 -oCelso -cFinanceiro : Fechamento de Expressas: Implementação do Parcelamento de Financiamento (Restrição)}
+{TODO 2 -oCelso -cOperacional : Rotina de Devolução - revisão geral}
+{TODO 2 -oCelso -cRelatórios : Planilha de Créditos - revisão - entregadores, jornal, distribuidores e venda avulsa}
+{TODO 3 -oCelso -cRelatórios : Extrato de Expressas - Visao dos Extravios e Atrasos}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<TfrxReport Version="5.1.11" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Printer="Default" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="41571,5914351736" ReportOptions.Description.Text="" ReportOptions.LastChange="42272,8005119213" ScriptLanguage="PascalScript" ScriptText.Text="begin&#13;&#10;&#13;&#10;end.">
+  <Datasets>
+    <item DataSet="frxDBDataset" DataSetName="frxDBDataset"/>
+  </Datasets>
+  <Variables>
+    <item Name=" Sistema"/>
+    <item Name="pEntregador"/>
+    <item Name="pData"/>
+    <item Name="pUsuario"/>
+    <item Name="pSistema"/>
+    <item Name="pLote"/>
+  </Variables>
+  <TfrxDataPage Name="Data" Height="1000" Left="0" Top="0" Width="1000"/>
+  <TfrxReportPage Name="Page1" Orientation="poLandscape" PaperWidth="297" PaperHeight="210" PaperSize="9" LeftMargin="10" RightMargin="10" TopMargin="10" BottomMargin="10" ColumnWidth="0" ColumnPositions.Text="" HGuides.Text="" VGuides.Text="">
+    <TfrxPageHeader Name="PageHeader1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="94,48825" Left="0" Top="18,89765" Width="1046,92981">
+      <TfrxMemoView Name="Memo1" Left="3,77953" Top="0" Width="1039,37075" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Courier New" Font.Style="1" ParentFont="False" Text="RELATÓRIO DE ATRIBUIÇÕES"/>
+      <TfrxMemoView Name="Memo2" Left="778,58318" Top="0" Width="264,5671" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Courier New" Font.Style="0" HAlign="haRight" ParentFont="False" Text="PÁGINA [&#60;Page#&#62;] / [TotalPages#]"/>
+      <TfrxMemoView Name="Memo3" Left="3,77953" Top="22,67718" Width="1039,37075" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Courier New" Font.Style="0" ParentFont="False" Text="Entregador: [pEntregador]"/>
+      <TfrxMemoView Name="Memo4" Left="3,77953" Top="22,67718" Width="1039,37075" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Courier New" Font.Style="0" HAlign="haRight" ParentFont="False" Text="Data Atribuição [frxDBDataset.&#34;DAT_ATRIBUICAO&#34;]"/>
+      <TfrxMemoView Name="Memo6" Left="3,77953" Top="60,47248" Width="75,5906" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Courier New" Font.Style="0" ParentFont="False" Text="Código"/>
+      <TfrxMemoView Name="Memo7" Left="83,14966" Top="60,47248" Width="143,62214" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Courier New" Font.Style="0" ParentFont="False" Text="Nome Assinante"/>
+      <TfrxMemoView Name="Memo9" Left="230,55133" Top="60,47248" Width="200,31509" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Courier New" Font.Style="0" ParentFont="False" Text="Endereço"/>
+      <TfrxMemoView Name="Memo10" Left="434,64595" Top="60,47248" Width="124,72449" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Courier New" Font.Style="0" ParentFont="False" Text="Bairro"/>
+      <TfrxMemoView Name="Memo11" Left="563,14997" Top="60,47248" Width="71,81107" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Courier New" Font.Style="0" ParentFont="False" Text="CEP"/>
+      <TfrxMemoView Name="Memo12" Left="638,74057" Top="60,47248" Width="90,70872" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Courier New" Font.Style="0" HAlign="haCenter" ParentFont="False" Text="Exemplares"/>
+      <TfrxLineView Name="Line1" Left="3,77953" Top="86,92919" Width="1039,37075" Height="0" Color="0" Frame.Typ="4"/>
+      <TfrxMemoView Name="Memo5" Left="733,22882" Top="60,47248" Width="132,28355" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Courier New" Font.Style="0" ParentFont="False" Text="Produto"/>
+      <TfrxMemoView Name="Memo13" Left="869,2919" Top="60,47248" Width="173,85838" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Courier New" Font.Style="0" ParentFont="False" Text="Tipo Assinatura"/>
+    </TfrxPageHeader>
+    <TfrxMasterData Name="MasterData1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Courier New" Font.Style="0" Height="15,11812" Left="0" ParentFont="False" Top="173,85838" Width="1046,92981" AllowSplit="True" ColumnWidth="0" ColumnGap="0" DataSet="frxDBDataset" DataSetName="frxDBDataset" KeepTogether="True" RowCount="0" Stretched="True">
+      <TfrxMemoView Name="frxDBDatasetNUM_NOSSONUMERO" Left="3,77953" Top="0" Width="75,5906" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-8" Font.Name="Courier New" Font.Style="0" ParentFont="False" Text="[frxDBDataset.&#34;COD_ASSINANTE&#34;]"/>
+      <TfrxMemoView Name="frxDBDatasetNOM_CONSUMIDOR" Left="83,14966" Top="0" Width="143,62214" Height="15,11812" StretchMode="smActualHeight" Font.Charset="1" Font.Color="0" Font.Height="-8" Font.Name="Courier New" Font.Style="0" ParentFont="False" Text="[frxDBDataset.&#34;NOM_ASSINANTE&#34;]"/>
+      <TfrxMemoView Name="Memo8" Left="230,55133" Top="0" Width="200,31509" Height="15,11812" StretchMode="smActualHeight" Font.Charset="1" Font.Color="0" Font.Height="-8" Font.Name="Courier New" Font.Style="0" ParentFont="False" Text="[frxDBDataset.&#34;DES_ENDERECO&#34;]/ [frxDBDataset.&#34;DES_COMPLEMENTO&#34;]">
+        <Formats>
+          <item/>
+          <item/>
+        </Formats>
+      </TfrxMemoView>
+      <TfrxMemoView Name="frxDBDatasetDES_BAIRRO" Left="434,64595" Top="0" Width="124,72449" Height="15,11812" StretchMode="smActualHeight" Font.Charset="1" Font.Color="0" Font.Height="-8" Font.Name="Courier New" Font.Style="0" ParentFont="False" Text="[frxDBDataset.&#34;DES_BAIRRO&#34;]"/>
+      <TfrxMemoView Name="frxDBDatasetNUM_CEP" Left="563,14997" Top="0" Width="71,81107" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-8" Font.Name="Courier New" Font.Style="0" ParentFont="False" Text="[frxDBDataset.&#34;CEP_ENDERECO&#34;]"/>
+      <TfrxMemoView Name="frxDBDatasetQTD_VOLUMES" Left="638,74057" Top="0" Width="90,70872" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-8" Font.Name="Courier New" Font.Style="0" HAlign="haRight" ParentFont="False" Text="[frxDBDataset.&#34;QTD_EXEMPLARES&#34;]"/>
+      <TfrxMemoView Name="frxDBDataset1DES_PRODUTO" Left="733,22882" Top="0" Width="132,28355" Height="15,11812" StretchMode="smActualHeight" Font.Charset="1" Font.Color="0" Font.Height="-8" Font.Name="Courier New" Font.Style="0" ParentFont="False" Text="[frxDBDataset.&#34;DES_PRODUTO&#34;]"/>
+      <TfrxMemoView Name="frxDBDataset1DES_TIPO_ASSINATURA" Left="869,2919" Top="0" Width="173,85838" Height="15,11812" StretchMode="smActualHeight" Font.Charset="1" Font.Color="0" Font.Height="-8" Font.Name="Courier New" Font.Style="0" ParentFont="False" Text="[frxDBDataset.&#34;DES_TIPO_ASSINATURA&#34;]"/>
+    </TfrxMasterData>
+    <TfrxReportSummary Name="ReportSummary1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="113,3859" Left="0" Top="249,44898" Width="1046,92981">
+      <TfrxMemoView Name="Memo14" Left="3,77953" Top="30,23624" Width="185,19697" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Courier New" Font.Style="0" ParentFont="False" Text="Total de Entregas"/>
+      <TfrxSysMemoView Name="SysMemo1" Left="196,53556" Top="30,23624" Width="98,26778" Height="18,89765" DisplayFormat.ThousandSeparator="." DisplayFormat.FormatStr="%2.0f" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Courier New" Font.Style="1" HAlign="haRight" ParentFont="False" Text="[COUNT(MasterData1)]"/>
+      <TfrxLineView Name="Line3" Left="3,77953" Top="11,33859" Width="298,58287" Height="0" Color="0" Frame.Typ="4"/>
+    </TfrxReportSummary>
+    <TfrxPageFooter Name="PageFooter1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="41,57483" Left="0" Top="385,51206" Width="1046,92981">
+      <TfrxLineView Name="Line2" Left="3,77953" Top="0" Width="1039,37075" Height="0" Color="0" Frame.Typ="4"/>
+      <TfrxMemoView Name="Memo20" Left="3,77953" Top="3,77953" Width="1039,37075" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Courier New" Font.Style="0" ParentFont="False" Text="Relatório impresso pelo sistema [pSistema] em [&#60;Date&#62;] [Time] por [pUsuario]"/>
+    </TfrxPageFooter>
+  </TfrxReportPage>
+</TfrxReport>
