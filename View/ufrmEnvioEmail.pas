@@ -23,7 +23,8 @@ uses
   cxButtonEdit, cxLabel, clEnvioEmail, cxMemo,
   Vcl.ActnList, Vcl.Menus, Vcl.StdCtrls, cxButtons, cxListBox, dxSkinMetropolis,
   dxSkinMetropolisDark, dxSkinOffice2013DarkGray,
-  dxSkinOffice2013LightGray, dxSkinOffice2013White, System.Actions;
+  dxSkinOffice2013LightGray, dxSkinOffice2013White, System.Actions, dxSkinOffice2016Colorful, dxSkinOffice2016Dark,
+  dxSkinVisualStudio2013Blue, dxSkinVisualStudio2013Dark, dxSkinVisualStudio2013Light;
 
 type
   TfrmEnvioEmail = class(TForm)

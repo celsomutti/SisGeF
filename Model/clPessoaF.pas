@@ -71,6 +71,8 @@ type
     procedure setDtNascimento(const Value: TDate);
     function getEmissaoCNH: TDate;
     procedure setEmissaoCNH(const Value: TDate);
+    function getCodigoCNH: String;
+    procedure setCodigoCNH(const Value: String);
   protected
     _cpf: String;
     _tipodoc: String;
@@ -87,6 +89,7 @@ type
     _seriectps: String;
     _ufctps: String;
     _pis: String;
+    _codcnh: String;
     _cnh: String;
     _cnhregistro: String;
     _categoriacnh: String;
@@ -123,6 +126,7 @@ type
     property UFCTPS: String read getUFCTPS write setUFCTPS;
     property PIS: String read getPIS write setPIS;
     property CNH: String read getCNH write setCNH;
+    property CodigoCNH: String read getCodigoCNH write setCodigoCNH;
     property CNHRegistro: String read getCNHRegistro write setCNHRegistro;
     property CategoriaCNH: String read getCategoriaCNH write setCategoriaCNH;
     property ValidadeCNH: TDate read getValidadeCNH write setValidadeCNH;
@@ -182,6 +186,11 @@ end;
 function TPessoaF.getCNHUF: String;
 begin
   Result := _cnhuf;
+end;
+
+function TPessoaF.getCodigoCNH: String;
+begin
+  Result := _codcnh;
 end;
 
 function TPessoaF.getCPF: String;
@@ -347,6 +356,11 @@ end;
 procedure TPessoaF.setCNHUF(const Value: String);
 begin
   _cnhuf := Value;
+end;
+
+procedure TPessoaF.setCodigoCNH(const Value: String);
+begin
+  _codcnh := Value;
 end;
 
 procedure TPessoaF.setCPF(const Value: String);

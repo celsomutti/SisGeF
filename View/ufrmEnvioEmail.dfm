@@ -201,79 +201,61 @@ object frmEnvioEmail: TfrmEnvioEmail
       Lines.Strings = (
         'Favor solicitar pesquisa GR para o motorista abaixo:'
         ''
-        'MOTORISTA'
+        'DADOS PESSOAIS'
         ''
-        'Nome Completo '#9': $NOME$'
-        'Nome de Guerra'#9': $GUERRA$'
-        'RG'#9#9': $RG$ '#9#9
-        'Orgao Expedidor : $UFRG$'#9#9
-        'Data Emissao    : $EMISSAORG$'
-        'UF'#9#9': $UFNAT$'#9
-        'Naturalizade    : $CIDADENAT$'
-        'Data Nascimento'#9': $DATANAS$     '
-        'CPF             : $CPF$'
-        'CNH'#9#9': $CNH$'#9#9
-        'Vencimento CNH  : $VENCCNH$'
-        'UF CNH          : $UFCNH$'
-        'Registro CNH'#9': $REGCNH$'#9
-        'Categoria       : $CAT$'#9#9
-        '1a. Habilita'#231'ao : $1CNH$'
-        'Nome do Pai'#9': $PAI$'
-        'Nome da Mae'#9': $MAE$'
-        'Endere'#231'o'#9': $ENDERECO$'#9#9#9
-        'CEP     '#9': $CEP$'
-        'Bairro'#9#9': $BAIRRO$'
-        'UF'#9#9': $UFEND$'#9
-        'Cidade          : $CIDADEEND$'
-        'Telefone 1'#9': $TEL1$     '
-        'Contato         : $CONT1$'
-        'Telefone 2      : $TEL2$'
-        'Contato         : $CONT2$'
-        'Telefone 3      : $TEL3$     '
-        'Contato'#9'        : $CONT3$'
+        'Nome: $NOME$'#9#9#9'CPF: $CPF$'
+        'RG: $RG$ '#9'UF: $UFRG$ '#9'Data Emissao: $EMISSAORG$'#9#9
+        'Nascimento: $DATANAS$'#9#9'Naturalidade: $CIDADENAT$ '#9#9'UF: $UFNAT$'#9
         ''
+        'E-MAIL: $EMAIL$'
+        ''
+        'CNH'
+        #9#9
+        
+          'C'#243'd.CNH: $CODCNH$'#9' Registro CNH: $REGCNH$'#9' UF CNH: $UFCNH   Emis' +
+          's'#227'o: $EMISSAOCNH$ '
+        
+          '1a. Habilita'#231'ao: $1CNH$'#9' Categoria: $CAT$'#9' Vencimento CNH: $VENC' +
+          'CNH$  Cod. Seg. CNH: $SEGCNH$   '
+        ''
+        'FILIA'#199#195'O'
+        ''
+        'Nome do Pai : $PAI$'
+        'Nome da Mae : $MAE$'
+        ''
+        'ENDERE'#199'O / CONTATO'
+        ''
+        'Endere'#231'o: $ENDERECO$'#9#9#9#9#9'Bairro: $BAIRRO$'
+        'Cidade: $CIDADEEND$'#9#9'UF: $UFEND$ '#9#9'CEP: $CEP$'
+        #9
+        'Telefone 1: $TEL1$ $CONT1$'#9'     Telefone 2: $TEL2$ $CONT2$'#9' '#9#9#9
+        '   '
         'PROPRIETARIO DO VEICULO'
         ''
-        'Pessoa'#9#9': $PESSOA$'
-        'CPF/CNPJ'#9': $CNPJ$'
-        'Nome Completo'#9': $PROP$'
-        'Data Nascimento'#9': $NASPROP$'
-        'Nome da Mae'#9': $MAEPROP$'#9
-        'RG'#9#9': $RGPROP$'#9'   '
-        'Estado          : $UFRGPROP$'#9
-        'Data Emissao    : $EMISSAORGPROP$'
-        'UF'#9#9': $UFPROP$'#9'   '
-        'Cidade          : $CIDADEPROP$    '
-        'Endere'#231'o'#9': $ENDERECOPROP$'#9
-        'CEP   '#9'        : $CEPPROP$'
-        'Bairro'#9#9': $BAIRROPROP$ '
-        'Telefone 1 '#9': $TEL1PROP$'#9#9
-        'Contato         : $CONT1PROP$'
-        'Telefone 2 '#9': $TEL2PROP$            '
-        'Contato         : $CONT2PROP$'
+        'CPF/CNPJ: '#9'$CNPJ$'
+        'Nome:'#9#9'$PROP$'
+        'Nascimento: '#9'$NASPROP$'
+        'Nome da Mae: '#9'$MAEPROP$'
+        'Nome do Pai: '#9'$PAIPROP$'#9
+        
+          'RG: '#9#9'$RGPROP$'#9'Data Emissao: $EMISSAORGPROP$ '#9#9'Estado: $UFRGPROP' +
+          '$'#9'   '
+        'Endere'#231'o : $ENDERECOPROP$'#9#9#9#9'Bairro: $BAIRROPROP$ '#9
+        'Cidade: $CIDADEPROP$'#9#9#9#9#9'UF: $UFPROP$'#9'CEP: $CEPPROP$'
+        'Telefone 1: $TEL1PROP$ $CONT1PROP$'#9'   '
+        'Telefone 2: $TEL2PROP$ $CONT2PROP$            '
+        ''
         ''
         'DADOS DO VEICULO'
         ''
-        'Placa'#9#9': $PLACA$'
-        'UF'#9#9': $UFVEICULO$'#9#9
-        'Cidade          : $CIDADEVEICULO$'
-        'RENAVAN'#9#9': $RE$'#9#9#9
-        'Chassi          : $CHASSI$'
-        'Cor'#9#9': $COR$'#9#9#9
-        'Modelo          : $MODELO$'
-        'Marca           : $MARCA$               '
-        'Ano             : $ANO$'
-        'Tipo            : $TIPO$'
+        'Placa: $PLACA$'#9'Cidade: $CIDADEVEICULO$ '#9'UF: $UFVEICULO$'
+        'Cor: '#9'$COR$'#9'Chassi : $CHASSI$'#9#9'Ano: $ANO$'#9#9#9
+        'RENAVAN: $RE$'
+        'Modelo: $MODELO$'#9'Marca: $MARCA$               '
         ''
-        'OBSERVA'#199'OES COMPLEMENTARES SOBRE O MOTORISTA'
+        'OBSERVA'#199'OES COMPLEMENTARES'
         ''
-        'Ja foi vitima de roubo ?    '#9'   : $J1$'#9'Quantas vezes ?    : $Q1$'
-        
-          'Ja se envolveu em acidentes ?  '#9'   : $J2$'#9'Quantas vezes ?    : $' +
-          'Q2$'
-        
-          'Ja transportou para essa empresa ? : $J3$'#9'Quantas vezes ?    : $' +
-          'Q3$'
+        '$OBS$'
         ''
         'Pesquisa solicitada por $USER$')
       ParentFont = False

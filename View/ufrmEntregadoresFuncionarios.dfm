@@ -233,7 +233,7 @@
           Transparent = True
         end
         object cxNome: TcxTextEdit
-          Left = 107
+          Left = 93
           Top = 40
           Hint = 'Nome Completo do Entregador/Funcion'#225'rio'
           Properties.CharCase = ecUpperCase
@@ -241,7 +241,7 @@
           Properties.OnChange = cxNomePropertiesChange
           StyleDisabled.BorderStyle = ebsThick
           TabOrder = 3
-          Width = 472
+          Width = 486
         end
         object cxLabel6: TcxLabel
           Left = 204
@@ -260,20 +260,20 @@
           Width = 111
         end
         object cxLabel11: TcxLabel
-          Left = 340
+          Left = 337
           Top = 121
-          Caption = 'C'#243'd. Seguran'#231'a CN&H'
+          Caption = 'C'#243'd. Seg. CN&H'
           FocusControl = cxCNH
           Transparent = True
         end
         object cxCNH: TcxTextEdit
-          Left = 451
+          Left = 419
           Top = 121
           Hint = 'N'#250'mero da Carteira Nacional de Habilita'#231#227'o'
           Properties.CharCase = ecUpperCase
           Properties.MaxLength = 15
           TabOrder = 13
-          Width = 128
+          Width = 97
         end
         object cxLabel12: TcxLabel
           Left = 197
@@ -320,20 +320,20 @@
           Width = 84
         end
         object cxLabel13: TcxLabel
-          Left = 240
-          Top = 152
-          Caption = 'C&at. CNH'
+          Left = 522
+          Top = 121
+          Caption = 'C&at.'
           FocusControl = cxCategoria
           Transparent = True
         end
         object cxCategoria: TcxTextEdit
-          Left = 291
-          Top = 148
+          Left = 551
+          Top = 121
           Hint = 'Categoria da Carteira Nacional de Habilita'#231#227'o'
           Properties.CharCase = ecUpperCase
           Properties.MaxLength = 2
-          TabOrder = 15
-          Width = 33
+          TabOrder = 14
+          Width = 28
         end
         object cxLabel16: TcxLabel
           Left = 3
@@ -343,7 +343,7 @@
           Transparent = True
         end
         object cxCodigoSistema: TcxTextEdit
-          Left = 107
+          Left = 93
           Top = 13
           TabStop = False
           Properties.Alignment.Horz = taRightJustify
@@ -488,7 +488,7 @@
           Transparent = True
         end
         object cxDataNascimento: TcxDateEdit
-          Left = 107
+          Left = 93
           Top = 67
           Hint = 'Data do Nascimento'
           Properties.ButtonGlyph.Data = {
@@ -532,16 +532,16 @@
           Transparent = True
         end
         object cxRegistroCNH: TcxTextEdit
-          Left = 107
+          Left = 93
           Top = 148
           Hint = 'Registro da Carteira Nacional de Habilita'#231#227'o'
           Properties.CharCase = ecUpperCase
           Properties.MaxLength = 15
-          TabOrder = 14
-          Width = 127
+          TabOrder = 15
+          Width = 92
         end
         object cxLabel38: TcxLabel
-          Left = 330
+          Left = 346
           Top = 152
           Caption = 'UF &CNH'
           FocusControl = cxUFCNH
@@ -549,13 +549,13 @@
         end
         object cxUFCNH: TcxComboBox
           Tag = -1
-          Left = 377
+          Left = 393
           Top = 148
           Hint = 'Sigla do Estado da CNH'
           Properties.CharCase = ecUpperCase
           Properties.MaxLength = 2
-          TabOrder = 16
-          Width = 57
+          TabOrder = 17
+          Width = 45
         end
         object cxLabel39: TcxLabel
           Left = 444
@@ -598,7 +598,7 @@
           Properties.DateButtons = [btnClear, btnNow, btnToday]
           Properties.SaveTime = False
           Properties.ShowTime = False
-          TabOrder = 17
+          TabOrder = 18
           Width = 86
         end
         object cxLabel40: TcxLabel
@@ -616,13 +616,13 @@
           Transparent = True
         end
         object cxNomePai: TcxTextEdit
-          Left = 107
+          Left = 93
           Top = 175
           Hint = 'Nome do Pai'
           Properties.CharCase = ecUpperCase
           Properties.MaxLength = 70
           TabOrder = 19
-          Width = 472
+          Width = 486
         end
         object cxLabel41: TcxLabel
           Left = 3
@@ -639,16 +639,16 @@
           Transparent = True
         end
         object cxNomeMae: TcxTextEdit
-          Left = 107
+          Left = 93
           Top = 201
           Hint = 'Nome da M'#227'e'
           Properties.CharCase = ecUpperCase
           Properties.MaxLength = 70
-          TabOrder = 21
-          Width = 472
+          TabOrder = 20
+          Width = 486
         end
         object cxOrgaoRG: TcxTextEdit
-          Left = 107
+          Left = 93
           Top = 94
           Hint = 
             'Org'#227'o emissor do RG ou Inscri'#231#227'o Estadual do Entregador/Funcion'#225 +
@@ -659,7 +659,7 @@
           Width = 92
         end
         object cxEmissaoCNH: TcxDateEdit
-          Left = 107
+          Left = 93
           Top = 121
           Hint = 'Data da Emiss'#227'o da Carteira Nacional de Habilita'#231#227'o'
           Properties.ButtonGlyph.Data = {
@@ -708,6 +708,22 @@
           Caption = 'Org'#227'o Emissor RG'
           FocusControl = cxOrgaoRG
           Transparent = True
+        end
+        object cxLabel47: TcxLabel
+          Left = 191
+          Top = 152
+          Caption = 'C'#243'd. CNH'
+          FocusControl = cxRegistroCNH
+          Transparent = True
+        end
+        object cxCodigoCNH: TcxTextEdit
+          Left = 248
+          Top = 148
+          Hint = 'Registro da Carteira Nacional de Habilita'#231#227'o'
+          Properties.CharCase = ecUpperCase
+          Properties.MaxLength = 15
+          TabOrder = 16
+          Width = 92
         end
       end
       object cxGroupBox6: TcxGroupBox
@@ -2231,6 +2247,10 @@
       Caption = 'Documentos Digitalizados'
       ImageIndex = 3
       OnShow = cxTabSheet4Show
+      ExplicitLeft = 0
+      ExplicitTop = 0
+      ExplicitWidth = 0
+      ExplicitHeight = 0
       DesignSize = (
         1043
         404)
@@ -2933,7 +2953,7 @@
     PrintOptions.Printer = 'Padr'#227'o'
     PrintOptions.PrintOnSheet = 0
     ReportOptions.CreateDate = 42524.693230092600000000
-    ReportOptions.LastChange = 42915.667525127310000000
+    ReportOptions.LastChange = 43686.679404120370000000
     ScriptLanguage = 'PascalScript'
     StoreInDFM = False
     Left = 960

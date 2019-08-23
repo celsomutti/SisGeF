@@ -663,7 +663,8 @@ begin
         'COD_MEI, ' +
         'NOM_RAZAO_MEI, ' +
         'NOM_FANTASIA_MEI, ' +
-        'NUM_CNPJ_MEI) ' +
+        'NUM_CNPJ_MEI, ' +
+        'COD_CNH) ' +
         'VALUES (' +
         ':CADASTRO, '+
         ':FUNCIONARIO, ' +
@@ -724,7 +725,8 @@ begin
         ':MEI, ' +
         ':RAZAOMEI, ' +
         ':FANTASIAMEI, ' +
-        ':CNPJMEI)';
+        ':CNPJMEI, ' +
+        ':CODCNH)';
       MaxCadastro;
       // if Self.Funcionario <> 'E' then begin
       // MaxCodigo(Self.Funcionario);
@@ -789,6 +791,7 @@ begin
       ParamByName('RAZAOMEI').AsString := Self.RazaoMEI;
       ParamByName('FANTASIAMEI').AsString := Self.FantasiaMEI;
       ParamByName('CNPJMEI').AsString := Self.CNPJMEI;
+      ParamByName('CODCNH').AsString := Self.CodigoCNH;
       dm.ZConn.PingServer;
       ExecSQL;
     end;
@@ -848,7 +851,8 @@ begin
         'DAT_ALTERACAO = :ALTERACAO, ' + 'DES_CHAVE  = :CHAVE, ' +
         'COD_GRUPO = :GRUPO, COD_ROTEIRO = :ROTEIRO,  ' +
         'COD_MEI = :MEI, NOM_RAZAO_MEI = :RAZAOMEI,  ' +
-        'NOM_FANTASIA_MEI = :FANTASIAMEI, NUM_CNPJ_MEI = :CNPJMEI  ' +
+        'NOM_FANTASIA_MEI = :FANTASIAMEI, NUM_CNPJ_MEI = :CNPJMEI,  ' +
+        'COD_CNH = :CODCNH ' +
         'WHERE ' + 'COD_CADASTRO = :CADASTRO';
 
       ParamByName('CADASTRO').AsInteger := Self.Cadastro;
@@ -911,6 +915,7 @@ begin
       ParamByName('RAZAOMEI').AsString := Self.RazaoMEI;
       ParamByName('FANTASIAMEI').AsString := Self.FantasiaMEI;
       ParamByName('CNPJMEI').AsString := Self.CNPJMEI;
+      ParamByName('CODCNH').AsString := Self.CodigoCNH;
       dm.ZConn.PingServer;
       ExecSQL;
     end;

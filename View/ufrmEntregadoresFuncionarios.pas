@@ -300,6 +300,8 @@ type
     cxEmissaoCNH: TcxDateEdit;
     cxLabel46: TcxLabel;
     cxOrgaoRG: TcxTextEdit;
+    cxLabel47: TcxLabel;
+    cxCodigoCNH: TcxTextEdit;
     procedure FormShow(Sender: TObject);
     procedure actCadastroIncluirExecute(Sender: TObject);
     procedure actCadastroEditarExecute(Sender: TObject);
@@ -1362,6 +1364,7 @@ begin
   cxNaturalidade.Text := entregador.Naturalidade;
   cxUFNatural.Text := entregador.UFNatural;
   cxCNH.Text := entregador.Cnh;
+  cxCodigoCNH.Text := entregador.CodigoCNH;
   if entregador.ValidadeCnh <> 0 then
   begin
     cxValidadeCNH.Date := entregador.ValidadeCnh;
@@ -1800,6 +1803,7 @@ begin
   entregador.Naturalidade := cxNaturalidade.Text;
   entregador.NomePai := cxNomePai.Text;
   entregador.NomeMae := cxNomeMae.Text;
+  entregador.CodigoCNH := cxCodigoCNH.Text;
   entregador.Cnh := cxCNH.Text;
   entregador.CNHRegistro := cxRegistroCNH.Text;
   entregador.CategoriaCnh := cxCategoria.Text;
@@ -2365,6 +2369,7 @@ procedure TfrmEntregadoresFuncionarios.TrocaCampos;
 var
   sEndereco: String;
   iConta: Integer;
+  sEMail: String;
 begin
 
   // dados do motorista
@@ -2380,15 +2385,14 @@ begin
   FindReplace('$DATANAS$', DateToStr(entregador.DtNascimento),
     frmEnvioEmail.cxMensagem);
   FindReplace('$CPF$', entregador.CPF, frmEnvioEmail.cxMensagem);
-  FindReplace('$CNH$', entregador.Cnh, frmEnvioEmail.cxMensagem);
-  FindReplace('$VENCCNH$', DateToStr(entregador.ValidadeCnh),
-    frmEnvioEmail.cxMensagem);
+  FindReplace('$CODCNH$', entregador.CodigoCNH, frmEnvioEmail.cxMensagem);
+  FindReplace('$SEGCNH$', entregador.Cnh, frmEnvioEmail.cxMensagem);
+  FindReplace('$VENCCNH$', DateToStr(entregador.ValidadeCnh), frmEnvioEmail.cxMensagem);
   FindReplace('$UFCNH$', entregador.CNHUF, frmEnvioEmail.cxMensagem);
   FindReplace('$REGCNH$', entregador.CNHRegistro, frmEnvioEmail.cxMensagem);
   FindReplace('$CAT$', entregador.CategoriaCnh, frmEnvioEmail.cxMensagem);
-  FindReplace('$1CNH$', entregador.CategoriaCnh, frmEnvioEmail.cxMensagem);
-  FindReplace('$UFCNH$', DateToStr(entregador.DataPrimeiraCNH),
-    frmEnvioEmail.cxMensagem);
+  FindReplace('$1CNH$', DateToStr(entregador.DataPrimeiraCNH), frmEnvioEmail.cxMensagem);
+  FindReplace('$EMISSAOCNH$', DateToStr(entregador.EmissaoCNH), frmEnvioEmail.cxMensagem);
   FindReplace('$PAI$', entregador.NomePai, frmEnvioEmail.cxMensagem);
   FindReplace('$MAE$', entregador.NomeMae, frmEnvioEmail.cxMensagem);
   sEndereco := tbEnderecosDES_LOGRADOURO.Text + ', ' +
@@ -2404,11 +2408,20 @@ begin
   FindReplace('$CIDADEEND$', tbEnderecosNOM_CIDADE.Text,
     frmEnvioEmail.cxMensagem);
   iConta := 1;
+  sEMail := '';
   if not(tbContatos.IsEmpty) then
   begin
     tbContatos.First;
     while not(tbContatos.Eof) do
     begin
+      if not tbContatosDES_EMAIL.Text.IsEmpty then
+      begin
+        if sEMail.IsEmpty then
+        begin
+          sEmail := tbContatosDES_EMAIL.Text;
+        end;
+      end;
+      FindReplace('$EMAIL$', sEmail, frmEnvioEmail.cxMensagem);
       if iConta = 1 then
       begin
         FindReplace('$TEL1$', tbContatosNUM_TELEFONE.Text,
@@ -2481,6 +2494,7 @@ begin
   FindReplace('$NASPROP$', DateToStr(veiculo.DtNascimento),
     frmEnvioEmail.cxMensagem);
   FindReplace('$MAEPROP$', veiculo.NomeMae, frmEnvioEmail.cxMensagem);
+  FindReplace('$PAIPROP$', veiculo.NomePai, frmEnvioEmail.cxMensagem);
   FindReplace('$RGPROP$', veiculo.RG, frmEnvioEmail.cxMensagem);
   FindReplace('$UFRGPROP$', veiculo.UFRG, frmEnvioEmail.cxMensagem);
   FindReplace('$EMISSAORGPROP$', DateToStr(veiculo.DataRG),
@@ -2509,6 +2523,8 @@ begin
   FindReplace('$TIPO$', veiculo.Tipo, frmEnvioEmail.cxMensagem);
 
   // dados complementares do motorista
+
+  FindReplace('$OBS$', entregador.Obs, frmEnvioEmail.cxMensagem);
 
   FindReplace('$J1$', entregador.Roubo, frmEnvioEmail.cxMensagem);
   FindReplace('$Q1$', IntToStr(entregador.QtdRoubo), frmEnvioEmail.cxMensagem);
@@ -2680,6 +2696,8 @@ begin
 end;
 
 procedure TfrmEntregadoresFuncionarios.SalvaCodigos;
+var
+  sChave: String;
 begin
   if not(tbCodigos.Active) then
   begin
@@ -2697,6 +2715,10 @@ begin
     Exit;
   end;
   tbCodigos.First;
+  sChave := entregador.CPF;
+  sChave := TUtil.ReplaceStr(sChave, '.', '');
+  sChave := TUtil.ReplaceStr(sChave, '-', '');
+  sChave := TUtil.ReplaceStr(sChave, '/', '');
   while not(tbCodigos.Eof) do
   begin
     codigoentregador.Cadastro := entregador.Cadastro;
@@ -2704,8 +2726,7 @@ begin
     codigoentregador.Nome := tbCodigosNOM_FANTASIA.AsString;
     codigoentregador.agente := tbCodigosCOD_AGENTE.AsInteger;
     codigoentregador.Data := tbCodigosDAT_CODIGO.AsDateTime;
-    codigoentregador.Chave :=
-      TUtil.ReplaceStr(tbCodigosNOM_FANTASIA.AsString, ' ', '');
+    codigoentregador.Chave := FormatFloat('0',StrToFloatDef(sChave, 0));
     codigoentregador.Grupo := tbCodigosCOD_GRUPO.Value;
     codigoentregador.Verba := tbCodigosVAL_VERBA.Value;
     codigoentregador.Executor := uGlobais.sUsuario;
@@ -2751,9 +2772,15 @@ end;
 procedure TfrmEntregadoresFuncionarios.ImprimeContrato;
 var
   sEndereco: String;
+  sDataExtenso: String;
+  sData: String;
+  dtData: TDate;
 begin
   begin
     sEndereco := '';
+    sData:= InputBox('Informe a Data','Data da Vigência:', '');
+    dtData := StrToDateDef(sData,0);
+    sDataExtenso := FormatDateTime('dd "de" mmmm "de" yyyy', dtData);
     with dm.frxReport do begin
       if not Assigned(frmImpressao) then begin
         frmImpressao := TfrmImpressao.Create(Application);
@@ -2790,6 +2817,8 @@ begin
       Variables.Items[Variables.IndexOf('parRazaoSocial')].Value :=  QuotedStr(txtRazaoMEI.Text);
       Variables.Items[Variables.IndexOf('parCNPJ')].Value :=  QuotedStr(mskCNPJMEI.Text);
       Variables.Items[Variables.IndexOf('parRG')].Value :=  QuotedStr(cxRGIE.Text);
+      Variables.Items[Variables.IndexOf('parVigencia')].Value :=  QuotedStr(FormatDateTime('dd/mm/yyyy', dtData));
+      Variables.Items[Variables.IndexOf('parData')].Value :=  QuotedStr(sDataExtenso);
       FreeAndNil(frmImpressao);
       if (not uGlobais.bFlagImprimir) then
       begin

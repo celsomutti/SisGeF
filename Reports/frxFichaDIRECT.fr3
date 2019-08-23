@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<TfrxReport Version="5.3.14" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Printer="Padrão" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="42524,6932300926" ReportOptions.Description.Text="" ReportOptions.LastChange="43686,7512562037" ScriptLanguage="PascalScript" ScriptText.Text="begin&#13;&#10;&#13;&#10;end." StoreInDFM="False">
+  <TfrxDataPage Name="Data" Height="1000" Left="0" Top="0" Width="1000"/>
+  <TfrxReportPage Name="Page1" PaperWidth="210" PaperHeight="297" PaperSize="9" LeftMargin="5" RightMargin="5" TopMargin="2,5" BottomMargin="2,5" ColumnWidth="0" ColumnPositions.Text="" HGuides.Text="" VGuides.Text="">
+    <TfrxPageHeader Name="PageHeader1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="7,55906" Left="0" Top="18,89765" Width="755,906"/>
+    <TfrxMemoView Name="Memo1" Left="0" Top="3,77953" Width="755,906" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-15" Font.Name="Arial" Font.Style="1" HAlign="haCenter" ParentFont="False" VAlign="vaCenter" Text="FORMULÁRIO DE CADASTRO"/>
+    <TfrxMemoView Name="Memo2" Left="0" Top="30,23624" Width="166,29932" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Calibri" Font.Style="1" HAlign="haCenter" ParentFont="False" VAlign="vaCenter" Text="TIPO DE OPERAÇÃO"/>
+    <TfrxShapeView Name="Shape1" Left="0" Top="30,23624" Width="166,29932" Height="49,13389"/>
+    <TfrxShapeView Name="Shape2" Left="166,29932" Top="30,23624" Width="215,43321" Height="49,13389"/>
+    <TfrxShapeView Name="Shape3" Left="381,73253" Top="30,23624" Width="374,17347" Height="49,13389"/>
+    <TfrxMemoView Name="Memo3" Left="0" Top="51,69295" Width="166,29932" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Calibri" Font.Style="0" HAlign="haCenter" ParentFont="False" VAlign="vaCenter" Text="(       ) LEVE (      ) PESADO"/>
+  </TfrxReportPage>
+</TfrxReport>

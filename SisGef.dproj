@@ -99,14 +99,14 @@
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_1_Win32)'!=''">
         <VerInfo_AutoIncVersion>true</VerInfo_AutoIncVersion>
-        <VerInfo_Build>65</VerInfo_Build>
+        <VerInfo_Build>69</VerInfo_Build>
         <VerInfo_Release>1</VerInfo_Release>
         <VerInfo_MinorVer>4</VerInfo_MinorVer>
         <VerInfo_Special>true</VerInfo_Special>
         <DCC_LegacyIFEND>true</DCC_LegacyIFEND>
         <Icon_MainIcon>SisGef_Icon.ico</Icon_MainIcon>
         <VerInfo_MajorVer>4</VerInfo_MajorVer>
-        <VerInfo_Keys>CompanyName=Alô Carioca Serviços de Entregas e Transportes EIRELI-ME;FileDescription=Executável do Sistema de Gerenciamento de Franquia;FileVersion=4.4.1.65;InternalName=SisGeF;LegalCopyright=Copyright © 2008-2017 Alô Carioca;LegalTrademarks=;OriginalFilename=SGE2;ProductName=Sistema Gerenciador de Franquias;ProductVersion=4.0;Comments=;SpecialBuild=;ProgramID=br.com.alocarioca.$(MSBuildProjectName)</VerInfo_Keys>
+        <VerInfo_Keys>CompanyName=Alô Carioca Serviços de Entregas e Transportes EIRELI-ME;FileDescription=Executável do Sistema de Gerenciamento de Franquia;FileVersion=4.4.1.69;InternalName=SisGeF;LegalCopyright=Copyright © 2008-2017 Alô Carioca;LegalTrademarks=;OriginalFilename=SGE2;ProductName=Sistema Gerenciador de Franquias;ProductVersion=4.0;Comments=;SpecialBuild=;ProgramID=br.com.alocarioca.$(MSBuildProjectName)</VerInfo_Keys>
         <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
         <VerInfo_Locale>1046</VerInfo_Locale>
         <DCC_RemoteDebug>false</DCC_RemoteDebug>
