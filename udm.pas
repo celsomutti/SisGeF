@@ -930,6 +930,7 @@ type
     frxSimpleTextExport1: TfrxSimpleTextExport;
     frxCSVExport1: TfrxCSVExport;
     frxDBDataset: TfrxDBDataset;
+    tbPesquisaEntregadorDOM_FUNCIONARIO: TStringField;
     procedure qryFaixasPesosBeforePost(DataSet: TDataSet);
     procedure qryFaixaVerbaBeforePost(DataSet: TDataSet);
     procedure qryFaixaVerbaAfterInsert(DataSet: TDataSet);
@@ -971,6 +972,7 @@ begin
     Global.Parametros.pCatalog := TUtil.LeIni( Global.Parametros.pFileIni, 'Database', 'Catalog');
     Global.Parametros.pDatabase := TUtil.LeIni( Global.Parametros.pFileIni, 'Database', 'Database');
     Global.Parametros.pPort := TUtil.LeIni( Global.Parametros.pFileIni, 'Database', 'Port');
+    Global.Parametros.pPasta := TUtil.LeIni( Global.Parametros.pFileIni, 'Database', 'Folder');
     iKey := StrToInt(TUtil.LeIni( Global.Parametros.pFileIni, 'Database', 'KBD'));
     Global.Parametros.pKBD := IntToStr(iKey);
     Global.Parametros.pUBD := TUtil.DesCriptografa(TUtil.LeIni( Global.Parametros.pFileIni, 'Database', 'UBD'), iKey);

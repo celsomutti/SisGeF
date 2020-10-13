@@ -309,8 +309,8 @@ uses udm, uGlobais, ufrmLogin, clUtil, ufrmEmpresasAgentes, ufrmEntregadoresFunc
      ufrmVerbaFaixaPeso, ufrmCepDistribuidores, ufrmAcareacoes, ufrmRecadosJornal, ufrmExtratoExpressa, ufrmControleTransportes,
      ufrmInsumosTransporte, ufrmEstoqueInsumosTransportes, ufrmItensManutencao, ufrmManutencaoVeiculos, ufrmVerbasExpressas,
      ufrmTabelasAuxiliaresCadastro, ufrmCadastroUsuarios, View.InventarioProdutosVA, View.ApontamentoOperacional,
-     View.CadastroBanca, View.CadastroProdutosVA, View.DigitacaoEncalheExpedicao,View.OcorrenciasJornal, View.ManutencaoRepartes, View.ExtraviosMultas, View.FechamentoExpressas,
-     View.ImportacaoPlanilhaEntradas, Global.Parametros;
+     View.CadastroBanca, View.CadastroProdutosVA, View.DigitacaoEncalheExpedicao,View.OcorrenciasJornal, View.ManutencaoRepartes,
+     View.ExtraviosMultas, View.FechamentoExpressas, View.ImportacaoPlanilhaEntradas, Global.Parametros;
 
 procedure TfrmMain.FormClose(Sender: TObject; var Action: TCloseAction);
 begin

@@ -233,6 +233,11 @@ object view_FechamentoExpressas: Tview_FechamentoExpressas
             Format = ',0.00;- ,0.00'
             Kind = skSum
             Column = tvFechamentoTOT_VERBA_FRANQUIA
+          end
+          item
+            Format = ',0'
+            Kind = skSum
+            Column = tvFechamentoQTD_PFP
           end>
         DataController.Summary.SummaryGroups = <>
         OptionsCustomize.ColumnGrouping = False

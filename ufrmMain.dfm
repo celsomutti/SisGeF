@@ -914,7 +914,7 @@ object frmMain: TfrmMain
     object bmMainBar9: TdxBar
       Caption = 'Devolu'#231#245'es'
       CaptionButtons = <>
-      DockedLeft = 364
+      DockedLeft = 365
       DockedTop = 0
       FloatLeft = 1144
       FloatTop = 8
@@ -942,7 +942,7 @@ object frmMain: TfrmMain
     object bmMainBar10: TdxBar
       Caption = 'Demonstrativos Expressas'
       CaptionButtons = <>
-      DockedLeft = 612
+      DockedLeft = 613
       DockedTop = 0
       FloatLeft = 1144
       FloatTop = 8

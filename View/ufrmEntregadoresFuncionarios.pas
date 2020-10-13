@@ -42,7 +42,8 @@ uses
   cxGridBandedTableView, cxGridDBBandedTableView, cxVGrid, cxInplaceContainer,
   cxDBVGrid, cxCurrencyEdit, cxGridCardView,
   cxGridDBCardView, cxGridCustomLayoutView, clConexao, frxClass, dxSkinOffice2016Colorful, dxSkinOffice2016Dark,
-  dxSkinVisualStudio2013Blue, dxSkinVisualStudio2013Dark, dxSkinVisualStudio2013Light, uGlobais;
+  dxSkinVisualStudio2013Blue, dxSkinVisualStudio2013Dark, dxSkinVisualStudio2013Light, uGlobais, Winapi.ShlObj, cxShellCommon,
+  cxListView, cxShellListView;
 
 type
   TfrmEntregadoresFuncionarios = class(TForm)
@@ -225,10 +226,7 @@ type
     cxButton1: TcxButton;
     OpenDialog: TOpenDialog;
     cxTabSheet4: TcxTabSheet;
-    cxDocumentos: TcxListBox;
     cxButton2: TcxButton;
-    cxButton3: TcxButton;
-    cxButton4: TcxButton;
     actCadastroBaixarDocumento: TAction;
     actCadastroExcluirDocumento: TAction;
     SaveDialog1: TSaveDialog;
@@ -238,7 +236,6 @@ type
     cxButton6: TcxButton;
     cxPlacas: TcxComboBox;
     actCadastroAtualizarDocumentos: TAction;
-    cxButton8: TcxButton;
     tbCodigos: TdxMemData;
     tbCodigosCOD_ENTREGADOR: TIntegerField;
     tbCodigosNOM_FANTASIA: TStringField;
@@ -302,6 +299,7 @@ type
     cxOrgaoRG: TcxTextEdit;
     cxLabel47: TcxLabel;
     cxCodigoCNH: TcxTextEdit;
+    cxShellListView: TcxShellListView;
     procedure FormShow(Sender: TObject);
     procedure actCadastroIncluirExecute(Sender: TObject);
     procedure actCadastroEditarExecute(Sender: TObject);
@@ -414,13 +412,15 @@ implementation
 
 uses
   udm, clUtil, ufrmLocalizar, ufrmListaApoio, ufrmDataGV,
-  ufrmVeiculosEx, ufrmEnvioEmail, ufrmEntregadorEx, ufrmImpressao;
+  ufrmVeiculosEx, ufrmEnvioEmail, ufrmEntregadorEx, ufrmImpressao, Global.Parametros;
 
 procedure TfrmEntregadoresFuncionarios.actCadastroAnexarExecute
   (Sender: TObject);
 var
-  lArquivo: TStringList;
-  sArquivo : String;
+  //lArquivo: TStringList;
+  sOrigem : String;
+  sDestino : String;
+  sArquivo: String;
 begin
   if OpenDialog.Execute then
   begin
@@ -429,13 +429,35 @@ begin
     ftp.Destino := ;
     ftp.FTPSend(IntToStr(entregador.Cadastro));
     Screen.Cursor := crDefault;}
-    if not DirectoryExists(PASTA + '\' + Trim(cxCodigoSistema.Text)) then
+    {if not DirectoryExists(PASTA + '\' + Trim(cxCodigoSistema.Text)) then
       ForceDirectories(PASTA + '\' + Trim(cxCodigoSistema.Text));
     lArquivo := TStringList.Create();
     sArquivo := ExtractFileName(OpenDialog.FileName);
     lArquivo.LoadFromFile(OpenDialog.FileName);
+
     lArquivo.SaveToFile(PASTA + '\' + Trim(cxCodigoSistema.Text) + '\' + sArquivo);
-    lArquivo.Free;
+    lArquivo.Free;}
+
+    if not DirectoryExists(PASTA + '\' + Trim(cxCodigoSistema.Text)) then
+    begin
+      if not CreateDir(PASTA + '\' + Trim(cxCodigoSistema.Text)) then
+      begin
+        Exit;
+      end;
+    end;
+
+    sArquivo := ExtractFileName(OpenDialog.FileName);
+    sOrigem := OpenDialog.FileName;
+    sDestino := PASTA + '\' + Trim(cxCodigoSistema.Text) + '\' +sArquivo;
+
+    if CopyFile(PChar(sOrigem), PChar(sDestino), False) then
+    begin
+      Application.MessageBox(PChar('Arquivo ' + sArquivo + ' copiado com sucesso.'), 'Arquivo Copiado', MB_OK + MB_ICONINFORMATION);
+    end
+    else
+    begin
+      Application.MessageBox(PChar('Erro ao copiar o arquivo ' + sArquivo + ' !'), 'Erro ao Copiar', MB_OK + MB_ICONERROR);
+    end;
     ListaDocumentos;
   end;
 end;
@@ -463,18 +485,18 @@ procedure TfrmEntregadoresFuncionarios.actCadastroBaixarDocumentoExecute
 var
   sArquivo: String;
 begin
-  sArquivo := TUtil.ReplaceStr(PASTA + Trim(cxCodigoSistema.Text) + '\' +  cxDocumentos.Items[cxDocumentos.ItemIndex],
-    '/', '\');
+  //sArquivo := TUtil.ReplaceStr(PASTA + Trim(cxCodigoSistema.Text) + '\' +  cxDocumentos.Items[cxDocumentos.ItemIndex],
+  //  '/', '\');
   {SaveDialog1.FileName := ExtractFileName(sArquivo);
   if SaveDialog1.Execute then}
-  begin
+ // begin
     {Screen.Cursor := crHourGlass;
     ftp.Origem := cxDocumentos.Items[cxDocumentos.ItemIndex];
     ftp.Destino := SaveDialog1.FileName;
     ftp.FTPGet(IntToStr(entregador.Cadastro));
     Screen.Cursor := crDefault;}
-    ShellExecute(Handle, 'open', pchar(sArquivo), nil, nil, SW_SHOW);
-  end;
+  //  ShellExecute(Handle, 'open', pchar(sArquivo), nil, nil, SW_SHOW);
+  //end;
 end;
 
 procedure TfrmEntregadoresFuncionarios.actCadastroCancelarExecute
@@ -631,18 +653,28 @@ procedure TfrmEntregadoresFuncionarios.actCadastroExcluirDocumentoExecute
   (Sender: TObject);
 var
   sMess: String;
+  sArquivo : String;
+  i: Integer;
 begin
-  sMess := 'Confirma excluir o arquivo ' + cxDocumentos.Items
-    [cxDocumentos.ItemIndex] + ' ?';
+  sMess := 'Confirma exclusão ?';
   if Application.MessageBox(pchar(sMess), 'Excluir', MB_YESNO + MB_ICONQUESTION)
     = IDNO then
   begin
     Exit;
   end;
-  {ftp.Origem := cxDocumentos.Items[cxDocumentos.ItemIndex];
-  ftp.FTPDelete(IntToStr(entregador.Cadastro));}
-  DeleteFile(PASTA + '\' + Trim(cxCodigoSistema.Text) + '\' + cxDocumentos.Items[cxDocumentos.ItemIndex]);
-  ListaDocumentos;
+  if cxShellListView.SelectedFilePaths.Count > 0 then
+  begin
+    for i := 0 to cxShellListView.SelectedFilePaths.Count - 1 do
+    begin
+      sArquivo := cxShellListView.SelectedFilePaths[I];
+      DeleteFile(PASTA + '\' + Trim(cxCodigoSistema.Text) + '\' + sArquivo);
+    end;
+    ListaDocumentos;
+  end
+  else
+  begin
+    Application.MessageBox('Selecione um arquivo!', 'Atenção', MB_OK+ MB_ICONWARNING);
+  end;
 end;
 
 procedure TfrmEntregadoresFuncionarios.actCadastroExcluirEnderecoExecute
@@ -1061,7 +1093,8 @@ end;
 
 procedure TfrmEntregadoresFuncionarios.FormShow(Sender: TObject);
 begin
-  PASTA :=  '\\SERVER\Arquivos\Docs\';
+  PASTA := Global.Parametros.pPasta;
+  //PASTA :=  '\\192.168.0.2\Arquivos\Docs';
   agente := TAgente.Create;
   estado := TEstados.Create;
   banco := TBancos.Create;
@@ -2581,21 +2614,23 @@ var
   bExiste: Boolean;
   sDir: String;
   SR: TSearchRec;
+  sPasta: String;
 begin
-  cxDocumentos.Items.Clear;
+  sDir := IntToStr(entregador.Cadastro);
+  {cxDocumentos.Items.Clear;
   cxDocumentos.Items.Add('Aguarde ...');
   cxDocumentos.Refresh;
   sDir := IntToStr(entregador.Cadastro);
   lLista := TStringList.Create();
   i := findFirst(PASTA + sDir + '\*.*', faAnyFile, SR);
-  while i = 0 do
+  while i > 0 do
   begin
     if (SR.Name <> '.') and (SR.Name <> '..') then
     begin
       lLista.Add(SR.Name);
     end;
     i := FindNext(SR);
-  end;
+  end;  }
 {  bExiste := False;
   lLista := ftp.FTPList(IntToStr(entregador.Cadastro));
   cxDocumentos.Items.Clear;
@@ -2607,11 +2642,25 @@ begin
     end;
     lLista.Free;
   end; }
-  cxDocumentos.Clear;
+  {cxDocumentos.Clear;
   for i := 0 to lLista.Count - 1 do
   begin
     cxDocumentos.Items.Add(lLista[i]);
+  end;}
+
+  sPasta := PASTA + '\' + sDir;
+
+  if not DirectoryExists(sPasta) then
+  begin
+    if not CreateDir(sPasta) then
+    begin
+      Exit;
+    end;
   end;
+
+
+  cxShellListView.Root.CustomPath := sPasta;
+  cxShellListView.Refresh;
 
 end;
 

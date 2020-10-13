@@ -29,7 +29,8 @@ uses
   dxSkinMetropolis, dxSkinMetropolisDark, dxSkinOffice2013DarkGray,
   dxSkinOffice2013LightGray, dxSkinOffice2013White, System.Actions, clAcessos,
   uthrPopularEntregadoresVencidos, cxGridExportLink,
-  ShellAPI, clConexao, cxTextEdit;
+  ShellAPI, clConexao, cxTextEdit, dxSkinOffice2016Colorful, dxSkinOffice2016Dark, dxSkinVisualStudio2013Blue,
+  dxSkinVisualStudio2013Dark, dxSkinVisualStudio2013Light;
 
 type
   TfrmPesquisaEntregadores = class(TForm)
@@ -73,6 +74,7 @@ type
     cxGrid1DBTableView1ANO_EXERCICIO_CLRV: TcxGridDBColumn;
     cxGrid1DBTableView1DES_PLACA: TcxGridDBColumn;
     cxGrid1DBTableView1DES_MODELO: TcxGridDBColumn;
+    cxGrid1DBTableView1DOM_FUNCIONARIO: TcxGridDBColumn;
     procedure FormShow(Sender: TObject);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure actPesquisaSairExecute(Sender: TObject);

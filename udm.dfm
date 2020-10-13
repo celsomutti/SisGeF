@@ -9,7 +9,6 @@ object dm: Tdm
     Catalog = 'rjsmart_homologacao'
     Properties.Strings = (
       'codepage=utf8')
-    Connected = True
     DesignConnection = True
     HostName = 'localhost'
     Port = 3306
@@ -9318,6 +9317,10 @@ object dm: Tdm
     object tbPesquisaEntregadorDES_MODELO: TStringField
       FieldName = 'DES_MODELO'
       Size = 50
+    end
+    object tbPesquisaEntregadorDOM_FUNCIONARIO: TStringField
+      FieldName = 'DOM_FUNCIONARIO'
+      Size = 1
     end
   end
   object tbDevolucao: TdxMemData
@@ -36309,7 +36312,6 @@ object dm: Tdm
   end
   object FDGUIxAsyncExecuteDialog: TFDGUIxAsyncExecuteDialog
     Provider = 'Forms'
-    Caption = 'Trabalhando...'
     Prompt = 'Por favor aguarde, aplica'#231#227'o est'#225' ocupada ...'
     Left = 56
     Top = 616

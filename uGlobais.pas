@@ -44,6 +44,7 @@ var
   pUser_name: String;
   pPassword : String;
   pPrivilegio: String;
+  pPasta : String;
 implementation
 
 end.

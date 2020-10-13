@@ -540,6 +540,7 @@ begin
         Self.NomePai := FieldByName('NOM_PAI').AsString;
         Self.NomeMae := FieldByName('NOM_MAE').AsString;
         Self.Cnh := FieldByName('NUM_CNH').AsString;
+        Self.CodigoCNH := FieldByName('COD_CNH').AsString;
         Self.CNHRegistro := FieldByName('NUM_REGISTRO_CNH').AsString;
         Self.CategoriaCnh := FieldByName('DES_CATEGORIA_CNH').AsString;
         Self.ValidadeCnh := FieldByName('DAT_VALIDADE_CNH').AsDateTime;

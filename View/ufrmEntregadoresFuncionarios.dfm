@@ -2247,57 +2247,25 @@
       Caption = 'Documentos Digitalizados'
       ImageIndex = 3
       OnShow = cxTabSheet4Show
-      ExplicitLeft = 0
-      ExplicitTop = 0
-      ExplicitWidth = 0
-      ExplicitHeight = 0
-      DesignSize = (
-        1043
-        404)
-      object cxDocumentos: TcxListBox
-        Left = 3
-        Top = 3
-        Width = 494
-        Height = 398
-        Anchors = [akLeft, akTop, akRight, akBottom]
-        ItemHeight = 13
-        TabOrder = 0
-      end
       object cxButton2: TcxButton
-        Left = 503
-        Top = 27
+        Left = 3
+        Top = 381
         Width = 138
         Height = 20
         Cursor = crHandPoint
         Action = actCadastroAnexar
+        TabOrder = 0
+      end
+      object cxShellListView: TcxShellListView
+        Left = 0
+        Top = 0
+        Width = 1043
+        Height = 375
+        Align = alTop
+        ReadOnly = True
+        Root.BrowseFolder = bfCustomPath
         TabOrder = 1
-      end
-      object cxButton3: TcxButton
-        Left = 503
-        Top = 53
-        Width = 138
-        Height = 20
-        Cursor = crHandPoint
-        Action = actCadastroBaixarDocumento
-        TabOrder = 2
-      end
-      object cxButton4: TcxButton
-        Left = 503
-        Top = 79
-        Width = 138
-        Height = 20
-        Cursor = crHandPoint
-        Action = actCadastroExcluirDocumento
-        TabOrder = 3
-      end
-      object cxButton8: TcxButton
-        Left = 503
-        Top = 105
-        Width = 138
-        Height = 20
-        Cursor = crHandPoint
-        Action = actCadastroAtualizarDocumentos
-        TabOrder = 4
+        ViewStyle = vsReport
       end
     end
     object cxTabSheet5: TcxTabSheet

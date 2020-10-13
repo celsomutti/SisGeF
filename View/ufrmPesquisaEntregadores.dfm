@@ -527,11 +527,79 @@ object frmPesquisaEntregadores: TfrmPesquisaEntregadores
           Visible = False
           GroupIndex = 0
         end
+        object cxGrid1DBTableView1DOM_FUNCIONARIO: TcxGridDBColumn
+          Caption = 'Tipo'
+          DataBinding.FieldName = 'DOM_FUNCIONARIO'
+          PropertiesClassName = 'TcxImageComboBoxProperties'
+          Properties.Images = dm.cxImageList1
+          Properties.Items = <
+            item
+              Description = 'ENTREGADOR'
+              ImageIndex = 57
+              Value = 'E'
+            end
+            item
+              Description = 'FUNCION'#193'RIO'
+              ImageIndex = 26
+              Value = 'F'
+            end
+            item
+              Description = 'AGREGADO'
+              ImageIndex = 31
+              Value = 'A'
+            end
+            item
+              Description = 'CONTRATADO'
+              ImageIndex = 17
+              Value = 'C'
+            end
+            item
+              Description = 'DEVOLU'#199#195'O'
+              ImageIndex = 53
+              Value = 'D'
+            end
+            item
+              Description = 'RESERVA'
+              ImageIndex = 83
+              Value = 'R'
+            end
+            item
+              Description = 'FUNCIONAL 1'
+              ImageIndex = 112
+              Value = '1'
+            end
+            item
+              Description = 'FUNCIONAL 2'
+              ImageIndex = 112
+              Value = '2'
+            end
+            item
+              Description = 'ROTEIRISTA'
+              ImageIndex = 13
+              Value = 'T'
+            end
+            item
+              Description = 'REPOSITOR'
+              ImageIndex = 85
+              Value = 'P'
+            end
+            item
+              Description = 'HORISTA'
+              ImageIndex = 107
+              Value = 'H'
+            end
+            item
+              Description = 'EMPRESA'
+              ImageIndex = 55
+              Value = '0'
+            end>
+          Width = 77
+        end
         object cxGrid1DBTableView1COD_CADASTRO: TcxGridDBColumn
           Caption = 'C'#243'd. Cadastro'
           DataBinding.FieldName = 'COD_CADASTRO'
           HeaderAlignmentHorz = taCenter
-          Width = 49
+          Width = 45
         end
         object cxGrid1DBTableView1COD_ENTREGADOR: TcxGridDBColumn
           Caption = 'C'#243'd. Entregador'
@@ -539,37 +607,37 @@ object frmPesquisaEntregadores: TfrmPesquisaEntregadores
           HeaderAlignmentHorz = taCenter
           SortIndex = 1
           SortOrder = soAscending
-          Width = 81
+          Width = 76
         end
         object cxGrid1DBTableView1NUM_CPF: TcxGridDBColumn
           Caption = 'N'#186'. CPF'
           DataBinding.FieldName = 'NUM_CPF'
           HeaderAlignmentHorz = taCenter
-          Width = 76
+          Width = 70
         end
         object cxGrid1DBTableView1DES_ENTREGADOR: TcxGridDBColumn
           Caption = 'Nome Completo'
           DataBinding.FieldName = 'DES_ENTREGADOR'
           HeaderAlignmentHorz = taCenter
-          Width = 131
+          Width = 122
         end
         object cxGrid1DBTableView1NOM_ENTREGADOR: TcxGridDBColumn
           Caption = 'Nome Entregador'
           DataBinding.FieldName = 'NOM_ENTREGADOR'
           HeaderAlignmentHorz = taCenter
-          Width = 194
+          Width = 180
         end
         object cxGrid1DBTableView1DAT_GV: TcxGridDBColumn
           Caption = 'Vencimento GR'
           DataBinding.FieldName = 'DAT_GV'
           HeaderAlignmentHorz = taCenter
-          Width = 64
+          Width = 59
         end
         object cxGrid1DBTableView1DAT_CNH: TcxGridDBColumn
           Caption = 'Vencimento CNH'
           DataBinding.FieldName = 'DAT_CNH'
           HeaderAlignmentHorz = taCenter
-          Width = 68
+          Width = 64
         end
         object cxGrid1DBTableView1COD_AGENTE: TcxGridDBColumn
           DataBinding.FieldName = 'COD_AGENTE'
@@ -615,14 +683,14 @@ object frmPesquisaEntregadores: TfrmPesquisaEntregadores
               Value = 5
             end>
           HeaderAlignmentHorz = taCenter
-          Width = 81
+          Width = 75
         end
         object cxGrid1DBTableView1ANO_EXERCICIO_CLRV: TcxGridDBColumn
           Caption = 'Licenciamento'
           DataBinding.FieldName = 'ANO_EXERCICIO_CLRV'
           PropertiesClassName = 'TcxTextEditProperties'
           Properties.ReadOnly = True
-          Width = 116
+          Width = 107
         end
         object cxGrid1DBTableView1RecId: TcxGridDBColumn
           DataBinding.FieldName = 'RecId'
@@ -633,14 +701,14 @@ object frmPesquisaEntregadores: TfrmPesquisaEntregadores
           DataBinding.FieldName = 'DES_PLACA'
           PropertiesClassName = 'TcxTextEditProperties'
           Properties.ReadOnly = True
-          Width = 99
+          Width = 92
         end
         object cxGrid1DBTableView1DES_MODELO: TcxGridDBColumn
           Caption = 'Modelo'
           DataBinding.FieldName = 'DES_MODELO'
           PropertiesClassName = 'TcxTextEditProperties'
           Properties.ReadOnly = True
-          Width = 116
+          Width = 108
         end
       end
       object cxGrid1Level1: TcxGridLevel
@@ -687,7 +755,6 @@ object frmPesquisaEntregadores: TfrmPesquisaEntregadores
       TabOrder = 0
       Transparent = True
       OnClick = cxAgenteAtivoClick
-      Width = 156
     end
     object cxEntregadoresAtivos: TcxCheckBox
       Left = 165
@@ -699,7 +766,6 @@ object frmPesquisaEntregadores: TfrmPesquisaEntregadores
       TabOrder = 1
       Transparent = True
       OnClick = cxEntregadoresAtivosClick
-      Width = 172
     end
     object cxButton4: TcxButton
       Left = 165
@@ -719,7 +785,6 @@ object frmPesquisaEntregadores: TfrmPesquisaEntregadores
       Properties.OnChange = cxDetalhesPropertiesChange
       TabOrder = 8
       Transparent = True
-      Width = 121
     end
     object cxButton5: TcxButton
       Left = 246

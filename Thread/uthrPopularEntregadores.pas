@@ -74,7 +74,7 @@ begin
       end;
       dm.tbPesquisaEntregador.Open;
       sSQL := 'SELECT tbentregadores.COD_CADASTRO, ' +
-        'tbcodigosentregadores.COD_ENTREGADOR, ' + 'tbentregadores.NUM_CNPJ, ' +
+        'tbcodigosentregadores.COD_ENTREGADOR, tbentregadores.DOM_FUNCIONARIO, tbentregadores.NUM_CNPJ, ' +
         'tbentregadores.DES_RAZAO_SOCIAL, ' +
         'tbcodigosentregadores.NOM_FANTASIA AS ALIAS, ' +
         'tbentregadores.DAT_GV, ' + 'tbentregadores.DAT_VALIDADE_CNH, ' +
@@ -153,6 +153,8 @@ begin
           end;
           dm.tbPesquisaEntregadorNOM_AGENTE.Value :=
             dm.tbPesquisaEntregadorCOD_AGENTE.AsString + '-' + sAgente;
+          dm.tbPesquisaEntregadorDOM_FUNCIONARIO.Value :=
+            dm.qryPesquisa.FieldByName('DOM_FUNCIONARIO').AsString;
           dm.tbPesquisaEntregadorCOD_ENTREGADOR.Value :=
             dm.qryPesquisa.FieldByName('COD_ENTREGADOR').AsInteger;
           dm.tbPesquisaEntregadorNUM_CPF.Value :=
