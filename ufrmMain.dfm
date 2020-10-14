@@ -380,16 +380,16 @@ object frmMain: TfrmMain
     Left = 0
     Top = 0
     Width = 1355
-    Height = 124
+    Height = 122
     Cursor = crHandPoint
     ApplicationButton.Visible = False
     BarManager = bmMain
     Style = rs2013
-    ColorSchemeName = 'Office2013White'
+    ColorSchemeName = 'White'
     QuickAccessToolbar.Visible = False
     SupportNonClientDrawing = True
     Contexts = <>
-    TabOrder = 3
+    TabOrder = 0
     TabStop = False
     object rtbArquivo: TdxRibbonTab
       Active = True
@@ -669,11 +669,7 @@ object frmMain: TfrmMain
     UseSystemFont = True
     Left = 712
     Top = 216
-    DockControlHeights = (
-      0
-      0
-      0
-      0)
+    PixelsPerInch = 96
     object bmMainBar1: TdxBar
       Caption = 'Pessoas'
       CaptionButtons = <>
@@ -1341,20 +1337,20 @@ object frmMain: TfrmMain
     object dxBarLargeButton41: TdxBarLargeButton
       Action = actCadastroItensManutencao
       Category = 0
-      LargeImageIndex = 37
       PaintStyle = psCaptionGlyph
+      LargeImageIndex = 37
     end
     object dxBarLargeButton40: TdxBarLargeButton
       Action = actCadastroItensManutencao
       Category = 0
-      LargeImageIndex = 37
       PaintStyle = psCaptionGlyph
+      LargeImageIndex = 37
     end
     object dxBarLargeButton42: TdxBarLargeButton
       Action = actOperacaoManutencao
       Category = 0
-      LargeImageIndex = 39
       PaintStyle = psCaptionGlyph
+      LargeImageIndex = 39
     end
     object dxBarButton21: TdxBarButton
       Action = actCadastroVerbasExpressas
@@ -2201,6 +2197,7 @@ object frmMain: TfrmMain
     end
   end
   object imlMain32: TcxImageList
+    SourceDPI = 96
     Height = 32
     Width = 32
     FormatVersion = 1
@@ -8308,5 +8305,6 @@ object frmMain: TfrmMain
     TabProperties.TabCaptionAlignment = taLeftJustify
     Left = 704
     Top = 272
+    PixelsPerInch = 96
   end
 end

@@ -376,9 +376,9 @@ begin
   Application.Initialize;
   Application.MainFormOnTaskbar := True;
   Application.Title := 'SisGeF';
-  AApplication.CreateForm(Tdm, dm);
+  Application.CreateForm(Tdm, dm);
   Application.CreateForm(TData_Module, Data_Module);
   Application.CreateForm(TfrmMain, frmMain);
-  pplication.Run;
+  Application.Run;
 
 end.

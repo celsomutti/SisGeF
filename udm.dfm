@@ -82,6 +82,7 @@ object dm: Tdm
     end
   end
   object cxImageList1: TcxImageList
+    SourceDPI = 96
     FormatVersion = 1
     DesignInfo = 27263832
     ImageInfo = <
@@ -4485,6 +4486,7 @@ object dm: Tdm
       end>
   end
   object cxImageList2: TcxImageList
+    SourceDPI = 96
     Height = 32
     Width = 32
     FormatVersion = 1
@@ -32815,6 +32817,7 @@ object dm: Tdm
     Top = 520
     object dxLayoutCxLookAndFeel1: TdxLayoutCxLookAndFeel
       LookAndFeel.SkinName = 'Office2013White'
+      PixelsPerInch = 96
     end
   end
   object tbTipoOcorrencias: TdxMemData
@@ -34396,6 +34399,7 @@ object dm: Tdm
     Top = 360
   end
   object iml16x16: TcxImageList
+    SourceDPI = 96
     ShareImages = True
     FormatVersion = 1
     DesignInfo = 38797944
@@ -36252,6 +36256,7 @@ object dm: Tdm
       end>
   end
   object iml32x32: TcxImageList
+    SourceDPI = 96
     ShareImages = True
     FormatVersion = 1
     DesignInfo = 42467960
@@ -36696,7 +36701,7 @@ object dm: Tdm
     end
   end
   object frxReport: TfrxReport
-    Version = '5.3.14'
+    Version = '6.6.11'
     DotMatrixReport = False
     IniFile = '\Software\Fast Reports'
     PreviewOptions.Buttons = [pbPrint, pbLoad, pbSave, pbExport, pbZoom, pbFind, pbOutline, pbPageSetup, pbTools, pbEdit, pbNavigator, pbExportQuick]
@@ -36747,12 +36752,16 @@ object dm: Tdm
       RightMargin = 10.000000000000000000
       TopMargin = 10.000000000000000000
       BottomMargin = 10.000000000000000000
+      Frame.Typ = []
+      MirrorMode = []
       object Picture1: TfrxPictureView
+        AllowVectorExport = True
         Left = 3.779530000000000000
         Top = 3.779530000000000000
         Width = 128.000000000000000000
         Height = 90.000000000000000000
         AutoSize = True
+        Frame.Typ = []
         Picture.Data = {
           0A544A504547496D6167659F620000FFD8FFE000104A46494600010101012B01
           2B0000FFE10F2E4578696600004D4D002A000000080007011200030000000100
@@ -37549,6 +37558,7 @@ object dm: Tdm
         TransparentColor = clWhite
       end
       object Memo1: TfrxMemoView
+        AllowVectorExport = True
         Left = 7.559060000000000000
         Top = 18.897650000000000000
         Width = 702.992580000000000000
@@ -37558,18 +37568,21 @@ object dm: Tdm
         Font.Height = -19
         Font.Name = 'Courier New'
         Font.Style = [fsBold]
+        Frame.Typ = []
         HAlign = haCenter
         Memo.UTF8W = (
           'PROTOCOLO DE RETIRADA DE DEVOLU'#199#213'ES')
         ParentFont = False
       end
       object BarCode1: TfrxBarCodeView
+        AllowVectorExport = True
         Left = 589.606680000000000000
         Top = 3.779530000000000000
         Width = 64.000000000000000000
         Height = 71.811070000000000000
         BarType = bcCode_2_5_interleaved
         Expression = '<numero>'
+        Frame.Typ = []
         Rotation = 0
         TestLine = False
         Text = '12345678'
@@ -37580,8 +37593,10 @@ object dm: Tdm
         Font.Height = -12
         Font.Name = 'Arial'
         Font.Style = []
+        ColorBar = clBlack
       end
       object Memo2: TfrxMemoView
+        AllowVectorExport = True
         Left = 3.779530000000000000
         Top = 105.826840000000000000
         Width = 64.252010000000000000
@@ -37591,11 +37606,13 @@ object dm: Tdm
         Font.Height = -19
         Font.Name = 'Courier New'
         Font.Style = [fsBold]
+        Frame.Typ = []
         Memo.UTF8W = (
           'Base:')
         ParentFont = False
       end
       object base: TfrxMemoView
+        AllowVectorExport = True
         Left = 162.519790000000000000
         Top = 105.826840000000000000
         Width = 411.968770000000000000
@@ -37605,11 +37622,13 @@ object dm: Tdm
         Font.Height = -19
         Font.Name = 'Courier New'
         Font.Style = []
+        Frame.Typ = []
         Memo.UTF8W = (
           '[base]')
         ParentFont = False
       end
       object Memo3: TfrxMemoView
+        AllowVectorExport = True
         Left = 3.779530000000000000
         Top = 124.724490000000000000
         Width = 143.622140000000000000
@@ -37619,11 +37638,13 @@ object dm: Tdm
         Font.Height = -19
         Font.Name = 'Courier New'
         Font.Style = [fsBold]
+        Frame.Typ = []
         Memo.UTF8W = (
           'Expedi'#231#227'o:')
         ParentFont = False
       end
       object expedicao: TfrxMemoView
+        AllowVectorExport = True
         Left = 162.519790000000000000
         Top = 124.724490000000000000
         Width = 411.968770000000000000
@@ -37633,11 +37654,13 @@ object dm: Tdm
         Font.Height = -19
         Font.Name = 'Courier New'
         Font.Style = []
+        Frame.Typ = []
         Memo.UTF8W = (
           '[expedicao]')
         ParentFont = False
       end
       object Subreport1: TfrxSubreport
+        AllowVectorExport = True
         Left = 3.779530000000000000
         Top = 151.181200000000000000
         Width = 710.551640000000000000
@@ -37645,6 +37668,7 @@ object dm: Tdm
         Page = frxReport.Page2
       end
       object Line1: TfrxLineView
+        AllowVectorExport = True
         Left = 3.779530000000000000
         Top = 510.236550000000000000
         Width = 710.551640000000000000
@@ -37653,6 +37677,7 @@ object dm: Tdm
         Frame.Typ = [ftTop]
       end
       object Line2: TfrxLineView
+        AllowVectorExport = True
         Left = 3.779530000000000000
         Top = 449.764070000000000000
         Width = 298.582870000000000000
@@ -37660,6 +37685,7 @@ object dm: Tdm
         Frame.Typ = [ftTop]
       end
       object Line3: TfrxLineView
+        AllowVectorExport = True
         Left = 453.543600000000000000
         Top = 449.764070000000000000
         Width = 226.771800000000000000
@@ -37667,6 +37693,7 @@ object dm: Tdm
         Frame.Typ = [ftTop]
       end
       object Memo7: TfrxMemoView
+        AllowVectorExport = True
         Left = 3.779530000000000000
         Top = 453.543600000000000000
         Width = 298.582870000000000000
@@ -37676,12 +37703,14 @@ object dm: Tdm
         Font.Height = -19
         Font.Name = 'Courier New'
         Font.Style = [fsBold]
+        Frame.Typ = []
         HAlign = haCenter
         Memo.UTF8W = (
           'Nome do Motorista')
         ParentFont = False
       end
       object Memo8: TfrxMemoView
+        AllowVectorExport = True
         Left = 457.323130000000000000
         Top = 453.543600000000000000
         Width = 222.992270000000000000
@@ -37691,17 +37720,20 @@ object dm: Tdm
         Font.Height = -19
         Font.Name = 'Courier New'
         Font.Style = [fsBold]
+        Frame.Typ = []
         HAlign = haCenter
         Memo.UTF8W = (
           'Data Retirada')
         ParentFont = False
       end
       object Picture2: TfrxPictureView
+        AllowVectorExport = True
         Left = 3.779530000000000000
         Top = 544.252320000000000000
         Width = 128.000000000000000000
         Height = 90.000000000000000000
         AutoSize = True
+        Frame.Typ = []
         Picture.Data = {
           0A544A504547496D6167659F620000FFD8FFE000104A46494600010101012B01
           2B0000FFE10F2E4578696600004D4D002A000000080007011200030000000100
@@ -38498,6 +38530,7 @@ object dm: Tdm
         TransparentColor = clWhite
       end
       object Memo9: TfrxMemoView
+        AllowVectorExport = True
         Left = 7.559060000000000000
         Top = 559.370440000000000000
         Width = 702.992580000000000000
@@ -38507,18 +38540,21 @@ object dm: Tdm
         Font.Height = -19
         Font.Name = 'Courier New'
         Font.Style = [fsBold]
+        Frame.Typ = []
         HAlign = haCenter
         Memo.UTF8W = (
           'PROTOCOLO DE RETIRADA DE DEVOLU'#199#213'ES')
         ParentFont = False
       end
       object BarCode2: TfrxBarCodeView
+        AllowVectorExport = True
         Left = 589.606680000000000000
         Top = 540.472790000000000000
         Width = 64.000000000000000000
         Height = 71.811070000000000000
         BarType = bcCode_2_5_interleaved
         Expression = '<numero>'
+        Frame.Typ = []
         Rotation = 0
         TestLine = False
         Text = '12345678'
@@ -38529,8 +38565,10 @@ object dm: Tdm
         Font.Height = -12
         Font.Name = 'Arial'
         Font.Style = []
+        ColorBar = clBlack
       end
       object Memo10: TfrxMemoView
+        AllowVectorExport = True
         Left = 3.779530000000000000
         Top = 646.299630000000000000
         Width = 64.252010000000000000
@@ -38540,11 +38578,13 @@ object dm: Tdm
         Font.Height = -19
         Font.Name = 'Courier New'
         Font.Style = [fsBold]
+        Frame.Typ = []
         Memo.UTF8W = (
           'Base:')
         ParentFont = False
       end
       object Memo11: TfrxMemoView
+        AllowVectorExport = True
         Left = 162.519790000000000000
         Top = 646.299630000000000000
         Width = 411.968770000000000000
@@ -38554,11 +38594,13 @@ object dm: Tdm
         Font.Height = -19
         Font.Name = 'Courier New'
         Font.Style = []
+        Frame.Typ = []
         Memo.UTF8W = (
           '[base]')
         ParentFont = False
       end
       object Memo12: TfrxMemoView
+        AllowVectorExport = True
         Left = 3.779530000000000000
         Top = 665.197280000000000000
         Width = 143.622140000000000000
@@ -38568,11 +38610,13 @@ object dm: Tdm
         Font.Height = -19
         Font.Name = 'Courier New'
         Font.Style = [fsBold]
+        Frame.Typ = []
         Memo.UTF8W = (
           'Expedi'#231#227'o:')
         ParentFont = False
       end
       object Memo13: TfrxMemoView
+        AllowVectorExport = True
         Left = 162.519790000000000000
         Top = 665.197280000000000000
         Width = 411.968770000000000000
@@ -38582,11 +38626,13 @@ object dm: Tdm
         Font.Height = -19
         Font.Name = 'Courier New'
         Font.Style = []
+        Frame.Typ = []
         Memo.UTF8W = (
           '[expedicao]')
         ParentFont = False
       end
       object Line4: TfrxLineView
+        AllowVectorExport = True
         Left = 3.779530000000000000
         Top = 982.677800000000000000
         Width = 298.582870000000000000
@@ -38594,6 +38640,7 @@ object dm: Tdm
         Frame.Typ = [ftTop]
       end
       object Line5: TfrxLineView
+        AllowVectorExport = True
         Left = 453.543600000000000000
         Top = 982.677800000000000000
         Width = 226.771800000000000000
@@ -38601,6 +38648,7 @@ object dm: Tdm
         Frame.Typ = [ftTop]
       end
       object Memo14: TfrxMemoView
+        AllowVectorExport = True
         Left = 3.779530000000000000
         Top = 986.457330000000000000
         Width = 298.582870000000000000
@@ -38610,12 +38658,14 @@ object dm: Tdm
         Font.Height = -19
         Font.Name = 'Courier New'
         Font.Style = [fsBold]
+        Frame.Typ = []
         HAlign = haCenter
         Memo.UTF8W = (
           'Nome do Motorista')
         ParentFont = False
       end
       object Memo15: TfrxMemoView
+        AllowVectorExport = True
         Left = 457.323130000000000000
         Top = 986.457330000000000000
         Width = 222.992270000000000000
@@ -38625,12 +38675,14 @@ object dm: Tdm
         Font.Height = -19
         Font.Name = 'Courier New'
         Font.Style = [fsBold]
+        Frame.Typ = []
         HAlign = haCenter
         Memo.UTF8W = (
           'Data Retirada')
         ParentFont = False
       end
       object Subreport2: TfrxSubreport
+        AllowVectorExport = True
         Left = 3.779530000000000000
         Top = 695.433520000000000000
         Width = 710.551640000000000000
@@ -38646,12 +38698,16 @@ object dm: Tdm
       RightMargin = 10.000000000000000000
       TopMargin = 10.000000000000000000
       BottomMargin = 10.000000000000000000
+      Frame.Typ = []
+      MirrorMode = []
       object Header1: TfrxHeader
         FillType = ftBrush
+        Frame.Typ = []
         Height = 76.370130000000000000
         Top = 18.897650000000000000
         Width = 718.110700000000000000
         object Memo4: TfrxMemoView
+          AllowVectorExport = True
           Left = 79.370130000000000000
           Top = 60.692950000000000000
           Width = 158.740260000000000000
@@ -38668,6 +38724,7 @@ object dm: Tdm
           ParentFont = False
         end
         object Memo5: TfrxMemoView
+          AllowVectorExport = True
           Left = 239.110390000000000000
           Top = 61.472480000000000000
           Width = 102.047310000000000000
@@ -38684,6 +38741,7 @@ object dm: Tdm
           ParentFont = False
         end
         object Memo6: TfrxMemoView
+          AllowVectorExport = True
           Left = 341.937230000000000000
           Top = 60.692950000000000000
           Width = 113.385900000000000000
@@ -38700,6 +38758,7 @@ object dm: Tdm
           ParentFont = False
         end
         object Memo18: TfrxMemoView
+          AllowVectorExport = True
           Left = 79.370130000000000000
           Top = 15.118120000000000000
           Width = 487.559370000000000000
@@ -38709,6 +38768,7 @@ object dm: Tdm
           Font.Height = -13
           Font.Name = 'Courier New'
           Font.Style = []
+          Frame.Typ = []
           HAlign = haBlock
           Memo.UTF8W = (
             
@@ -38718,6 +38778,7 @@ object dm: Tdm
           ParentFont = False
         end
         object Memo16: TfrxMemoView
+          AllowVectorExport = True
           Left = 453.543600000000000000
           Top = 61.472480000000000000
           Width = 113.385900000000000000
@@ -38736,6 +38797,7 @@ object dm: Tdm
       end
       object MasterData1: TfrxMasterData
         FillType = ftBrush
+        Frame.Typ = []
         Height = 15.118120000000000000
         Top = 117.165430000000000000
         Width = 718.110700000000000000
@@ -38744,6 +38806,7 @@ object dm: Tdm
         DataSetName = 'frxDBDataset1'
         RowCount = 0
         object frxDBDataset1NUM_NOSSONUMERO: TfrxMemoView
+          AllowVectorExport = True
           Left = 79.370130000000000000
           Width = 158.740260000000000000
           Height = 15.118120000000000000
@@ -38761,6 +38824,7 @@ object dm: Tdm
           ParentFont = False
         end
         object frxDBDataset1QTD_VOLUMES: TfrxMemoView
+          AllowVectorExport = True
           Left = 238.889920000000000000
           Width = 102.047310000000000000
           Height = 15.118120000000000000
@@ -38778,6 +38842,7 @@ object dm: Tdm
           ParentFont = False
         end
         object frxDBDataset1QTD_PESO_OBJETO: TfrxMemoView
+          AllowVectorExport = True
           Left = 342.937230000000000000
           Width = 113.385900000000000000
           Height = 15.118120000000000000
@@ -38795,6 +38860,7 @@ object dm: Tdm
           ParentFont = False
         end
         object ProtocolodeDevoluesNUM_LACRE: TfrxMemoView
+          AllowVectorExport = True
           Left = 457.323130000000000000
           Width = 109.606370000000000000
           Height = 15.118120000000000000
@@ -38821,8 +38887,11 @@ object dm: Tdm
       RightMargin = 10.000000000000000000
       TopMargin = 10.000000000000000000
       BottomMargin = 10.000000000000000000
+      Frame.Typ = []
+      MirrorMode = []
       object MasterData2: TfrxMasterData
         FillType = ftBrush
+        Frame.Typ = []
         Height = 15.118120000000000000
         Top = 56.692950000000000000
         Width = 718.110700000000000000
@@ -38830,6 +38899,7 @@ object dm: Tdm
         DataSetName = 'frxDBDataset1'
         RowCount = 0
         object Memo23: TfrxMemoView
+          AllowVectorExport = True
           Left = 113.385900000000000000
           Width = 158.740260000000000000
           Height = 15.118120000000000000
@@ -38847,6 +38917,7 @@ object dm: Tdm
           ParentFont = False
         end
         object Memo24: TfrxMemoView
+          AllowVectorExport = True
           Left = 272.905690000000000000
           Width = 102.047310000000000000
           Height = 15.118120000000000000
@@ -38864,6 +38935,7 @@ object dm: Tdm
           ParentFont = False
         end
         object Memo25: TfrxMemoView
+          AllowVectorExport = True
           Left = 376.953000000000000000
           Width = 113.385900000000000000
           Height = 15.118120000000000000
@@ -38881,6 +38953,7 @@ object dm: Tdm
           ParentFont = False
         end
         object ProtocolodeDevoluesNUM_LACRE1: TfrxMemoView
+          AllowVectorExport = True
           Left = 491.338900000000000000
           Width = 109.606370000000000000
           Height = 15.118120000000000000
@@ -38900,10 +38973,12 @@ object dm: Tdm
       end
       object Header2: TfrxHeader
         FillType = ftBrush
+        Frame.Typ = []
         Height = 15.338590000000000000
         Top = 18.897650000000000000
         Width = 718.110700000000000000
         object Memo19: TfrxMemoView
+          AllowVectorExport = True
           Left = 113.385900000000000000
           Top = 0.220470000000000000
           Width = 158.740260000000000000
@@ -38920,6 +38995,7 @@ object dm: Tdm
           ParentFont = False
         end
         object Memo20: TfrxMemoView
+          AllowVectorExport = True
           Left = 273.126160000000000000
           Width = 102.047310000000000000
           Height = 15.118120000000000000
@@ -38935,6 +39011,7 @@ object dm: Tdm
           ParentFont = False
         end
         object Memo21: TfrxMemoView
+          AllowVectorExport = True
           Left = 375.953000000000000000
           Top = 0.220470000000000000
           Width = 113.385900000000000000
@@ -38951,6 +39028,7 @@ object dm: Tdm
           ParentFont = False
         end
         object Memo17: TfrxMemoView
+          AllowVectorExport = True
           Left = 489.338900000000000000
           Width = 113.385900000000000000
           Height = 15.118120000000000000
@@ -38973,6 +39051,7 @@ object dm: Tdm
     ShowProgress = True
     OverwritePrompt = False
     DataOnly = False
+    OpenAfterExport = False
     PrintOptimized = False
     Outline = False
     Background = False
@@ -38989,6 +39068,8 @@ object dm: Tdm
     CenterWindow = False
     PrintScaling = False
     PdfA = False
+    PDFStandard = psNone
+    PDFVersion = pv17
     Left = 616
     Top = 296
   end
@@ -38997,6 +39078,7 @@ object dm: Tdm
     ShowProgress = True
     OverwritePrompt = False
     DataOnly = False
+    OpenAfterExport = False
     FixedWidth = True
     Background = False
     Centered = False
@@ -39012,6 +39094,7 @@ object dm: Tdm
     OverwritePrompt = False
     DataOnly = False
     PictureType = gpPNG
+    OpenAfterExport = False
     Wysiwyg = True
     Creator = 'FastReport'
     SuppressPageHeadersFooters = False
@@ -39060,6 +39143,7 @@ object dm: Tdm
     Frames = False
     EmptyLines = False
     OEMCodepage = False
+    OpenAfterExport = False
     DeleteEmptyColumns = True
     Left = 760
     Top = 344
@@ -39072,6 +39156,7 @@ object dm: Tdm
     Separator = ';'
     OEMCodepage = False
     UTF8 = False
+    OpenAfterExport = False
     NoSysSymbols = True
     ForcedQuotes = False
     Left = 760

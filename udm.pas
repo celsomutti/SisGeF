@@ -26,7 +26,8 @@ uses
   FireDAC.DApt, FireDAC.Comp.DataSet, cxLocalization, clUtil, FireDAC.Phys.MySQLDef, FireDAC.VCLUI.Async,
   FireDAC.Comp.BatchMove.Text, FireDAC.Comp.BatchMove, FireDAC.Comp.BatchMove.DataSet, dxSkinOffice2016Colorful,
   dxSkinOffice2016Dark, dxSkinVisualStudio2013Blue, dxSkinVisualStudio2013Dark, dxSkinVisualStudio2013Light, System.ImageList,
-  frxExportCSV, frxExportText, frxExportImage, frxExportRTF, frxExportHTML, frxClass, frxExportPDF, frxDBSet;
+  frxExportCSV, frxExportText, frxExportImage, frxExportRTF, frxExportHTML, frxClass, frxExportPDF, frxDBSet, frxExportBaseDialog,
+  cxImageList;
 
 type
   Tdm = class(TDataModule)

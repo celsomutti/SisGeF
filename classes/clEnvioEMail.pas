@@ -117,7 +117,7 @@ begin
       // Hotmail usam a porta 25 (smpt.live.com) e 995 (pop3.live.com) sem SSL!
       // Bol usa a porta 25 (smtp.bol.com.br) e 110 (pop3.bol.com.br) sem SSL!
       // ——————————————————————————-
-      if Porta <> '587' then
+      if Porta <> '1025' then
       // ( Se Porta DIFERENTE de ’25’… o sinal de diferente está sumido aqui)
       begin
         With IdSMTP1 Do

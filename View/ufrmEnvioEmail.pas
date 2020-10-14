@@ -24,7 +24,7 @@ uses
   Vcl.ActnList, Vcl.Menus, Vcl.StdCtrls, cxButtons, cxListBox, dxSkinMetropolis,
   dxSkinMetropolisDark, dxSkinOffice2013DarkGray,
   dxSkinOffice2013LightGray, dxSkinOffice2013White, System.Actions, dxSkinOffice2016Colorful, dxSkinOffice2016Dark,
-  dxSkinVisualStudio2013Blue, dxSkinVisualStudio2013Dark, dxSkinVisualStudio2013Light;
+  dxSkinVisualStudio2013Blue, dxSkinVisualStudio2013Dark, dxSkinVisualStudio2013Light, cxCustomListBox;
 
 type
   TfrmEnvioEmail = class(TForm)
@@ -128,11 +128,11 @@ var
     sNomeDe: String;
 begin
   bFlag := False;
-  sHost := 'smtp.rjsmart.com.br';
-  sDe := 'sistema@rjsmart.com.br';
-  sUsuario := 'sistema@rjsmart.com.br';
-  sSenha := 'a1b2c3';
-  sNomeDe := 'Gerenciador de Franquia';
+  sHost := 'mail.novorioexpress.com';
+  sDe := 'sistema@novorioexpress.com';
+  sUsuario := 'sistema@novorioexpress.com';
+  sSenha := 'e5d4c3b2';
+  sNomeDe := 'SisGeF';
   sAssunto := cxAssunto.Text;
   sTexto := cxMensagem.Text;
   sPara := '';
@@ -153,7 +153,7 @@ begin
     end;
     CC := CC + cxCopiaCom.Items[i];
   end;
-  bFlag := email.EnviarEmail(sHost, '587', sUsuario, sSenha, sDe, sNomeDe,
+  bFlag := email.EnviarEmail(sHost, '1025', sUsuario, sSenha, sDe, sNomeDe,
     sPara, sAssunto, sTexto, CC, 0, 7, False, cxAnexos.Items);
   if not(bFlag) then
   begin

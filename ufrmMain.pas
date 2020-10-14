@@ -16,7 +16,7 @@ uses
   cxClasses, dxRibbon, dxSkinscxPCPainter, dxLayoutContainer, dxLayoutControl, dxSkinsdxBarPainter, System.Actions, Vcl.ActnList,
   dxBar, Vcl.ImgList, cxPC, dxBarBuiltInMenu, dxTabbedMDI, Vcl.ExtCtrls, cxContainer, cxEdit, cxTextEdit, cxMemo,
   dxBarApplicationMenu, ufrmImportacaoTiragemJornal, DAO.Acessos, dxSkinOffice2016Colorful, dxSkinOffice2016Dark,
-  dxSkinVisualStudio2013Blue, dxSkinVisualStudio2013Dark, dxSkinVisualStudio2013Light, System.ImageList;
+  dxSkinVisualStudio2013Blue, dxSkinVisualStudio2013Dark, dxSkinVisualStudio2013Light, System.ImageList, cxImageList;
 
 type
   TfrmMain = class(TForm)

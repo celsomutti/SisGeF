@@ -805,8 +805,6 @@ object frmPrincipal: TfrmPrincipal
       Style.Color = 4227327
       Style.LookAndFeel.NativeStyle = True
       StyleDisabled.LookAndFeel.NativeStyle = True
-      StyleFocused.LookAndFeel.NativeStyle = True
-      StyleHot.LookAndFeel.NativeStyle = True
       TabOrder = 3
       OnClick = cxGroupBox1Click
       Height = 47
@@ -896,8 +894,6 @@ object frmPrincipal: TfrmPrincipal
       Style.Color = 8421440
       Style.LookAndFeel.NativeStyle = True
       StyleDisabled.LookAndFeel.NativeStyle = True
-      StyleFocused.LookAndFeel.NativeStyle = True
-      StyleHot.LookAndFeel.NativeStyle = True
       TabOrder = 4
       Height = 47
       Width = 234
@@ -995,8 +991,6 @@ object frmPrincipal: TfrmPrincipal
       Style.Color = 16512
       Style.LookAndFeel.NativeStyle = True
       StyleDisabled.LookAndFeel.NativeStyle = True
-      StyleFocused.LookAndFeel.NativeStyle = True
-      StyleHot.LookAndFeel.NativeStyle = True
       TabOrder = 5
       OnClick = cxGroupBox3Click
       Height = 47
@@ -2164,6 +2158,7 @@ object frmPrincipal: TfrmPrincipal
     TabProperties.TabCaptionAlignment = taLeftJustify
     Left = 768
     Top = 168
+    PixelsPerInch = 96
   end
   object PopupUsuario: TPopupMenu
     Left = 632

@@ -43,7 +43,7 @@ uses
   cxDBVGrid, cxCurrencyEdit, cxGridCardView,
   cxGridDBCardView, cxGridCustomLayoutView, clConexao, frxClass, dxSkinOffice2016Colorful, dxSkinOffice2016Dark,
   dxSkinVisualStudio2013Blue, dxSkinVisualStudio2013Dark, dxSkinVisualStudio2013Light, uGlobais, Winapi.ShlObj, cxShellCommon,
-  cxListView, cxShellListView;
+  cxListView, cxShellListView, dxDateRanges, cxDataControllerConditionalFormattingRulesManagerDialog;
 
 type
   TfrmEntregadoresFuncionarios = class(TForm)
@@ -838,9 +838,7 @@ begin
     frmEnvioEmail := TfrmEnvioEmail.Create(Application);
   end;
   frmEnvioEmail.cxDestintarios.Items.Clear;
-  frmEnvioEmail.cxDestintarios.Items.Add('gerenciadorisk@rjsmart.com.br');
-  frmEnvioEmail.cxCopiaCom.Items.Add('amarildo@rjsmart.com.br');
-  frmEnvioEmail.cxCopiaCom.Items.Add('celso.mutti@rjsmart.com.br');
+  frmEnvioEmail.cxDestintarios.Items.Add('gerenciadorisk@novorioexpress.com');
   frmEnvioEmail.cxAssunto.Text := 'Solicitação de Pesquisa GR para ' +
     entregador.Nome;
   TrocaCampos;
