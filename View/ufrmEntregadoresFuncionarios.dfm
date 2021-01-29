@@ -1461,39 +1461,12 @@
           TabOrder = 10
           Width = 239
         end
-        object cxButton9: TcxButton
-          Left = 3
-          Top = 170
-          Width = 70
-          Height = 20
-          Cursor = crHandPoint
-          Action = actCadastroIncluirCodigo
-          TabOrder = 11
-        end
-        object cxButton10: TcxButton
-          Left = 79
-          Top = 170
-          Width = 75
-          Height = 20
-          Cursor = crHandPoint
-          Action = actCadastroEditarCodigo
-          TabOrder = 12
-        end
-        object cxButton11: TcxButton
-          Left = 160
-          Top = 170
-          Width = 81
-          Height = 20
-          Cursor = crHandPoint
-          Action = actCadastroDesvincularCodigo
-          TabOrder = 13
-        end
         object cxGrid3: TcxGrid
           Left = 3
           Top = 14
           Width = 436
           Height = 150
-          TabOrder = 14
+          TabOrder = 11
           object cxGrid3DBCardView1: TcxGridDBCardView
             Navigator.Buttons.CustomButtons = <>
             DataController.DataSource = ds2

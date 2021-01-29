@@ -259,9 +259,6 @@ type
     actCadastroIncluirCodigo: TAction;
     actCadastroEditarCodigo: TAction;
     actCadastroDesvincularCodigo: TAction;
-    cxButton9: TcxButton;
-    cxButton10: TcxButton;
-    cxButton11: TcxButton;
     tbCodigosCOD_GRUPO: TIntegerField;
     tbCodigosVAL_VERBA: TFloatField;
     tbCodigosNOM_AGENTE: TStringField;
@@ -1947,7 +1944,7 @@ begin
         MB_OK + MB_ICONERROR);
       Exit;
     end;
-    SalvaCodigos;
+    //SalvaCodigos;
   end;
   SalvaEnderecos;
   SalvaContatos;
