@@ -419,6 +419,16 @@ var
   sDestino : String;
   sArquivo: String;
 begin
+
+  if not DirectoryExists(PASTA + '\' + Trim(cxCodigoSistema.Text)) then
+  begin
+    if not CreateDir(PASTA + '\' + Trim(cxCodigoSistema.Text)) then
+    begin
+      Application.MessageBox('Erro ao criar a pasta de destino !', 'Erro Criar Pasta', MB_OK + MB_ICONERROR);
+      Exit;
+    end;
+  end;
+  Opendialog.InitialDir := PASTA + '\' + Trim(cxCodigoSistema.Text);
   if OpenDialog.Execute then
   begin
     {Screen.Cursor := crHourGlass;
@@ -434,14 +444,6 @@ begin
 
     lArquivo.SaveToFile(PASTA + '\' + Trim(cxCodigoSistema.Text) + '\' + sArquivo);
     lArquivo.Free;}
-
-    if not DirectoryExists(PASTA + '\' + Trim(cxCodigoSistema.Text)) then
-    begin
-      if not CreateDir(PASTA + '\' + Trim(cxCodigoSistema.Text)) then
-      begin
-        Exit;
-      end;
-    end;
 
     sArquivo := ExtractFileName(OpenDialog.FileName);
     sOrigem := OpenDialog.FileName;
@@ -1234,7 +1236,7 @@ begin
   begin
     cxGroupBox1.Enabled := False;
     cxGroupBox2.Enabled := False;
-    cxGroupBox3.Enabled := False;
+    cxGroupBox3.Enabled := True;
     cxGroupBox4.Enabled := False;
     cxGroupBox5.Enabled := False;
     cxGroupBox6.Enabled := False;

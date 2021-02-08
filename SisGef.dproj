@@ -51,6 +51,12 @@
         <Cfg_2>true</Cfg_2>
         <Base>true</Base>
     </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='Win64' and '$(Cfg_2)'=='true') or '$(Cfg_2_Win64)'!=''">
+        <Cfg_2_Win64>true</Cfg_2_Win64>
+        <CfgParent>Cfg_2</CfgParent>
+        <Cfg_2>true</Cfg_2>
+        <Base>true</Base>
+    </PropertyGroup>
     <PropertyGroup Condition="'$(Base)'!=''">
         <SanitizedProjectName>SisGef</SanitizedProjectName>
         <DCC_UsePackage>DBXInterBaseDriver;DataSnapServer;DataSnapCommon;DbxCommonDriver;dbxcds;dsnap;IndyCore;CloudService;IPIndyImpl;bindcompfmx;dbrtl;bindcomp;inetdb;xmlrtl;ibxpress;bindengine;soaprtl;DBXInformixDriver;DBXFirebirdDriver;inet;DBXSybaseASADriver;dbexpress;fmx;IndySystem;DataSnapClient;DataSnapProviderClient;DBXOracleDriver;fmxase;inetdbxpress;rtl;DbxClientDriver;IndyProtocols;DBXMySQLDriver;fmxobj;fmxdae;DataSnapIndy10ServerTransport;$(DCC_UsePackage)</DCC_UsePackage>
@@ -127,11 +133,16 @@
         <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
         <VerInfo_MajorVer>4</VerInfo_MajorVer>
         <VerInfo_MinorVer>4</VerInfo_MinorVer>
-        <VerInfo_Build>75</VerInfo_Build>
+        <VerInfo_Build>78</VerInfo_Build>
         <VerInfo_Locale>1046</VerInfo_Locale>
         <AppEnableRuntimeThemes>true</AppEnableRuntimeThemes>
         <VerInfo_Release>1</VerInfo_Release>
-        <VerInfo_Keys>CompanyName=Alô Carioca Serviços e Entregas e Transportes Ltda.;FileDescription=Executável do Sistema Gerenciador de Franquia;FileVersion=4.4.1.75;InternalName=SisGeF;LegalCopyright=Copyright © 2008-2021 Alô Carioca;LegalTrademarks=;OriginalFilename=SisGeF;ProductName=SisGef;ProductVersion=4.4.1;Comments=;ProgramID=com.novorioexpress.$(MSBuildProjectName)</VerInfo_Keys>
+        <VerInfo_Keys>CompanyName=Alô Carioca Serviços e Entregas e Transportes Ltda.;FileDescription=Executável do Sistema Gerenciador de Franquia;FileVersion=4.4.1.78;InternalName=SisGeF;LegalCopyright=Copyright © 2008-2021 Alô Carioca;LegalTrademarks=;OriginalFilename=SisGeF;ProductName=SisGef;ProductVersion=4.4.1;Comments=;ProgramID=com.novorioexpress.$(MSBuildProjectName)</VerInfo_Keys>
+        <BT_BuildType>Debug</BT_BuildType>
+        <VerInfo_AutoIncVersion>true</VerInfo_AutoIncVersion>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_2_Win64)'!=''">
+        <BT_BuildType>Debug</BT_BuildType>
     </PropertyGroup>
     <ItemGroup>
         <DelphiCompile Include="$(MainSource)">
