@@ -25,14 +25,15 @@ uses
   cxDataStorage, cxDBData, cxGridLevel, cxGridCustomView,
   cxGridCustomTableView, cxGridTableView, cxGridDBTableView, cxGrid, cxCheckBox,
   clCodigosEntregadores, clLancamentos, Menus,
-  StdCtrls, cxButtons, cxPCdxBarPopupMenu, cxPC, cxButtonEdit, cxCalc, cxImage,
+  StdCtrls, cxButtons, cxPC, cxButtonEdit, cxCalc, cxImage,
   ExtCtrls, cxNavigator, Vcl.ComCtrls, dxCore,
   cxDateUtils, cxGridExportLink, ShellAPI, dxSkinsdxStatusBarPainter,
   dxStatusBar, cxProgressBar, cxImageComboBox,
   uthrPopularLancamentos, dxSkinMetropolis, dxSkinMetropolisDark,
   dxSkinOffice2013DarkGray, dxSkinOffice2013LightGray,
   dxSkinOffice2013White, dxBarBuiltInMenu, System.Actions, clAcessos, clConexao, dxSkinOffice2016Colorful, dxSkinOffice2016Dark,
-  dxSkinVisualStudio2013Blue, dxSkinVisualStudio2013Dark, dxSkinVisualStudio2013Light;
+  dxSkinVisualStudio2013Blue, dxSkinVisualStudio2013Dark, dxSkinVisualStudio2013Light, dxDateRanges,
+  cxDataControllerConditionalFormattingRulesManagerDialog;
 
 type
   TfrmLancamentos = class(TForm)
@@ -140,7 +141,7 @@ var
   frmLancamentos: TfrmLancamentos;
   entregador: TCodigosEntregadores;
   lancamento: TLancamentos;
-  sOperacao: String;
+  sOperacao, sCadastro: String;
   thrLancamentos: thrPopularLancamentos;
   acessos: TAcessos;
   conexao: TConexao;
@@ -208,8 +209,8 @@ begin
     cxDataCredito.Date := lancamento.Data;
     cxEntregadorCredito.Text := IntToStr(lancamento.entregador);
     entregador.Codigo := lancamento.entregador;
-    entregador.Cadastro := lancamento.entregador;
-    sDescricao := entregador.getField('NOM_FANTASIA', 'CADASTRO');
+    entregador.Cadastro := lancamento.cadastro;
+    sDescricao := entregador.getField('NOM_FANTASIA', 'CODIGO');
     cxNomeEntregadorCredito.Text := sDescricao;
     cxValorCredito.Value := lancamento.Valor;
     if lancamento.Descontado = 'S' then
@@ -240,7 +241,7 @@ begin
     cxEntregadorDebito.Text := IntToStr(lancamento.entregador);
     entregador.Codigo := lancamento.entregador;
     entregador.Cadastro := lancamento.entregador;
-    sDescricao := entregador.getField('NOM_FANTASIA', 'CADASTRO');
+    sDescricao := entregador.getField('NOM_FANTASIA', 'CODIGO');
     cxNomeEntregadorDebito.Text := sDescricao;
     cxValorDebito.Value := lancamento.Valor;
     if lancamento.Descontado = 'S' then
@@ -397,6 +398,7 @@ begin
     lancamento.Data := cxDataCredito.Date;
     lancamento.Tipo := 'CREDITO';
     lancamento.entregador := StrToInt(cxEntregadorCredito.Text);
+    lancamento.Cadastro := StrToIntDef(sCadastro,0);
     lancamento.Valor := cxValorCredito.Value;
     if sOperacao = 'I' then
     begin
@@ -623,7 +625,7 @@ begin
   dm.tbLancamentosDAT_LANCAMENTO.Value := lancamento.Data;
   dm.tbLancamentosCOD_ENTREGADOR.Value := lancamento.entregador;
   dm.ZConn.PingServer;
-  if entregador.getObject(IntToStr(lancamento.entregador), 'CADASTRO') then
+  if entregador.getObject(IntToStr(lancamento.entregador), 'CODIGO') then
   begin
     dm.tbLancamentosNOM_ENTREGADOR.Value := entregador.Nome;
   end
@@ -773,7 +775,7 @@ begin
     Close;
     SQL.Clear;
     SQL.Text :=
-      'SELECT COD_CADASTRO AS "Código", NOM_FANTASIA AS "Nome", COD_ENTREGADOR AS "Entregador" '
+      'SELECT COD_ENTREGADOR AS "Código", NOM_FANTASIA AS "Nome", COD_CADASTRO AS "Cadastro" '
       + 'FROM tbcodigosentregadores ';
     dm.ZConn.PingServer;
     Open;
@@ -811,6 +813,7 @@ begin
       cxNomeEntregadorDebito.Refresh;
     end;
   end;
+  sCadastro := dm.qryPesquisa.Fields[2].AsString;
   dm.qryPesquisa.Close;
   dm.qryPesquisa.SQL.Clear;
   FreeAndNil(frmListaApoio);

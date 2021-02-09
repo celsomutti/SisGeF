@@ -19,7 +19,7 @@ uses
   dxSkinSpringTime, dxSkinStardust, dxSkinSummer2008,
   dxSkinTheAsphaltWorld, dxSkinsDefaultPainters, dxSkinValentine, dxSkinVS2010,
   dxSkinWhiteprint, dxSkinXmas2008Blue,
-  dxSkinscxPCPainter, cxPCdxBarPopupMenu, dxSkinsdxStatusBarPainter, cxPC,
+  dxSkinscxPCPainter,  dxSkinsdxStatusBarPainter, cxPC,
   dxStatusBar, Data.DB, dxmdaset, cxContainer, cxEdit,
   cxTextEdit, cxMaskEdit, cxDropDownEdit, cxLabel, cxStyles, cxCustomData,
   cxFilter, cxData, cxDataStorage, cxNavigator, cxDBData,
@@ -33,7 +33,7 @@ uses
   dxSkinOffice2013LightGray, dxSkinOffice2013White,
   dxBarBuiltInMenu, System.Actions, cxButtonEdit, clAgentes, cxCheckBox,
   clAcessos, clConexao, dxSkinOffice2016Colorful, dxSkinOffice2016Dark, dxSkinVisualStudio2013Blue, dxSkinVisualStudio2013Dark,
-  dxSkinVisualStudio2013Light;
+  dxSkinVisualStudio2013Light, dxDateRanges, cxDataControllerConditionalFormattingRulesManagerDialog;
 
 type
   TfrmExtratoAgente = class(TForm)

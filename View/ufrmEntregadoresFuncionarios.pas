@@ -21,7 +21,7 @@ uses
   dxSkinsDefaultPainters, dxSkinValentine, dxSkinVS2010,
   dxSkinWhiteprint, dxSkinXmas2008Blue, cxLabel, cxImage, Vcl.ExtCtrls,
   clAgentes, clEstados, dxSkinscxPCPainter,
-  cxPCdxBarPopupMenu, cxTextEdit, cxMaskEdit, cxPC, cxDropDownEdit, cxGroupBox,
+   cxTextEdit, cxMaskEdit, cxPC, cxDropDownEdit, cxGroupBox,
   Vcl.ComCtrls, dxCore, cxDateUtils, cxCalendar,
   cxMemo, cxCalc, cxButtonEdit, cxStyles, cxCustomData, cxFilter, cxData,
   cxDataStorage, cxNavigator, Data.DB, cxDBData,

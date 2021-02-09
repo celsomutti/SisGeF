@@ -207,24 +207,28 @@ object frmRecepcaoHermes: TfrmRecepcaoHermes
     Properties.ActivePage = cxTabSheet1
     Properties.CustomButtons.Buttons = <>
     OnPageChanging = cxPageControl1PageChanging
-    ClientRectBottom = 388
-    ClientRectLeft = 2
-    ClientRectRight = 833
-    ClientRectTop = 28
+    ClientRectBottom = 390
+    ClientRectRight = 835
+    ClientRectTop = 24
     object cxTabSheet1: TcxTabSheet
       Caption = 'Recep'#231#227'o'
       ImageIndex = 0
+      ExplicitLeft = 2
+      ExplicitTop = 28
+      ExplicitWidth = 831
+      ExplicitHeight = 360
       DesignSize = (
-        831
-        360)
+        835
+        366)
       object cxGroupBox1: TcxGroupBox
         Left = 0
         Top = 0
         Align = alTop
         Caption = 'Par'#226'metros'
         TabOrder = 0
+        ExplicitWidth = 831
         Height = 66
-        Width = 831
+        Width = 835
         object cxLabel3: TcxLabel
           Left = 3
           Top = 15
@@ -246,10 +250,11 @@ object frmRecepcaoHermes: TfrmRecepcaoHermes
       object cxGrid1: TcxGrid
         Left = 0
         Top = 66
-        Width = 831
+        Width = 835
         Height = 263
         Align = alTop
         TabOrder = 1
+        ExplicitWidth = 831
         object cxGrid1DBTableView1: TcxGridDBTableView
           Navigator.Buttons.CustomButtons = <>
           DataController.DataSource = ds
@@ -349,26 +354,32 @@ object frmRecepcaoHermes: TfrmRecepcaoHermes
       end
       object cxProgressBar: TcxProgressBar
         Left = 3
-        Top = 335
+        Top = 341
         Anchors = [akLeft]
         Properties.ShowTextStyle = cxtsText
         Properties.Text = '0%'
         TabOrder = 5
         Visible = False
+        ExplicitTop = 335
         Width = 342
       end
     end
     object cxTabSheet2: TcxTabSheet
       Caption = 'Listagem'
       ImageIndex = 1
+      ExplicitLeft = 2
+      ExplicitTop = 28
+      ExplicitWidth = 831
+      ExplicitHeight = 360
       object cxGroupBox2: TcxGroupBox
         Left = 0
         Top = 0
         Align = alTop
         Caption = 'Par'#226'metros'
         TabOrder = 0
+        ExplicitWidth = 831
         Height = 66
-        Width = 831
+        Width = 835
         object cxLabel1: TcxLabel
           Left = 3
           Top = 15
@@ -414,7 +425,7 @@ object frmRecepcaoHermes: TfrmRecepcaoHermes
       object cxGrid2: TcxGrid
         Left = 0
         Top = 66
-        Width = 831
+        Width = 835
         Height = 263
         Align = alTop
         TabOrder = 1

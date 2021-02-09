@@ -19,7 +19,7 @@ uses
   dxSkinSpringTime, dxSkinStardust, dxSkinSummer2008,
   dxSkinTheAsphaltWorld, dxSkinsDefaultPainters, dxSkinValentine, dxSkinVS2010,
   dxSkinWhiteprint, dxSkinXmas2008Blue,
-  dxSkinscxPCPainter, cxPCdxBarPopupMenu, cxContainer, cxEdit, Vcl.ComCtrls,
+  dxSkinscxPCPainter,  cxContainer, cxEdit, Vcl.ComCtrls,
   dxCore, cxDateUtils, cxTextEdit, cxMaskEdit,
   cxDropDownEdit, cxCalendar, cxLabel, cxPC, cxButtonEdit, cxStyles,
   cxCustomData, cxFilter, cxData, cxDataStorage, cxNavigator,
@@ -32,7 +32,8 @@ uses
   uthrImportarDevolucao, cxProgressBar, dxSkinMetropolis, dxSkinMetropolisDark,
   dxSkinOffice2013DarkGray, dxSkinOffice2013LightGray,
   dxSkinOffice2013White, dxBarBuiltInMenu, System.Actions, clAcessos, clConexao, cxDBLookupComboBox, dxSkinOffice2016Colorful,
-  dxSkinOffice2016Dark, dxSkinVisualStudio2013Blue, dxSkinVisualStudio2013Dark, dxSkinVisualStudio2013Light;
+  dxSkinOffice2016Dark, dxSkinVisualStudio2013Blue, dxSkinVisualStudio2013Dark, dxSkinVisualStudio2013Light, dxDateRanges,
+  cxDataControllerConditionalFormattingRulesManagerDialog;
 
 type
   TfrmDevolucoes = class(TForm)

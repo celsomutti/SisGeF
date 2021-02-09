@@ -60,22 +60,25 @@
   object cxPageControl1: TcxPageControl
     AlignWithMargins = True
     Left = 3
-    Top = 28
+    Top = 29
     Width = 578
-    Height = 326
+    Height = 325
     Align = alClient
     TabOrder = 4
     Properties.ActivePage = cxTabSheet1
     Properties.CustomButtons.Buttons = <>
+    ExplicitTop = 28
     ExplicitHeight = 266
-    ClientRectBottom = 320
-    ClientRectLeft = 3
-    ClientRectRight = 572
-    ClientRectTop = 26
+    ClientRectBottom = 325
+    ClientRectRight = 578
+    ClientRectTop = 24
     object cxTabSheet1: TcxTabSheet
       Caption = 'Cadastro'
       ImageIndex = 0
-      ExplicitHeight = 234
+      ExplicitLeft = 3
+      ExplicitTop = 26
+      ExplicitWidth = 569
+      ExplicitHeight = 294
       object cxLabel1: TcxLabel
         Left = 3
         Top = 16
@@ -94,7 +97,10 @@
     object cxTabSheet2: TcxTabSheet
       Caption = 'Acessos'
       ImageIndex = 1
-      ExplicitHeight = 234
+      ExplicitLeft = 3
+      ExplicitTop = 26
+      ExplicitWidth = 569
+      ExplicitHeight = 294
       object cxGrid1: TcxGrid
         AlignWithMargins = True
         Left = 6
@@ -205,10 +211,11 @@
     UseSystemFont = True
     Left = 296
     Top = 32
+    PixelsPerInch = 96
     DockControlHeights = (
       0
       0
-      25
+      26
       0)
     object dxBarManager1Bar1: TdxBar
       Caption = 'Menu'
@@ -385,6 +392,7 @@
     end
   end
   object cxImageList: TcxImageList
+    SourceDPI = 96
     FormatVersion = 1
     DesignInfo = 2097528
     ImageInfo = <

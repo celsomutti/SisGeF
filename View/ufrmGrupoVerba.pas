@@ -17,7 +17,7 @@ uses
   dxSkinSharpPlus, dxSkinSilver, dxSkinSpringTime, dxSkinStardust,
   dxSkinSummer2008, dxSkinTheAsphaltWorld, dxSkinsDefaultPainters,
   dxSkinValentine, dxSkinVS2010, dxSkinWhiteprint, dxSkinXmas2008Blue,
-  dxSkinscxPCPainter, cxPCdxBarPopupMenu, cxPC, DB, dxmdaset, cxStyles,
+  dxSkinscxPCPainter,  cxPC, DB, dxmdaset, cxStyles,
   cxCustomData, cxFilter, cxData, cxDataStorage, cxEdit, cxDBData,
   cxGridLevel, cxClasses, cxGridCustomView, cxGridCustomTableView,
   cxGridTableView, cxGridDBTableView, cxGrid, cxContainer, cxLabel,
@@ -25,7 +25,8 @@ uses
   cxNavigator, cxImage, Vcl.ExtCtrls, cxMaskEdit,
   cxGridExportLink, ShellAPI, cxButtonEdit, dxSkinMetropolis,
   dxSkinMetropolisDark, dxSkinOffice2013DarkGray,
-  dxSkinOffice2013LightGray, dxSkinOffice2013White, System.Actions, clConexao;
+  dxSkinOffice2013LightGray, dxSkinOffice2013White, System.Actions, clConexao, dxDateRanges,
+  cxDataControllerConditionalFormattingRulesManagerDialog;
 
 type
   TfrmGrupoVerba = class(TForm)

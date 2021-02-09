@@ -18,7 +18,7 @@ uses
   dxSkinSilver, dxSkinSpringTime, dxSkinStardust, dxSkinSummer2008,
   dxSkinTheAsphaltWorld, dxSkinsDefaultPainters, dxSkinValentine,
   dxSkinVS2010, dxSkinWhiteprint, dxSkinXmas2008Blue, dxSkinscxPCPainter,
-  cxPCdxBarPopupMenu, cxPC, cxContainer, cxEdit, cxTextEdit,
+  cxPC, cxContainer, cxEdit, cxTextEdit,
   cxLabel, cxButtonEdit, cxMaskEdit, cxDropDownEdit, cxCalendar, cxSpinEdit,
   cxTimeEdit, cxStyles, cxCustomData, cxFilter, cxData,
   cxDataStorage, DB, cxDBData, cxGridLevel, cxClasses, cxGridCustomView,
@@ -32,7 +32,8 @@ uses
   dxSkinMetropolisDark, dxSkinOffice2013DarkGray, dxSkinOffice2013LightGray,
   dxSkinOffice2013White, System.Actions,
   dxBarBuiltInMenu, clAcessos, clBancos, clConexao, ufrmProcesso, cxDBLookupComboBox, dxSkinOffice2016Colorful,
-  dxSkinOffice2016Dark, dxSkinVisualStudio2013Blue, dxSkinVisualStudio2013Dark, dxSkinVisualStudio2013Light;
+  dxSkinOffice2016Dark, dxSkinVisualStudio2013Blue, dxSkinVisualStudio2013Dark, dxSkinVisualStudio2013Light, dxDateRanges,
+  cxDataControllerConditionalFormattingRulesManagerDialog;
 
 type
   TfrmOrdemServico = class(TForm)

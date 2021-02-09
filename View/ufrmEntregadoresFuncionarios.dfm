@@ -189,6 +189,9 @@
     object cxTabSheet1: TcxTabSheet
       Caption = 'Cadastro'
       ImageIndex = 0
+      ExplicitTop = 0
+      ExplicitWidth = 0
+      ExplicitHeight = 0
       object cxGroupBox1: TcxGroupBox
         Left = 3
         Top = 3
@@ -2300,6 +2303,9 @@
       Caption = 'Documentos Digitalizados'
       ImageIndex = 3
       OnShow = cxTabSheet4Show
+      ExplicitTop = 0
+      ExplicitWidth = 0
+      ExplicitHeight = 0
       object cxButton2: TcxButton
         Left = 3
         Top = 381

@@ -30,6 +30,8 @@ type
     procedure setPersistir(const Value: String);
     constructor Create;
     destructor Destroy;
+    function getCadastro: Integer;
+    procedure setCadastro(const Value: Integer);
   protected
     _codigo: Integer;
     _descricao: String;
@@ -42,6 +44,7 @@ type
     _extrato: String;
     _persistir: String;
     _conexao: TConexao;
+    _cadastro: Integer;
   public
     property Codigo: Integer read getCodigo write setCodigo;
     property Descricao: String read getDescricao write setDescricao;
@@ -53,6 +56,7 @@ type
     property Desconto: TDateTime read getDescnto write setDesconto;
     property Extrato: String read getExtrato write setExtrato;
     property Persistir: String read getPersistir write setPersistir;
+    property Cadastro: Integer read getCadastro write setCadastro;
 
     procedure MaxSeq;
 
@@ -95,6 +99,11 @@ end;
 destructor TLancamentos.Destroy;
 begin
   _conexao.Free;
+end;
+
+function TLancamentos.getCadastro: Integer;
+begin
+  Result := _cadastro;
 end;
 
 function TLancamentos.getCodigo: Integer;
@@ -299,6 +308,7 @@ begin
         Self.Desconto := FieldByName('DAT_DESCONTO').AsDateTime;
         Self.Extrato := FieldByName('NUM_EXTRATO').AsString;
         Self.Persistir := FieldByName('DOM_PERSISTIR').AsString;
+        Self.Cadastro := FieldByName('COD_CADASTRO').AsInteger;
       end
       else
       begin
@@ -326,10 +336,10 @@ begin
       Close;
       SQL.Clear;
       SQL.Text := 'INSERT INTO ' + TABLENAME + '(' + 'COD_LANCAMENTO, ' +
-        'DES_LANCAMENTO, ' + 'DAT_LANCAMENTO, ' + 'COD_ENTREGADOR, ' +
+        'DES_LANCAMENTO, ' + 'DAT_LANCAMENTO, ' + 'COD_CADASTRO, COD_ENTREGADOR, ' +
         'DES_TIPO, ' + 'VAL_LANCAMENTO, ' + 'DOM_DESCONTO, ' + 'DAT_DESCONTO, '
         + 'NUM_EXTRATO, ' + 'DOM_PERSISTIR) ' + 'VALUES (' + ':CODIGO, ' +
-        ':DESCRICAO, ' + ':DATA, ' + ':ENTREGADOR, ' + ':TIPO, ' + ':VALOR, ' +
+        ':DESCRICAO, ' + ':DATA, ' + ':CADASTRO, :ENTREGADOR, ' + ':TIPO, ' + ':VALOR, ' +
         ':DESCONTADO, ' + ':DESCONTO, ' + ':EXTRATO, ' + ':PERSISTIR)';
 
       MaxSeq;
@@ -337,6 +347,7 @@ begin
       ParamByName('CODIGO').AsInteger := Self.Codigo;
       ParamByName('DESCRICAO').AsString := Self.Descricao;
       ParamByName('DATA').AsDate := Self.Data;
+      ParamByName('CADASTRO').AsInteger := Self.Cadastro;
       ParamByName('ENTREGADOR').AsInteger := Self.Entregador;
       ParamByName('TIPO').AsString := Self.Tipo;
       ParamByName('VALOR').AsFloat := Self.Valor;
@@ -370,6 +381,7 @@ begin
       SQL.Clear;
       SQL.Text := 'UPDATE ' + TABLENAME + ' SET ' +
         'DES_LANCAMENTO = :DESCRICAO, ' + 'DAT_LANCAMENTO = :DATA, ' +
+        'COD_CADASTRO = :CADASTRO, ' +
         'COD_ENTREGADOR = :ENTREGADOR, ' + 'DES_TIPO       = :TIPO, ' +
         'VAL_LANCAMENTO = :VALOR, ' + 'DOM_DESCONTO   = :DESCONTADO, ' +
         'DAT_DESCONTO   = :DESCONTO,  ' + 'NUM_EXTRATO    = :EXTRATO, ' +
@@ -378,6 +390,7 @@ begin
       ParamByName('CODIGO').AsInteger := Self.Codigo;
       ParamByName('DESCRICAO').AsString := Self.Descricao;
       ParamByName('DATA').AsDate := Self.Data;
+      ParamByName('CADASTRO').AsInteger := Self.Cadastro;
       ParamByName('ENTREGADOR').AsInteger := Self.Entregador;
       ParamByName('TIPO').AsString := Self.Tipo;
       ParamByName('VALOR').AsFloat := Self.Valor;
@@ -658,6 +671,11 @@ begin
       ShowMessage('Classe: ' + E.ClassName + chr(13) + 'Mensagem: ' +
         E.Message);
   end;
+end;
+
+procedure TLancamentos.setCadastro(const Value: Integer);
+begin
+  _cadastro := Value;
 end;
 
 procedure TLancamentos.setCodigo(const Value: Integer);

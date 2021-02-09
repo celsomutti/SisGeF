@@ -19,13 +19,13 @@ uses
   dxSkinVS2010, dxSkinWhiteprint, dxSkinXmas2008Blue, dxSkinscxPCPainter,
   cxCustomData, cxFilter, cxData, cxDataStorage, cxEdit, DB, cxDBData,
   cxGridLevel, cxClasses, cxGridCustomView, cxGridCustomTableView,
-  cxGridTableView, cxGridDBTableView, cxGrid, cxPCdxBarPopupMenu, cxPC,
+  cxGridTableView, cxGridDBTableView, cxGrid,  cxPC,
   cxContainer, cxTextEdit, cxLabel, dxmdaset, Menus, StdCtrls, cxButtons,
   ActnList, clServicos, cxNavigator, cxImage, Vcl.ExtCtrls,
   cxGridExportLink, ShellAPI, cxSpinEdit, cxCheckBox, cxCurrencyEdit,
   dxSkinMetropolis, dxSkinMetropolisDark,
   dxSkinOffice2013DarkGray, dxSkinOffice2013LightGray, dxSkinOffice2013White,
-  System.Actions, clConexao;
+  System.Actions, clConexao, dxDateRanges, cxDataControllerConditionalFormattingRulesManagerDialog;
 
 type
   TfrmServicos = class(TForm)

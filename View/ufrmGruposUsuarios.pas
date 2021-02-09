@@ -20,7 +20,7 @@ uses
   dxSkinValentine, dxSkinVS2010, dxSkinWhiteprint, dxSkinXmas2008Blue,
   dxSkinsdxBarPainter, Vcl.ActnList, dxBar, Vcl.ImgList,
   cxGraphics, cxClasses, cxControls, cxLookAndFeels, cxLookAndFeelPainters,
-  dxSkinscxPCPainter, cxPCdxBarPopupMenu, cxPC,
+  dxSkinscxPCPainter,  cxPC,
   cxContainer, cxEdit, cxTextEdit, cxLabel, cxMaskEdit, cxDropDownEdit,
   cxCheckBox, cxSpinEdit, Data.DB, dxmdaset, cxStyles,
   cxCustomData, cxFilter, cxData, cxDataStorage, cxNavigator, cxDBData,
@@ -29,7 +29,7 @@ uses
   clUsuarios, clAcessos, DateUtils, dxSkinMetropolis,
   dxSkinMetropolisDark, dxSkinOffice2013DarkGray, dxSkinOffice2013LightGray,
   dxSkinOffice2013White, dxBarBuiltInMenu, System.Actions,
-  clConexao;
+  clConexao, dxDateRanges, cxDataControllerConditionalFormattingRulesManagerDialog, System.ImageList, cxImageList;
 
 type
   TfrmGruposUsuarios = class(TForm)

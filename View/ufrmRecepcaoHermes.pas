@@ -22,7 +22,7 @@ uses
   dxSkinWhiteprint, dxSkinXmas2008Blue, cxLabel, cxImage, Vcl.ExtCtrls,
   cxGroupBox, Vcl.ComCtrls, dxCore, cxDateUtils, cxTextEdit,
   cxMaskEdit, cxDropDownEdit, cxCalendar, dxSkinscxPCPainter,
-  cxPCdxBarPopupMenu, cxPC, cxStyles, cxCustomData, cxFilter, cxData,
+   cxPC, cxStyles, cxCustomData, cxFilter, cxData,
   cxDataStorage, cxNavigator, Data.DB, cxDBData, cxGridLevel, cxClasses,
   cxGridCustomView, cxGridCustomTableView, cxGridTableView,
   cxGridDBTableView, cxGrid, Vcl.ActnList, Vcl.Menus, Vcl.StdCtrls, cxButtons,
@@ -31,7 +31,7 @@ uses
   uthrPopulaRecepcao, cxGridExportLink, ShellAPI, cxCurrencyEdit,
   clConexao, dxSkinMetropolis, dxSkinMetropolisDark, dxSkinOffice2013DarkGray,
   dxSkinOffice2013LightGray, dxSkinOffice2013White,
-  dxBarBuiltInMenu, System.Actions;
+  dxBarBuiltInMenu, System.Actions, dxDateRanges, cxDataControllerConditionalFormattingRulesManagerDialog;
 
 type
   TfrmRecepcaoHermes = class(TForm)

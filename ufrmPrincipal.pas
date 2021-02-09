@@ -23,7 +23,7 @@ uses
   cxEdit, cxListBox, dxSkinsdxStatusBarPainter,
   dxStatusBar, clAcessos, Vcl.ExtCtrls, dxRibbonSkins, dxSkinsdxRibbonPainter,
   dxBarApplicationMenu, dxRibbon, Vcl.ImgList,
-  dxRibbonStatusBar, dxSkinscxPCPainter, cxPCdxBarPopupMenu, cxPC, dxBevel,
+  dxRibbonStatusBar, dxSkinscxPCPainter, cxPC, dxBevel,
   dxSkinsdxNavBarPainter, dxNavBarCollns, dxNavBarBase,
   dxNavBar, dxCustomTileControl, dxTileControl, dxTabbedMDI, dxSkinMetropolis,
   dxSkinMetropolisDark, dxSkinOffice2013DarkGray,

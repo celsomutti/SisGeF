@@ -21,7 +21,7 @@ uses
   dxSkinsDefaultPainters, dxSkinValentine, dxSkinVS2010,
   dxSkinWhiteprint, dxSkinXmas2008Blue, cxLabel, cxImage, Vcl.ExtCtrls,
   clAgentes, clEstados, dxSkinscxPCPainter,
-  cxPCdxBarPopupMenu, cxTextEdit, cxMaskEdit, cxPC, cxDropDownEdit, cxGroupBox,
+  cxTextEdit, cxMaskEdit, cxPC, cxDropDownEdit, cxGroupBox,
   Vcl.ComCtrls, dxCore, cxDateUtils, cxCalendar,
   cxMemo, cxCalc, cxButtonEdit, cxStyles, cxCustomData, cxFilter, cxData,
   cxDataStorage, cxNavigator, Data.DB, cxDBData,
@@ -34,7 +34,8 @@ uses
   dxSkinMetropolis, dxSkinMetropolisDark, dxSkinOffice2013DarkGray,
   dxSkinOffice2013LightGray, dxSkinOffice2013White,
   dxBarBuiltInMenu, System.Actions, clAcessos, clConexao, dxSkinOffice2016Colorful, dxSkinOffice2016Dark,
-  dxSkinVisualStudio2013Blue, dxSkinVisualStudio2013Dark, dxSkinVisualStudio2013Light;
+  dxSkinVisualStudio2013Blue, dxSkinVisualStudio2013Dark, dxSkinVisualStudio2013Light, dxDateRanges,
+  cxDataControllerConditionalFormattingRulesManagerDialog;
 
 type
   TfrmEmpresasAgentes = class(TForm)

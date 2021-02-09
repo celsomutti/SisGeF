@@ -19,7 +19,7 @@ uses
   dxSkinVS2010, dxSkinWhiteprint, dxSkinXmas2008Blue, dxSkinscxPCPainter,
   cxCustomData, cxFilter, cxData, cxDataStorage, cxEdit, DB, cxDBData,
   cxGridLevel, cxClasses, cxGridCustomView, cxGridCustomTableView,
-  cxGridTableView, cxGridDBTableView, cxGrid, cxPCdxBarPopupMenu, cxPC,
+  cxGridTableView, cxGridDBTableView, cxGrid,  cxPC,
   cxContainer, cxLabel, dxmdaset, cxTextEdit, clMalote, ActnList, Menus,
   StdCtrls, cxButtons, cxMaskEdit, cxDropDownEdit, cxCalendar, cxButtonEdit,
   cxCurrencyEdit, Vcl.ComCtrls, dxCore, cxDateUtils, cxNavigator, cxImage,
@@ -28,7 +28,7 @@ uses
   dxSkinMetropolisDark, dxSkinOffice2013DarkGray,
   dxSkinOffice2013LightGray, dxSkinOffice2013White, System.Actions, clAcessos,
   clConexao, dxSkinOffice2016Colorful, dxSkinOffice2016Dark, dxSkinVisualStudio2013Blue, dxSkinVisualStudio2013Dark,
-  dxSkinVisualStudio2013Light;
+  dxSkinVisualStudio2013Light, dxDateRanges, cxDataControllerConditionalFormattingRulesManagerDialog;
 
 type
   TfrmMalotes = class(TForm)

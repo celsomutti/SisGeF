@@ -18,7 +18,7 @@ uses
   dxSkinSilver, dxSkinSpringTime, dxSkinStardust, dxSkinSummer2008,
   dxSkinTheAsphaltWorld, dxSkinsDefaultPainters, dxSkinValentine,
   dxSkinVS2010, dxSkinWhiteprint, dxSkinXmas2008Blue, dxSkinscxPCPainter,
-  cxPCdxBarPopupMenu, cxPC, cxStyles, cxCustomData,
+  cxPC, cxStyles, cxCustomData,
   cxFilter, cxData, cxDataStorage, cxEdit, DB, cxDBData, dxmdaset, cxGridLevel,
   cxClasses, cxGridCustomView, cxGridCustomTableView,
   cxGridTableView, cxGridDBTableView, cxGrid, cxGridBandedTableView,
@@ -29,7 +29,7 @@ uses
   clCliente, clAgentes, dxSkinMetropolis,
   dxSkinMetropolisDark, dxSkinOffice2013DarkGray, dxSkinOffice2013LightGray,
   dxSkinOffice2013White, dxBarBuiltInMenu,
-  System.Actions, clAcessos, clConexao;
+  System.Actions, clAcessos, clConexao, dxDateRanges, cxDataControllerConditionalFormattingRulesManagerDialog;
 
 type
   TfrmPrazosEntrega = class(TForm)
