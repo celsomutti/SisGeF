@@ -189,9 +189,6 @@
     object cxTabSheet1: TcxTabSheet
       Caption = 'Cadastro'
       ImageIndex = 0
-      ExplicitTop = 0
-      ExplicitWidth = 0
-      ExplicitHeight = 0
       object cxGroupBox1: TcxGroupBox
         Left = 3
         Top = 3
@@ -2076,7 +2073,7 @@
         object cxLabel32: TcxLabel
           Left = 11
           Top = 165
-          Caption = 'C. C&usto'
+          Caption = 'BIMER'
           FocusControl = cxCentroCusto
           Transparent = True
         end
@@ -2089,13 +2086,15 @@
             item
               Action = actCadastroApoio
               Default = True
+              Enabled = False
               Kind = bkGlyph
+              Visible = False
             end>
           Properties.IgnoreMaskBlank = True
           Properties.Images = dm.cxImageList1
           Properties.MaskKind = emkRegExpr
           Properties.Nullstring = '0'
-          Properties.EditMask = '\d\d\d\d'
+          Properties.EditMask = '\d\d\d\d\d\d'
           Properties.UseNullString = True
           Properties.OnChange = cxCentroCustoPropertiesChange
           Properties.OnValidate = cxCentroCustoPropertiesValidate
@@ -2111,6 +2110,7 @@
           Properties.CharCase = ecUpperCase
           Properties.ReadOnly = True
           TabOrder = 17
+          Visible = False
           Width = 204
         end
       end
@@ -2303,9 +2303,6 @@
       Caption = 'Documentos Digitalizados'
       ImageIndex = 3
       OnShow = cxTabSheet4Show
-      ExplicitTop = 0
-      ExplicitWidth = 0
-      ExplicitHeight = 0
       object cxButton2: TcxButton
         Left = 3
         Top = 381
@@ -2458,6 +2455,8 @@
         Properties.ShowTextStyle = cxtsText
         TabOrder = 1
         Transparent = True
+        ExplicitLeft = -374
+        ExplicitTop = -9
         Height = 24
         Width = 925
       end
@@ -2693,6 +2692,13 @@
       ImageIndex = 86
       OnExecute = actCadastroContratoExecute
     end
+    object actCadastroSolicitacaoCadastro: TAction
+      Category = 'Cadastro'
+      Caption = 'Solicita'#231#227'o de Cadastro'
+      Hint = 'Solicita'#231#227'o de cadastro no sistema financeiro'
+      ImageIndex = 92
+      OnExecute = actCadastroSolicitacaoCadastroExecute
+    end
   end
   object tbEnderecos: TdxMemData
     Indexes = <>
@@ -2824,6 +2830,10 @@
         end
         item
           Visible = True
+          ItemName = 'dxBarButton13'
+        end
+        item
+          Visible = True
           ItemName = 'dxBarButton7'
         end>
       OneOnRow = True
@@ -2908,6 +2918,11 @@
     object dxBarButton11: TdxBarButton
       Action = actCadastroInformarGV
       Category = 0
+    end
+    object dxBarButton13: TdxBarButton
+      Action = actCadastroSolicitacaoCadastro
+      Category = 0
+      PaintStyle = psCaptionGlyph
     end
   end
   object ds1: TDataSource

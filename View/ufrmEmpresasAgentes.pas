@@ -158,6 +158,8 @@ type
     cxLabel34: TcxLabel;
     cxLabel50: TcxLabel;
     cxStatus: TcxImageComboBox;
+    cxLabel16: TcxLabel;
+    cxTabela: TcxComboBox;
     procedure FormShow(Sender: TObject);
     procedure actCadastroIncluirExecute(Sender: TObject);
     procedure actCadastroEditarExecute(Sender: TObject);
@@ -432,7 +434,7 @@ begin
     Exit;
   end;
   PopulaEstados;
-  PopulaGrupos;
+  //PopulaGrupos;
   TUtil.LimparFields(Self);
   agente.Operacao := 'X';
   Modo;
@@ -670,8 +672,10 @@ begin
   begin
     cxDescricaoCentroCusto.Text := 'CENTRO DE CUSTO NÃO CADASTRADO';
   end;
+  cxTabela.Text := IntToStr(agente.Tabela);
   cxGrupoVerba.Text := IntToStr(agente.Grupo);
   cxStatus.EditValue := agente.Status;
+
 end;
 
 procedure TfrmEmpresasAgentes.SetupEndereco;
@@ -1021,6 +1025,8 @@ begin
     agente.DtCadastro := FormatDateTime('dd/mm/yyyy', Now);
   end;
   agente.DtAlteracaop := Now;
+  agente.Tabela := StrToIntDef(cxTabela.Text,0);
+  agente.Chave := '';
 end;
 
 procedure TfrmEmpresasAgentes.SalvaDados;

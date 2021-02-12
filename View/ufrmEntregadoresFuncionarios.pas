@@ -297,6 +297,8 @@ type
     cxLabel47: TcxLabel;
     cxCodigoCNH: TcxTextEdit;
     cxShellListView: TcxShellListView;
+    actCadastroSolicitacaoCadastro: TAction;
+    dxBarButton13: TdxBarButton;
     procedure FormShow(Sender: TObject);
     procedure actCadastroIncluirExecute(Sender: TObject);
     procedure actCadastroEditarExecute(Sender: TObject);
@@ -338,6 +340,7 @@ type
     procedure actCadastroDesvincularCodigoExecute(Sender: TObject);
     procedure cxNomePropertiesChange(Sender: TObject);
     procedure actCadastroContratoExecute(Sender: TObject);
+    procedure actCadastroSolicitacaoCadastroExecute(Sender: TObject);
   private
     { Private declarations }
     procedure Modo;
@@ -363,7 +366,7 @@ type
     procedure PopulaExtravios;
     procedure PopulaVeiculosEx;
     Procedure FindReplace(const Enc, subs: String; Var Texto: TcxMemo);
-    procedure TrocaCampos;
+    procedure TrocaCampos(bCadastro: boolean);
     procedure ValidaCPFCNPJ;
     procedure ListaDocumentos;
     procedure PopulaGrupos;
@@ -575,7 +578,7 @@ begin
     if not Assigned(frmEntregadorEx) then
     begin
       frmEntregadorEx := TfrmEntregadorEx.Create(Application);
-      PopulaGrupos;
+      //PopulaGrupos;
       frmEntregadorEx.sOperacao := 'U';
       frmEntregadorEx.iCadastro := StrToInt(cxCodigoSistema.Text);
       frmEntregadorEx.cxCodigoEntregador.Text :=
@@ -720,7 +723,7 @@ begin
   if not Assigned(frmEntregadorEx) then
   begin
     frmEntregadorEx := TfrmEntregadorEx.Create(Application);
-    PopulaGrupos;
+    //PopulaGrupos;
     frmEntregadorEx.sOperacao := 'I';
     frmEntregadorEx.iCadastro := entregador.Cadastro;
   end;
@@ -829,6 +832,25 @@ begin
   SalvaDados;
 end;
 
+procedure TfrmEntregadoresFuncionarios.actCadastroSolicitacaoCadastroExecute(Sender: TObject);
+begin
+  if not Assigned(frmEnvioEmail) then
+  begin
+    frmEnvioEmail := TfrmEnvioEmail.Create(Application);
+  end;
+  frmEnvioEmail.cxDestintarios.Items.Clear;
+  frmEnvioEmail.cxDestintarios.Items.Add('cadastro@novorioexpress.com');
+  frmEnvioEmail.cxAssunto.Text := 'Solicitação de Cadastro no Sistema Financeiro (Alterdata) para ' +
+    entregador.Nome;
+  TrocaCampos(True);
+  if frmEnvioEmail.ShowModal = mrCancel then
+  begin
+    FreeAndNil(frmEnvioEmail);
+    Exit;
+  end;
+  FreeAndNil(frmEnvioEmail);
+end;
+
 procedure TfrmEntregadoresFuncionarios.actCadastroSolicitarGVExecute
   (Sender: TObject);
 begin
@@ -840,7 +862,7 @@ begin
   frmEnvioEmail.cxDestintarios.Items.Add('gerenciadorisk@novorioexpress.com');
   frmEnvioEmail.cxAssunto.Text := 'Solicitação de Pesquisa GR para ' +
     entregador.Nome;
-  TrocaCampos;
+  TrocaCampos(False);
   if frmEnvioEmail.ShowModal = mrCancel then
   begin
     FreeAndNil(frmEnvioEmail);
@@ -2395,11 +2417,13 @@ begin
   end;
 end;
 
-procedure TfrmEntregadoresFuncionarios.TrocaCampos;
+procedure TfrmEntregadoresFuncionarios.TrocaCampos(bCadastro: boolean);
 var
   sEndereco: String;
   iConta: Integer;
   sEMail: String;
+  sConta: String;
+  bancos : TBancos;
 begin
 
   // dados do motorista
@@ -2566,6 +2590,25 @@ begin
     frmEnvioEmail.cxMensagem);
   FindReplace('$USER$', uGlobais.sNomeUsuario + ' em ' + DateTimeToStr(Now),
     frmEnvioEmail.cxMensagem);
+  sConta := '';
+  if bCadastro then
+  begin
+    FindReplace('$SOLICIT$', 'Favor cadastrar no sistema Financeiro o motorista abaixo:', frmEnvioEmail.cxMensagem);
+
+
+    bancos := TBancos.Create;
+    sConta := #13 + 'Dados bancários: ' + #13 + #13;
+    bancos.Codigo := entregador.Banco;
+    sConta := sConta + 'Banco: ' + entregador.Banco + ' - ' + bancos.getField('NOM_BANCO','CODIGO') + #13;
+    sConta := sConta + 'Agência: ' + entregador.Agencia + #13;
+    sConta := sConta + 'Conta: ' + entregador.NumeroConta + #13;
+    frmEnvioEmail.cxMensagem.Text := frmEnvioEmail.cxMensagem.Text + sConta;
+    bancos.Free;
+  end
+  else
+  begin
+    FindReplace('$SOLICIT$', 'Favor solicitar pesquisa GR para o motorista abaixo:', frmEnvioEmail.cxMensagem);
+  end;
 end;
 
 Procedure TfrmEntregadoresFuncionarios.FindReplace(const Enc, subs: String;

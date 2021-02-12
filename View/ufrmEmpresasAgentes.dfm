@@ -108,9 +108,6 @@
     object cxTabSheet1: TcxTabSheet
       Caption = 'Cadastro'
       ImageIndex = 0
-      ExplicitTop = 0
-      ExplicitWidth = 0
-      ExplicitHeight = 0
       object cxGroupBox1: TcxGroupBox
         Left = 3
         Top = 3
@@ -630,7 +627,7 @@
           Transparent = True
         end
         object cxVerba: TcxCalcEdit
-          Left = 76
+          Left = 79
           Top = 17
           Hint = 'Verba ou Ajuda de Custo'
           EditValue = 0.000000000000000000
@@ -673,7 +670,7 @@
             40008080400080804000808040008080400080804000}
           Properties.DisplayFormat = ' ,0.00;- ,0.00'
           TabOrder = 1
-          Width = 101
+          Width = 63
         end
         object cxLabel25: TcxLabel
           Left = 11
@@ -831,7 +828,7 @@
         object cxLabel32: TcxLabel
           Left = 11
           Top = 205
-          Caption = 'C. C&usto'
+          Caption = 'BIMER:'
           FocusControl = cxCentroCusto
           Transparent = True
         end
@@ -844,13 +841,15 @@
             item
               Action = actCadastroApoio
               Default = True
+              Enabled = False
               Kind = bkGlyph
+              Visible = False
             end>
           Properties.IgnoreMaskBlank = True
           Properties.Images = dm.cxImageList1
           Properties.MaskKind = emkRegExpr
           Properties.Nullstring = '0'
-          Properties.EditMask = '\d\d\d\d'
+          Properties.EditMask = '\d\d\d\d\d\d'
           Properties.UseNullString = True
           Properties.OnChange = cxCentroCustoPropertiesChange
           Properties.OnValidate = cxCentroCustoPropertiesValidate
@@ -866,23 +865,68 @@
           Properties.CharCase = ecUpperCase
           Properties.ReadOnly = True
           TabOrder = 20
+          Visible = False
           Width = 204
         end
         object cxLabel33: TcxLabel
-          Left = 183
+          Left = 244
           Top = 18
-          Caption = 'Grupo Verba'
+          Caption = 'Faixa Verba:'
           FocusControl = cxVerba
           Transparent = True
         end
         object cxGrupoVerba: TcxComboBox
-          Left = 253
+          Left = 312
           Top = 17
           Hint = 'C'#243'digo fo Grupo de Verbas'
+          Properties.Alignment.Horz = taRightJustify
           Properties.DropDownListStyle = lsEditFixedList
+          Properties.Items.Strings = (
+            '0'
+            '1'
+            '2'
+            '3'
+            '4'
+            '5'
+            '6'
+            '7'
+            '8'
+            '9'
+            '10')
           Properties.MaxLength = 2
           TabOrder = 2
-          Width = 57
+          Text = '0'
+          Width = 52
+        end
+        object cxLabel16: TcxLabel
+          Left = 148
+          Top = 18
+          Caption = 'Tabela:'
+          FocusControl = cxVerba
+          Transparent = True
+        end
+        object cxTabela: TcxComboBox
+          Left = 191
+          Top = 17
+          Hint = 'C'#243'digo fo Grupo de Verbas'
+          Properties.Alignment.Horz = taRightJustify
+          Properties.DropDownListStyle = lsEditFixedList
+          Properties.Items.Strings = (
+            '0'
+            '1'
+            '2'
+            '3'
+            '4'
+            '5'
+            '6'
+            '7'
+            '8'
+            '9'
+            '10')
+          Properties.MaxLength = 2
+          TabOrder = 23
+          Text = '0'
+          Width = 47
         end
       end
       object cxGroupBox5: TcxGroupBox
@@ -899,10 +943,6 @@
           Height = 101
           Align = alClient
           TabOrder = 0
-          ExplicitLeft = 3
-          ExplicitTop = 15
-          ExplicitWidth = 520
-          ExplicitHeight = 96
           object cxGrid1DBTableView1: TcxGridDBTableView
             Navigator.Buttons.CustomButtons = <>
             Navigator.Buttons.Images = dm.cxImageList1

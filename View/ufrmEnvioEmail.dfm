@@ -199,7 +199,7 @@ object frmEnvioEmail: TfrmEnvioEmail
       Top = 3
       Anchors = [akLeft, akTop, akRight, akBottom]
       Lines.Strings = (
-        'Favor solicitar pesquisa GR para o motorista abaixo:'
+        '$SOLICIT$'
         ''
         'DADOS PESSOAIS'
         ''

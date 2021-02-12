@@ -41,6 +41,10 @@ type
     procedure setCentroCusto(const Value: Integer);
     function getGrupo: Integer;
     procedure setGrupo(const Value: Integer);
+    function getTabela: Integer;
+    procedure setTabela(const Value: Integer);
+    function getChave: String;
+    procedure setChave(const Value: String);
 
   protected
 
@@ -60,6 +64,8 @@ type
     _cabecacep: TCEPAgentes;
     _centrocusto: Integer;
     _grupo: Integer;
+    _tabela : Integer;
+    _chave: String;
     _conexao: TConexao;
   public
     destructor Destroy;
@@ -79,6 +85,8 @@ type
     property Verba: Double read getVerba write setVerba;
     property CentroCusto: Integer read getCentroCusto write setCentroCusto;
     property Grupo: Integer read getGrupo write setGrupo;
+    property Tabela: Integer read getTabela write setTabela;
+    property Chave: String read getChave write setChave;
 
     function Validar(): Boolean;
     function Delete(filtro: String): Boolean;
@@ -118,6 +126,11 @@ begin
   Result := _centrocusto;
 end;
 
+function TAgente.getChave: String;
+begin
+  Result := _chave;
+end;
+
 function TAgente.getCnh: String;
 begin
   Result := _cnh;
@@ -151,6 +164,11 @@ end;
 function TAgente.getStatus: String;
 begin
   Result := _status;
+end;
+
+function TAgente.getTabela: Integer;
+begin
+  Result := _tabela;
 end;
 
 function TAgente.getValidadeCnh: TDateTime;
@@ -382,6 +400,8 @@ begin
         Self.Forma := FieldByName('DES_FORMA_PAGAMENTO').AsString;
         Self.CentroCusto := FieldByName('COD_CENTRO_CUSTO').AsInteger;
         Self.Grupo := FieldByName('COD_GRUPO').AsInteger;
+        Self.Tabela := FieldByName('COD_TABELA').AsInteger;
+        Self.Chave := FieldByName('DES_CHAVE').AsString;
       end
       else
       begin
@@ -414,13 +434,14 @@ begin
         'DAT_CADASTRO, ' + 'VAL_VERBA, ' + 'DES_TIPO_CONTA, ' + 'COD_BANCO, ' +
         'COD_AGENCIA, ' + 'NUM_CONTA, ' + 'NOM_FAVORECIDO, ' +
         'NUM_CPF_CNPJ_FAVORECIDO, ' + 'DES_FORMA_PAGAMENTO, ' +
-        'COD_CENTRO_CUSTO, ' + 'COD_GRUPO, ' + 'DAT_ALTERACAO) ' + 'VALUES (' +
+        'COD_CENTRO_CUSTO, ' + 'COD_GRUPO, ' + 'DAT_ALTERACAO, COD_TABELA, DES_CHAVE) ' +
+        'VALUES (' +
         ':CODIGO, ' + ':RAZAO, ' + ':FANTASIA, ' + ':TIPODOC, ' + ':CNPJ, ' +
         ':IE, ' + ':IEST, ' + ':IM, ' + ':CNAE, ' + ':CRT, ' + ':CNH, ' +
         ':CATEGORIACNH, ' + ':VALIDADECNH, ' + ':PAGINA, ' + ':STATUS, ' +
         ':OBS, ' + ':CADASTRO, ' + ':VERBA, ' + ':TIPOCONTA, ' + ':BANCO, ' +
         ':AGENCIA, ' + ':CONTA, ' + ':FAVORECIDO, ' + ':CPFCNPJFAVORECIDO, ' +
-        ':FORMA, ' + ':CENTROCUSTO, ' + ':GRUPO, ' + ':ALTERACAO)';
+        ':FORMA, ' + ':CENTROCUSTO, ' + ':GRUPO, ' + ':ALTERACAO, :TABELA, :CHAVE)';
 
       ParamByName('CODIGO').AsInteger := StrToInt(Self.Codigo);
       ParamByName('RAZAO').AsString := Self.Razao;
@@ -450,6 +471,8 @@ begin
       ParamByName('ALTERACAO').AsDateTime := Self.DtAlteracaop;
       ParamByName('CENTROCUSTO').AsInteger := Self.CentroCusto;
       ParamByName('GRUPO').AsInteger := Self.Grupo;
+      ParamByName('TABELA').AsInteger := Self.Tabela;
+      ParamByName('CHAVE').AsString := Self.Chave;
       dm.ZConn.PingServer;
       ExecSQL;
     end;
@@ -488,7 +511,8 @@ begin
         'NOM_FAVORECIDO = :FAVORECIDO, ' +
         'NUM_CPF_CNPJ_FAVORECIDO = :CPFCNPJFAVORECIDO, ' +
         'DES_FORMA_PAGAMENTO = :FORMA, ' + 'COD_CENTRO_CUSTO = :CENTROCUSTO, ' +
-        'COD_GRUPO = :GRUPO, ' + 'DAT_ALTERACAO = :ALTERACAO ' + 'WHERE ' +
+        'COD_GRUPO = :GRUPO, ' + 'DAT_ALTERACAO = :ALTERACAO, COD_TABELA = :TABELA, DES_CHAVE = :CHAVE ' +
+        'WHERE ' +
         'COD_AGENTE = :CODIGO';
 
       ParamByName('CODIGO').AsInteger := StrToInt(Self.Codigo);
@@ -519,6 +543,8 @@ begin
       ParamByName('ALTERACAO').AsDateTime := Self.DtAlteracaop;
       ParamByName('CENTROCUSTO').AsInteger := Self.CentroCusto;
       ParamByName('GRUPO').AsInteger := Self.Grupo;
+      ParamByName('TABELA').AsInteger := Self.Tabela;
+      ParamByName('CHAVE').AsString := Self.Chave;
       dm.ZConn.PingServer;
       ExecSQL;
     end;
@@ -672,6 +698,11 @@ begin
   _centrocusto := Value;
 end;
 
+procedure TAgente.setChave(const Value: String);
+begin
+  _chave := Value;
+end;
+
 procedure TAgente.setCnh(const Value: String);
 begin
   _cnh := Value;
@@ -705,6 +736,11 @@ end;
 procedure TAgente.setStatus(const Value: String);
 begin
   _status := Value;
+end;
+
+procedure TAgente.setTabela(const Value: Integer);
+begin
+  _tabela := Value;
 end;
 
 procedure TAgente.setValidadeCnh(const Value: TDateTime);
