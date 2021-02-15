@@ -5,7 +5,7 @@
         <FrameworkType>VCL</FrameworkType>
         <MainSource>SisGef.dpr</MainSource>
         <Base>True</Base>
-        <Config Condition="'$(Config)'==''">Debug</Config>
+        <Config Condition="'$(Config)'==''">Release</Config>
         <Platform Condition="'$(Platform)'==''">Win32</Platform>
         <TargetedPlatforms>3</TargetedPlatforms>
         <AppType>Application</AppType>
@@ -133,11 +133,11 @@
         <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
         <VerInfo_MajorVer>4</VerInfo_MajorVer>
         <VerInfo_MinorVer>4</VerInfo_MinorVer>
-        <VerInfo_Build>83</VerInfo_Build>
+        <VerInfo_Build>86</VerInfo_Build>
         <VerInfo_Locale>1046</VerInfo_Locale>
         <AppEnableRuntimeThemes>true</AppEnableRuntimeThemes>
         <VerInfo_Release>1</VerInfo_Release>
-        <VerInfo_Keys>CompanyName=Alô Carioca Serviços e Entregas e Transportes Ltda.;FileDescription=Executável do Sistema Gerenciador de Franquia;FileVersion=4.4.1.83;InternalName=SisGeF;LegalCopyright=Copyright © 2008-2021 Alô Carioca;LegalTrademarks=;OriginalFilename=SisGeF;ProductName=SisGef;ProductVersion=4.4.1;Comments=;ProgramID=com.novorioexpress.$(MSBuildProjectName)</VerInfo_Keys>
+        <VerInfo_Keys>CompanyName=Alô Carioca Serviços e Entregas e Transportes Ltda.;FileDescription=Executável do Sistema Gerenciador de Franquia;FileVersion=4.4.1.86;InternalName=SisGeF;LegalCopyright=Copyright © 2008-2021 Alô Carioca;LegalTrademarks=;OriginalFilename=SisGeF;ProductName=SisGef;ProductVersion=4.4.1;Comments=;ProgramID=com.novorioexpress.$(MSBuildProjectName)</VerInfo_Keys>
         <BT_BuildType>Debug</BT_BuildType>
         <VerInfo_AutoIncVersion>true</VerInfo_AutoIncVersion>
     </PropertyGroup>
