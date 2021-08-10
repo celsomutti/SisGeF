@@ -2867,7 +2867,8 @@ var
 begin
   begin
     sEndereco := '';
-    sData:= InputBox('Informe a Data','Data da Vigência:', '');
+    //sData:= InputBox('Informe a Data','Data da Vigência:', '');
+    sData := cxDataCadastro.Text;
     dtData := StrToDateDef(sData,0);
     sDataExtenso := FormatDateTime('dd "de" mmmm "de" yyyy', dtData);
     with dm.frxReport do begin
@@ -2897,16 +2898,11 @@ begin
       sEndereco := sEndereco + ', ' + cxCidade.Text + '/' + cxUF.Text;
       LoadFromFile(frmImpressao.cxArquivo.Text);
       Variables.Items[Variables.IndexOf('parNome')].Value :=  QuotedStr(cxNome.Text);
-      Variables.Items[Variables.IndexOf('parNacionalidade')].Value :=  QuotedStr('brasileira');
-      Variables.Items[Variables.IndexOf('parEstadoCivil')].Value :=  QuotedStr('casado');
-      Variables.Items[Variables.IndexOf('parProfissao')].Value :=  QuotedStr('entregador');
       Variables.Items[Variables.IndexOf('parIdentidade')].Value :=  QuotedStr(cxRGIE.Text);
       Variables.Items[Variables.IndexOf('parCPF')].Value :=  QuotedStr(cxCPF.Text);
       Variables.Items[Variables.IndexOf('parEndereco')].Value :=  QuotedStr(sEndereco);
       Variables.Items[Variables.IndexOf('parRazaoSocial')].Value :=  QuotedStr(txtRazaoMEI.Text);
       Variables.Items[Variables.IndexOf('parCNPJ')].Value :=  QuotedStr(mskCNPJMEI.Text);
-      Variables.Items[Variables.IndexOf('parRG')].Value :=  QuotedStr(cxRGIE.Text);
-      Variables.Items[Variables.IndexOf('parVigencia')].Value :=  QuotedStr(FormatDateTime('dd/mm/yyyy', dtData));
       Variables.Items[Variables.IndexOf('parData')].Value :=  QuotedStr(sDataExtenso);
       FreeAndNil(frmImpressao);
       if (not uGlobais.bFlagImprimir) then

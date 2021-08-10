@@ -2455,8 +2455,6 @@
         Properties.ShowTextStyle = cxtsText
         TabOrder = 1
         Transparent = True
-        ExplicitLeft = -374
-        ExplicitTop = -9
         Height = 24
         Width = 925
       end
@@ -2996,7 +2994,7 @@
     PrintOptions.Printer = 'Padr'#227'o'
     PrintOptions.PrintOnSheet = 0
     ReportOptions.CreateDate = 42524.693230092600000000
-    ReportOptions.LastChange = 43686.679404120370000000
+    ReportOptions.LastChange = 44418.498957847220000000
     ScriptLanguage = 'PascalScript'
     StoreInDFM = False
     Left = 960
