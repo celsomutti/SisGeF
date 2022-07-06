@@ -30,7 +30,7 @@ uses
   dxSkinOffice2013LightGray, dxSkinOffice2013White, System.Actions, clAcessos,
   uthrPopularEntregadoresVencidos, cxGridExportLink,
   ShellAPI, clConexao, cxTextEdit, dxSkinOffice2016Colorful, dxSkinOffice2016Dark, dxSkinVisualStudio2013Blue,
-  dxSkinVisualStudio2013Dark, dxSkinVisualStudio2013Light;
+  dxSkinVisualStudio2013Dark, dxSkinVisualStudio2013Light, dxDateRanges, cxDataControllerConditionalFormattingRulesManagerDialog;
 
 type
   TfrmPesquisaEntregadores = class(TForm)
@@ -262,3 +262,4 @@ begin
 end;
 
 end.
+

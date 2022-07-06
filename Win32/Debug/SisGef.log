@@ -6,3 +6,43 @@ Caption do Form......: Cadastro de Entregadores, Funcionários e Contratados
 Classe da Exception..: EcxEditError
 Mensagem de Exception: Parâmetro incorreto
 
+Exception ocorrida em 06 de jul de 2022 às 11:29:21
+----------------------------------------
+Form.................: frmTabelasAuxiliaresCadastro
+Caption do Form......: Tabelas Auxiliares de Cadastro
+----------------------------------------
+Classe da Exception..: EMySQLNativeException
+Mensagem de Exception: [FireDAC][Phys][MySQL] Table 'bderpsisgef.cad_tipo_cadastro' doesn't exist
+
+Exception ocorrida em 06 de jul de 2022 às 11:32:07
+----------------------------------------
+Form.................: frmOrdemServico
+Caption do Form......: Controle de Ordens de Serviços
+----------------------------------------
+Classe da Exception..: EAccessViolation
+Mensagem de Exception: Access violation at address 7BC089BF in module 'libmysql.dll'. Read of address 64064F47
+
+Exception ocorrida em 06 de jul de 2022 às 12:13:43
+----------------------------------------
+Form.................: frmOrdemServico
+Caption do Form......: Controle de Ordens de Serviços
+----------------------------------------
+Classe da Exception..: EConvertError
+Mensagem de Exception: '' is not a valid floating point value
+
+Exception ocorrida em 06 de jul de 2022 às 12:14:05
+----------------------------------------
+Form.................: frmOrdemServico
+Caption do Form......: Controle de Ordens de Serviços
+----------------------------------------
+Classe da Exception..: EConvertError
+Mensagem de Exception: '' is not a valid floating point value
+
+Exception ocorrida em 06 de jul de 2022 às 12:21:28
+----------------------------------------
+Form.................: frmOrdemServico
+Caption do Form......: Controle de Ordens de Serviços
+----------------------------------------
+Classe da Exception..: EConvertError
+Mensagem de Exception: '' is not a valid floating point value
+

@@ -392,8 +392,7 @@ object frmMain: TfrmMain
     TabOrder = 0
     TabStop = False
     object rtbArquivo: TdxRibbonTab
-      Active = True
-      Caption = 'Arquivos'
+      Caption = 'Arquivo'
       Groups = <
         item
           ToolbarName = 'bmMainBar6'
@@ -401,6 +400,7 @@ object frmMain: TfrmMain
       Index = 0
     end
     object rtbCadastro: TdxRibbonTab
+      Active = True
       Caption = 'Cadastro'
       Groups = <
         item
@@ -705,7 +705,7 @@ object frmMain: TfrmMain
     object bmMainBar2: TdxBar
       Caption = 'Servi'#231'os e Transportes'
       CaptionButtons = <>
-      DockedLeft = 341
+      DockedLeft = 339
       DockedTop = 0
       FloatLeft = 1015
       FloatTop = 8
@@ -737,7 +737,7 @@ object frmMain: TfrmMain
     object bmMainBar3: TdxBar
       Caption = 'Expressas'
       CaptionButtons = <>
-      DockedLeft = 630
+      DockedLeft = 626
       DockedTop = 0
       FloatLeft = 1015
       FloatTop = 8
@@ -761,7 +761,7 @@ object frmMain: TfrmMain
     object bmMainBar4: TdxBar
       Caption = 'Di'#225'rio'
       CaptionButtons = <>
-      DockedLeft = 754
+      DockedLeft = 748
       DockedTop = 0
       FloatLeft = 1015
       FloatTop = 8
@@ -793,7 +793,7 @@ object frmMain: TfrmMain
     object bmMainBar5: TdxBar
       Caption = 'Financeiro'
       CaptionButtons = <>
-      DockedLeft = 963
+      DockedLeft = 955
       DockedTop = 0
       FloatLeft = 1015
       FloatTop = 8
@@ -1270,7 +1270,7 @@ object frmMain: TfrmMain
     object bmMainBar24: TdxBar
       Caption = 'Opera'#231#227'o'
       CaptionButtons = <>
-      DockedLeft = 128
+      DockedLeft = 126
       DockedTop = 0
       FloatLeft = 1389
       FloatTop = 8

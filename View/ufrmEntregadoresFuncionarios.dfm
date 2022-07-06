@@ -1299,7 +1299,6 @@
           Left = 79
           Top = 191
           EditValue = 1
-          Properties.Images = dm.cxImageList1
           Properties.Items = <
             item
               Description = 'REPROVADO GR'
@@ -1549,7 +1548,6 @@
           TabOrder = 0
           object cxGrid1DBTableView1: TcxGridDBTableView
             Navigator.Buttons.CustomButtons = <>
-            Navigator.Buttons.Images = dm.cxImageList1
             Navigator.Buttons.First.Hint = 'Primeiro Contato'
             Navigator.Buttons.Prior.Visible = False
             Navigator.Buttons.Next.Hint = 'Pr'#243'ximo Contato'
@@ -1577,7 +1575,6 @@
             DataController.Summary.DefaultGroupSummaryItems = <>
             DataController.Summary.FooterSummaryItems = <>
             DataController.Summary.SummaryGroups = <>
-            Images = dm.cxImageList1
             OptionsBehavior.FocusCellOnTab = True
             OptionsBehavior.FocusFirstCellOnNewRecord = True
             OptionsBehavior.GoToNextCellOnEnter = True
@@ -1982,7 +1979,6 @@
               Kind = bkGlyph
             end>
           Properties.IgnoreMaskBlank = True
-          Properties.Images = dm.cxImageList1
           Properties.MaskKind = emkRegExpr
           Properties.Nullstring = '0'
           Properties.EditMask = '\d\d\d\d'
@@ -2091,7 +2087,6 @@
               Visible = False
             end>
           Properties.IgnoreMaskBlank = True
-          Properties.Images = dm.cxImageList1
           Properties.MaskKind = emkRegExpr
           Properties.Nullstring = '0'
           Properties.EditMask = '\d\d\d\d\d\d'
@@ -2686,7 +2681,8 @@
     end
     object actCadastroContrato: TAction
       Category = 'Cadastro'
-      Caption = 'Contrato'
+      Caption = 'Contrato PJ'
+      Hint = 'Emiss'#227'o de contrato de presta'#231#227'o de servi'#231'os Pessoa Jur'#237'dica'
       ImageIndex = 86
       OnExecute = actCadastroContratoExecute
     end
@@ -2696,6 +2692,13 @@
       Hint = 'Solicita'#231#227'o de cadastro no sistema financeiro'
       ImageIndex = 92
       OnExecute = actCadastroSolicitacaoCadastroExecute
+    end
+    object actionCadastroContratoPF: TAction
+      Category = 'Cadastro'
+      Caption = 'Contrato PF'
+      Hint = 'Emiss'#227'o de contrato de presta'#231#227'o de servi'#231'los Pessoa F'#237'sica'
+      ImageIndex = 86
+      OnExecute = actionCadastroContratoPFExecute
     end
   end
   object tbEnderecos: TdxMemData
@@ -2765,7 +2768,6 @@
       2)
     Categories.Visibles = (
       True)
-    ImageOptions.Images = dm.cxImageList1
     PopupMenuLinks = <>
     UseSystemFont = True
     Left = 648
@@ -2791,6 +2793,7 @@
       FloatTop = 8
       FloatClientWidth = 0
       FloatClientHeight = 0
+      Images = dm.cxImageList1
       ItemLinks = <
         item
           Visible = True
@@ -2822,9 +2825,8 @@
           ItemName = 'dxBarSubItem1'
         end
         item
-          BeginGroup = True
           Visible = True
-          ItemName = 'dxBarButton12'
+          ItemName = 'dxBarSubItem2'
         end
         item
           Visible = True
@@ -2922,10 +2924,31 @@
       Category = 0
       PaintStyle = psCaptionGlyph
     end
+    object dxBarSubItem2: TdxBarSubItem
+      Caption = 'Contratos'
+      Category = 0
+      Visible = ivAlways
+      ItemLinks = <
+        item
+          Visible = True
+          ItemName = 'dxBarButton14'
+        end
+        item
+          Visible = True
+          ItemName = 'dxBarButton15'
+        end>
+    end
+    object dxBarButton14: TdxBarButton
+      Action = actCadastroContrato
+      Category = 0
+    end
+    object dxBarButton15: TdxBarButton
+      Action = actionCadastroContratoPF
+      Category = 0
+    end
   end
   object ds1: TDataSource
     AutoEdit = False
-    DataSet = dm.tbExtravios
     Left = 856
     Top = 8
   end
@@ -2994,7 +3017,7 @@
     PrintOptions.Printer = 'Padr'#227'o'
     PrintOptions.PrintOnSheet = 0
     ReportOptions.CreateDate = 42524.693230092600000000
-    ReportOptions.LastChange = 44418.498957847220000000
+    ReportOptions.LastChange = 44518.422828923610000000
     ScriptLanguage = 'PascalScript'
     StoreInDFM = False
     Left = 960

@@ -737,16 +737,13 @@ object frmOrdemServico: TfrmOrdemServico
     Properties.ActivePage = cxTabSheet1
     Properties.CustomButtons.Buttons = <>
     Properties.Images = dm.cxImageList1
+    ExplicitLeft = -2
     ClientRectBottom = 463
     ClientRectRight = 807
     ClientRectTop = 25
     object cxTabSheet1: TcxTabSheet
       Caption = 'Ordem de Servi'#231'o'
       ImageIndex = 41
-      ExplicitLeft = 2
-      ExplicitTop = 29
-      ExplicitWidth = 803
-      ExplicitHeight = 432
       DesignSize = (
         807
         438)
@@ -979,7 +976,7 @@ object frmOrdemServico: TfrmOrdemServico
             item
               Format = ' ,0.00;- ,0.00'
               Kind = skSum
-              Column = cxGrid1DBTableView1VAL_SERVICO
+              Column = cxGrid1DBTableView1VAL_TOTAL
             end>
           DataController.Summary.SummaryGroups = <>
           NewItemRow.InfoText = 'Clique aqui para incluir'
@@ -1015,12 +1012,20 @@ object frmOrdemServico: TfrmOrdemServico
                 Kind = bkGlyph
               end>
             Properties.Images = dm.cxImageList1
-            Width = 637
+            Width = 512
+          end
+          object cxGrid1DBTableView1QTD_SERVICO: TcxGridDBColumn
+            Caption = 'Qtde.'
+            DataBinding.FieldName = 'QTD_SERVICO'
           end
           object cxGrid1DBTableView1VAL_SERVICO: TcxGridDBColumn
             DataBinding.FieldName = 'VAL_SERVICO'
             PropertiesClassName = 'TcxCurrencyEditProperties'
             Width = 96
+          end
+          object cxGrid1DBTableView1VAL_TOTAL: TcxGridDBColumn
+            Caption = 'Total'
+            DataBinding.FieldName = 'VAL_TOTAL'
           end
         end
         object cxGrid1Level1: TcxGridLevel
@@ -1036,8 +1041,6 @@ object frmOrdemServico: TfrmOrdemServico
         Action = actCadastroIncluir
         Anchors = [akRight, akBottom]
         TabOrder = 23
-        ExplicitLeft = 207
-        ExplicitTop = 404
       end
       object cxButton3: TcxButton
         Left = 283
@@ -1048,8 +1051,6 @@ object frmOrdemServico: TfrmOrdemServico
         Action = actCadastroExcluir
         Anchors = [akRight, akBottom]
         TabOrder = 24
-        ExplicitLeft = 279
-        ExplicitTop = 404
       end
       object cxButton7: TcxButton
         Left = 355
@@ -1061,8 +1062,6 @@ object frmOrdemServico: TfrmOrdemServico
         Anchors = [akRight, akBottom]
         Cancel = True
         TabOrder = 25
-        ExplicitLeft = 351
-        ExplicitTop = 404
       end
       object cxButton6: TcxButton
         Left = 428
@@ -1073,8 +1072,6 @@ object frmOrdemServico: TfrmOrdemServico
         Action = actCadastroLocalizar
         Anchors = [akRight, akBottom]
         TabOrder = 26
-        ExplicitLeft = 424
-        ExplicitTop = 404
       end
       object cxButton4: TcxButton
         Left = 587
@@ -1085,8 +1082,6 @@ object frmOrdemServico: TfrmOrdemServico
         Action = actCadastroSalvar
         Anchors = [akRight, akBottom]
         TabOrder = 28
-        ExplicitLeft = 583
-        ExplicitTop = 404
       end
       object cxButton5: TcxButton
         Left = 740
@@ -1097,8 +1092,6 @@ object frmOrdemServico: TfrmOrdemServico
         Action = actCadastroSair
         Anchors = [akRight, akBottom]
         TabOrder = 29
-        ExplicitLeft = 736
-        ExplicitTop = 403
       end
       object cxButton1: TcxButton
         Left = 507
@@ -1109,8 +1102,6 @@ object frmOrdemServico: TfrmOrdemServico
         Action = actCadastroImprimir
         Anchors = [akRight, akBottom]
         TabOrder = 27
-        ExplicitLeft = 503
-        ExplicitTop = 404
       end
       object cxKM: TcxCheckBox
         Tag = -1
@@ -1170,17 +1161,11 @@ object frmOrdemServico: TfrmOrdemServico
         Action = actCadastroImportar
         Anchors = [akRight, akBottom]
         TabOrder = 33
-        ExplicitLeft = 655
-        ExplicitTop = 404
       end
     end
     object cxTabSheet2: TcxTabSheet
       Caption = 'Extrato'
       ImageIndex = 30
-      ExplicitLeft = 2
-      ExplicitTop = 29
-      ExplicitWidth = 803
-      ExplicitHeight = 432
       DesignSize = (
         807
         438)
@@ -1352,7 +1337,6 @@ object frmOrdemServico: TfrmOrdemServico
         Action = actCadastroExecutar
         Anchors = [akTop, akRight]
         TabOrder = 7
-        ExplicitLeft = 711
       end
       object cxGrid2: TcxGrid
         Left = 3
@@ -1432,7 +1416,7 @@ object frmOrdemServico: TfrmOrdemServico
             HeaderAlignmentHorz = taCenter
             SortIndex = 0
             SortOrder = soAscending
-            Width = 45
+            Width = 34
           end
           object cxGrid2DBTableView1DAT_OS: TcxGridDBColumn
             Caption = 'Data'
@@ -1452,6 +1436,7 @@ object frmOrdemServico: TfrmOrdemServico
           object cxGrid2DBTableView1NOM_ENTREGADOR: TcxGridDBColumn
             Caption = 'Entregador/Motorista'
             DataBinding.FieldName = 'NOM_ENTREGADOR'
+            Width = 181
           end
           object cxGrid2DBTableView1COD_CLIENTE: TcxGridDBColumn
             Caption = 'Cliente'
@@ -1472,7 +1457,7 @@ object frmOrdemServico: TfrmOrdemServico
             Caption = 'Servi'#231'o'
             DataBinding.FieldName = 'DES_SERVICO'
             PropertiesClassName = 'TcxTextEditProperties'
-            Width = 427
+            Width = 181
           end
           object cxGrid2DBTableView1VAL_SERVICO: TcxGridDBColumn
             Caption = 'Valor'
@@ -1506,8 +1491,6 @@ object frmOrdemServico: TfrmOrdemServico
         Action = atCadastroImprimirExtrato
         Anchors = [akRight, akBottom]
         TabOrder = 9
-        ExplicitLeft = 202
-        ExplicitTop = 409
       end
       object cxButton10: TcxButton
         Left = 340
@@ -1518,8 +1501,6 @@ object frmOrdemServico: TfrmOrdemServico
         Action = actCadastroExportar
         Anchors = [akRight, akBottom]
         TabOrder = 10
-        ExplicitLeft = 336
-        ExplicitTop = 409
       end
       object cxButton11: TcxButton
         Left = 474
@@ -1560,11 +1541,12 @@ object frmOrdemServico: TfrmOrdemServico
     AnchorY = 22
   end
   object tbServicos: TdxMemData
-    Active = True
     Indexes = <>
     SortOptions = []
     SortedField = 'NUM_ITEM'
+    AfterInsert = tbServicosAfterInsert
     BeforePost = tbServicosBeforePost
+    OnCalcFields = tbServicosCalcFields
     Left = 668
     Top = 16
     object tbServicosDES_SERVICO: TStringField
@@ -1579,6 +1561,16 @@ object frmOrdemServico: TfrmOrdemServico
     end
     object tbServicosNUM_ITEM: TIntegerField
       FieldName = 'NUM_ITEM'
+    end
+    object tbServicosQTD_SERVICO: TFloatField
+      FieldName = 'QTD_SERVICO'
+      DisplayFormat = ' ,0.000;- ,0.000'
+    end
+    object tbServicosVAL_TOTAL: TFloatField
+      FieldKind = fkCalculated
+      FieldName = 'VAL_TOTAL'
+      DisplayFormat = ' ,0.00;- ,0.00'
+      Calculated = True
     end
   end
   object DS: TDataSource

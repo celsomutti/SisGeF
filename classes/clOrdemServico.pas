@@ -216,11 +216,11 @@ begin
     MessageDlg('Informe o Entregador!', mtWarning, [mbOK], 0);
     Exit;
   end;
-  if Self.Veiculo = 0 then
-  begin
-    MessageDlg('Informe o Veiculo!', mtWarning, [mbOK], 0);
-    Exit;
-  end;
+//  if Self.Veiculo = 0 then
+//  begin
+//    MessageDlg('Informe o Veiculo!', mtWarning, [mbOK], 0);
+//    Exit;
+//  end;
   if Self.KmFinal > 0 then
   begin
     if Self.KmFinal < Self.KmInicial then
@@ -623,7 +623,7 @@ begin
       SQL.Add(' WHERE DAT_OS BETWEEN :INICIO AND :TERMINO');
       if StrToInt(sEntregador) > 0 then
       begin
-        SQL.Add(' AND COD_CLIENTE = :CLIENTE');
+        SQL.Add(' AND COD_ENTREGADOR = :CLIENTE');
       end;
       ParamByName('INICIO').AsDate := StrToDate(sdtInicial);
       ParamByName('TERMINO').AsDate := StrToDate(sdtFinal);

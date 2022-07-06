@@ -147,6 +147,10 @@ type
     dsCliente: TDataSource;
     tbExtratoDES_PLACA: TStringField;
     cxGrid2DBTableView1DES_PLACA: TcxGridDBColumn;
+    tbServicosQTD_SERVICO: TFloatField;
+    cxGrid1DBTableView1QTD_SERVICO: TcxGridDBColumn;
+    tbServicosVAL_TOTAL: TFloatField;
+    cxGrid1DBTableView1VAL_TOTAL: TcxGridDBColumn;
     procedure FormShow(Sender: TObject);
     procedure actCadastroIncluirExecute(Sender: TObject);
     procedure actCadastroExcluirExecute(Sender: TObject);
@@ -182,6 +186,8 @@ type
       var DisplayValue: Variant; var ErrorText: TCaption; var Error: Boolean);
     procedure cxNumeroExit(Sender: TObject);
     procedure actCadastroImportarExecute(Sender: TObject);
+    procedure tbServicosAfterInsert(DataSet: TDataSet);
+    procedure tbServicosCalcFields(DataSet: TDataSet);
   private
     { Private declarations }
     procedure Modo;
@@ -527,7 +533,7 @@ end;
 procedure TfrmOrdemServico.AtualizaGrid;
 var
   Contador, i, ITam: Integer;
-  Linha, sItem, sDescricao, sValor: String;
+  Linha, sItem, sDescricao, sValor, sQtde, sUnitario: String;
   sItens: TStringList;
 
   // Lê Linha e Monta os valores
@@ -576,10 +582,20 @@ begin
     end;
     if Contador = 3 then
     begin
+      sQtde := MontaValor;
+      inc(Contador);
+    end;
+    if Contador = 4 then
+    begin
+      sUnitario := MontaValor;
+      inc(Contador);
+    end;
+    if Contador = 5 then
+    begin
       sValor := MontaValor;
       inc(Contador);
     end;
-    if Contador > 3 then
+    if Contador > 5 then
     begin
       Contador := 1;
     end;
@@ -587,7 +603,8 @@ begin
     begin
       tbServicos.Insert;
       tbServicosDES_SERVICO.AsString := sDescricao;
-      tbServicosVAL_SERVICO.AsFloat := StrToFloat(sValor);
+      tbServicosQTD_SERVICO.AsFloat := StrToFloat(sQtde);
+      tbServicosVAL_SERVICO.AsFloat := StrToFloat(sUnitario);
       tbServicos.Post;
     end;
   end;
@@ -658,6 +675,7 @@ begin
     end;
     sItens.Add(tbServicos.RecIdField.AsString + '|' +
       tbServicosDES_SERVICO.AsString + '|' +
+      tbServicosQTD_SERVICO.AsString + '|' +
       tbServicosVAL_SERVICO.AsString + '|');
     tbServicos.Next;
   end;
@@ -937,9 +955,20 @@ begin
   end;
 end;
 
+procedure TfrmOrdemServico.tbServicosAfterInsert(DataSet: TDataSet);
+begin
+  if tbServicos.Tag = 0 then
+    tbServicosQTD_SERVICO.AsInteger := 1;
+end;
+
 procedure TfrmOrdemServico.tbServicosBeforePost(DataSet: TDataSet);
 begin
   tbServicosNUM_ITEM.AsInteger := tbServicos.RecIdField.AsInteger;
+end;
+
+procedure TfrmOrdemServico.tbServicosCalcFields(DataSet: TDataSet);
+begin
+  tbServicosVAL_TOTAL.AsFloat := tbServicosQTD_SERVICO.AsFloat * tbServicosVAL_SERVICO.AsFloat;
 end;
 
 procedure TfrmOrdemServico.cxEntregadorPropertiesChange(Sender: TObject);
@@ -1031,7 +1060,7 @@ begin
             tbExtratoNUM_SERVICO.AsInteger := iItem;
             inc(iItem, 1);
             tbExtratoDES_SERVICO.AsString := tbServicosDES_SERVICO.AsString;
-            tbExtratoVAL_SERVICO.AsFloat := tbServicosVAL_SERVICO.AsFloat;
+            tbExtratoVAL_SERVICO.AsFloat := tbServicosVAL_TOTAL.AsFloat;
             tbExtratoNUM_OS.AsInteger := os.Numero;
             tbExtratoDAT_OS.AsDateTime := os.Data;
             tbExtratoCOD_CLIENTE.AsInteger := os.Cliente;

@@ -299,6 +299,10 @@ type
     cxShellListView: TcxShellListView;
     actCadastroSolicitacaoCadastro: TAction;
     dxBarButton13: TdxBarButton;
+    dxBarSubItem2: TdxBarSubItem;
+    dxBarButton14: TdxBarButton;
+    actionCadastroContratoPF: TAction;
+    dxBarButton15: TdxBarButton;
     procedure FormShow(Sender: TObject);
     procedure actCadastroIncluirExecute(Sender: TObject);
     procedure actCadastroEditarExecute(Sender: TObject);
@@ -341,6 +345,7 @@ type
     procedure cxNomePropertiesChange(Sender: TObject);
     procedure actCadastroContratoExecute(Sender: TObject);
     procedure actCadastroSolicitacaoCadastroExecute(Sender: TObject);
+    procedure actionCadastroContratoPFExecute(Sender: TObject);
   private
     { Private declarations }
     procedure Modo;
@@ -375,6 +380,7 @@ type
     procedure PopulaEntregadores;
     procedure SalvaCodigos;
     procedure ImprimeContrato;
+    procedure ImprimeContratoPF;
   public
     { Public declarations }
     iCodigo: Integer;
@@ -890,6 +896,11 @@ begin
   PopulaPlacas;
   PopulaVeiculo;
   FreeAndNil(frmVeiculosEx);
+end;
+
+procedure TfrmEntregadoresFuncionarios.actionCadastroContratoPFExecute(Sender: TObject);
+begin
+  ImprimeContratoPF
 end;
 
 procedure TfrmEntregadoresFuncionarios.cxAgentePropertiesChange
@@ -2875,8 +2886,67 @@ begin
       if not Assigned(frmImpressao) then begin
         frmImpressao := TfrmImpressao.Create(Application);
       end;
-      frmImpressao.cxLabel1.Caption := 'CONTRATO DE PRESTAÇÃO DE SERVIÇO';
+      frmImpressao.cxLabel1.Caption := 'CONTRATO DE PRESTAÇÃO DE SERVIÇO - PESSOA JURÍDICA';
       frmImpressao.cxArquivo.Text := ExtractFilePath(Application.ExeName) + 'Reports\frxContratoServico.fr3';
+      if frmImpressao.ShowModal <> mrOk then
+      begin
+        FreeAndNil(frmImpressao);
+        Exit;
+      end
+      else begin
+        if (not FileExists(frmImpressao.cxArquivo.Text)) then begin
+          Application.MessageBox(PChar('Arquivo ' + frmImpressao.cxArquivo.Text +
+                                 ' não foi encontrado!'), 'Atenção', MB_OK + MB_ICONWARNING);
+          Exit;
+        end;
+      end;
+      sEndereco := cxLogradouro.Text + ', ' + cxNumero.Text;
+      if not TUtil.Empty(cxComplemento.Text) then
+      begin
+        sEndereco := sEndereco + ', ' + cxComplemento.Text;
+      end;
+      sEndereco := sEndereco + ', ' + cxBairro.Text;
+      sEndereco := sEndereco + ', ' + cxCidade.Text + '/' + cxUF.Text;
+      LoadFromFile(frmImpressao.cxArquivo.Text);
+      Variables.Items[Variables.IndexOf('parNome')].Value :=  QuotedStr(cxNome.Text);
+      Variables.Items[Variables.IndexOf('parIdentidade')].Value :=  QuotedStr(cxRGIE.Text);
+      Variables.Items[Variables.IndexOf('parCPF')].Value :=  QuotedStr(cxCPF.Text);
+      Variables.Items[Variables.IndexOf('parEndereco')].Value :=  QuotedStr(sEndereco);
+      Variables.Items[Variables.IndexOf('parRazaoSocial')].Value :=  QuotedStr(txtRazaoMEI.Text);
+      Variables.Items[Variables.IndexOf('parCNPJ')].Value :=  QuotedStr(mskCNPJMEI.Text);
+      Variables.Items[Variables.IndexOf('parData')].Value :=  QuotedStr(sDataExtenso);
+      FreeAndNil(frmImpressao);
+      if (not uGlobais.bFlagImprimir) then
+      begin
+        ShowReport(True);
+      end
+      else
+      begin
+        Print;
+      end;
+    end;
+  end;
+end;
+
+procedure TfrmEntregadoresFuncionarios.ImprimeContratoPF;
+var
+  sEndereco: String;
+  sDataExtenso: String;
+  sData: String;
+  dtData: TDate;
+begin
+  begin
+    sEndereco := '';
+    //sData:= InputBox('Informe a Data','Data da Vigência:', '');
+    sData := cxDataCadastro.Text;
+    dtData := StrToDateDef(sData,0);
+    sDataExtenso := FormatDateTime('dd "de" mmmm "de" yyyy', dtData);
+    with dm.frxReport do begin
+      if not Assigned(frmImpressao) then begin
+        frmImpressao := TfrmImpressao.Create(Application);
+      end;
+      frmImpressao.cxLabel1.Caption := 'CONTRATO DE PRESTAÇÃO DE SERVIÇO - PESSOA FÍSICA';
+      frmImpressao.cxArquivo.Text := ExtractFilePath(Application.ExeName) + 'Reports\frxContratoServicopf.fr3';
       if frmImpressao.ShowModal <> mrOk then
       begin
         FreeAndNil(frmImpressao);
